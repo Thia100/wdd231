@@ -4,12 +4,79 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="author" content="Fathia Diekola Gbolahan">
-    <meta name="description" content="">
-    <title></title>
+    <meta name="description" content="WDD 231 course homepage">
+    <link href="styles/normalize.css" rel="stylesheet">
+
+    <link href="styles/style.css" rel="stylesheet">
+    <script src="scripts/index.js" defer></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+    <title>Course Homepage | WDD 231</title>
 </head>
 <body>
-    <header></header>
-    <main></main>
-    <footer></footer>
+    <header class="header">
+        <div class="logo">
+            <picture>
+                <source srcset="images/fathiasmall.webp" media="(max-width:576px)">
+                <img src="images/Thia.webp" alt="Fathia's profile picture" loading="lazy" width="350" height="300">
+            </picture>
+            <span>Fathia D. Gbolahan</span>
+        </div>
+        <nav>
+            <ul class="sidebar">
+                <li onclick=hideSidebar()><i class="fa fa-times fa-2x" aria-hidden="true"></i></li>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Chamber</a></li>
+                <li><a href="#">GitHub Profile</a></li>
+                <li><a href="#">LinkedIn</a></li>
+            </ul>
+            <ul>
+                <li class="hideOnMobile"><a href="#">Home</a></li>
+                <li class="hideOnMobile"><a href="#">Chamber</a></li>
+                <li class="hideOnMobile"><a href="#">GitHub Profile</a></li>
+                <li class="hideOnMobile"><a href="#">LinkedIn</a></li>
+                <li class="menu-button" onclick=showSidebar()><i class="fa fa-bars fa-2x" aria-hidden="true"></i></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h1>Home</h1>
+        <section class="main">
+            <section class="section1">
+                <h2>Course Work</h2>
+                <ul>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                </ul>
+            </section>
+            <section class="section2">
+                <h2>Nigeria,Osun state</h2>
+                <figure>
+                    <img src="images/nigeria.jpg" alt="Nigeria flag">
+                    <figcaption>Nigeria flag</figcaption>
+                </figure>
+            </section>
+            <section class="section3">
+                <h2>Web and Computer Programming Certificate</h2>
+                <div class="course-menu">
+                    <button id="all">All</button>
+                    <button id="cse">CSE</button>
+                    <button id="wdd">WDD</button>
+                </div>
+                <div id="course-list"></div>
+            </section>
+        </section>
+    </main>
+    <footer>
+        <p><span id="currentyear"></span> 💠Fathia Gbolahan💠 Nigeria</p>
+        <p id="last-modified"></p>
+    </footer>
 </body>
 </html>
