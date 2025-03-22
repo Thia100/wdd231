@@ -30,7 +30,7 @@ nav{
     font-size: 2rem;
     background: none;
     border: none;
-    /* add suitable brand color */
+    color: var(--primary-color);
     cursor: pointer;
     width: 100%;
     text-align: right;
