@@ -1,34 +1,37 @@
-:root{
-    --background-color:#fbf4ef;
-    --primary-color:#023047;
-    --secondary-color:#BF4342;
-    --header:#A3CEF1;
+:root {
+    --background-color: #fbf4ef;
+    --primary-color: #023047;
+    --secondary-color: #BF4342;
+    --header: #A3CEF1;
 }
-*{
+
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
-body{
+
+body {
     font-family: "Nunito", sans-serif;
     background-color: var(--background-color);
 }
-header{
-    display: flex;
-    display: grid;
-    grid-template-columns: 120px  auto 44px;
-    align-items: center;
-} 
 
+header {
+    display: grid;
+    grid-template-columns: 120px auto 44px;
+    align-items: center;
+}
 
 /* NAVIGATION */
-nav{
+nav {
     background-color: var(--header);
 }
-#myButton::before{
+
+#myButton::before {
     content: "\2630";
 }
-#myButton{
+
+#myButton {
     font-size: 2rem;
     background: none;
     border: none;
@@ -38,76 +41,76 @@ nav{
     text-align: right;
     padding: .25rem 2vw;
 }
-ul.menuLinks li a{
+
+ul.menuLinks li a {
     display: block;
     padding: .85rem 2vw;
     color: black;
     text-decoration: none;
     font-size: 18px;
-    
-} 
-li.current-menu-item a{
+}
+
+li.current-menu-item a {
     background-color: rgba(0, 0, 0, 0.2);
 }
+
 ul.menuLinks {
     list-style-type: none;
 }
-#myButton.open::before{
+
+#myButton.open::before {
     content: "X";
 }
-nav{
+
+nav {
     display: grid;
     grid-template-rows: 0fr;
     transition: grid-template-rows 0.5s ease-out;
 }
-nav ul{
+
+nav ul {
     overflow: hidden;
 }
-nav.open{
+
+nav.open {
     grid-template-rows: 1fr;
 }
-header h1{
+
+header h1 {
     color: var(--primary-color);
     font-weight: 700;
     font-size: 18px;
 }
 
-
 /* MAIN */
 .menu {
-	margin: 1rem auto;
-	padding: 0.5rem;
-	background-color: var(--primary-color);
-	text-align: center;
+    margin: 1rem auto;
+    padding: 0.5rem;
+    background-color: var(--primary-color);
+    text-align: center;
 }
+
 .menu button {
-	padding: 1rem;
-	font-weight: 700;
-} 
-#cards section p{
+    padding: 1rem;
+    font-weight: 700;
+}
+
+#cards section p {
     color: #023047;
     line-height: 1.8;
 }
+
 main {
     margin: 10px auto;
     max-width: 1500px;
 }
-#cards section .member-website{
+
+#cards section .member-website {
     color: #BF4342;
 }
-#cards section .member-website:visited{
+
+#cards section .member-website:visited {
     color: var(--primary-color);
-}
-
-
-
-
-
-/* List View */
-#cards.list {
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
 }
 
 #cards.list section h2 {
@@ -123,25 +126,29 @@ main {
 #cards.list section img {
     width: 100px;
     height: auto;
-    margin-right: 20px;
 }
 
-/* Style for each member card */
 #cards section {
-    border: 1px solid #ccc;
     background-color: #fff;
-    padding: 20px;
+    margin: 30px auto;
+    padding: 15px 10px;
+    border: 1px solid #ccc;
     border-radius: 10px;
-    text-align: center; 
+    text-align: center;
     box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.1);
 }
 
-
- 
+#cards.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    padding: 20px;
+    width: 100%;
+}
 
 
 /* FOOTER */
-.footer{
+.footer {
     width: 100%;
     background: linear-gradient(to right, #4f5b60, #A3CEF1);
     padding: 80px 0 30px;
@@ -156,19 +163,19 @@ main {
     align-items: center;
 }
 
-h5{
+h5 {
     font-size: 20px;
 }
 
-.col{
+.col {
     justify-self: center;
     align-self: center;
     line-height: 1.8;
     text-align: center;
-    color:black;
+    color: black;
 }
 
-.col a i{
+.col a i {
     color: var(--secondary-color);
     font-size: 20px;
     background-color: #fff;
@@ -177,24 +184,21 @@ h5{
     margin-right: 15px;
 }
 
-.footer .col span{
+.footer .col span {
     font-size: 16px;
 }
 
-.col h5{
+.col h5 {
     margin-bottom: 20px;
-    font-size:26px;
+    font-size: 26px;
 }
 
-.email-id{
+.email-id {
     border-bottom: 1px solid #ccc;
     margin: 16px 0;
 }
 
-.footer .col h6{
+.footer .col h6 {
     font-size: 16px;
     font-weight: 600;
 }
-
-
-
