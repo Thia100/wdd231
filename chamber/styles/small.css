@@ -50,15 +50,12 @@ li.current-menu-item a{
     background-color: rgba(0, 0, 0, 0.2);
 }
 ul.menuLinks {
-    /* display: none; */
     list-style-type: none;
 }
 #myButton.open::before{
     content: "X";
 }
-/* ul.menuLinks.open{
-    display: block;
-} */
+
 nav{
     display: grid;
     grid-template-rows: 0fr;
@@ -70,3 +67,142 @@ nav ul{
 nav.open{
     grid-template-rows: 1fr;
 }
+
+/* MAIN */
+.menu {
+	margin: 1rem auto;
+	border: 1px solid rgba(0, 0, 0, 0.1);
+	padding: 0.5rem;
+	background-color: var(--primary-color);
+	text-align: center;
+}
+.menu button {
+	padding: 1rem;
+	font-weight: 700;
+} 
+#cards section p{
+    color: #023047;
+}
+main {
+    margin: 50px auto;
+    max-width: 1500px;
+}
+#cards section .member-website{
+    color: #BF4342;
+}
+#cards section .member-website:visited{
+    color: var(--primary-color);
+}
+
+
+/* Grid View */
+#cards.grid {
+    display: grid;
+    gap: 3rem;
+    
+    justify-items: center;
+    align-items: center;
+    margin: 3rem 0;
+    line-height: 1.8;
+}
+
+/* List View */
+#cards.list {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+#cards.list section {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#cards.list section h2 {
+    margin: 0;
+    flex: 1;
+}
+
+#cards.list section p {
+    margin: 0;
+    flex: 1;
+}
+
+#cards.list section img {
+    width: 100px;
+    height: auto;
+    margin-right: 20px;
+}
+
+/* Style for each member card */
+#cards section {
+    border: 1px solid #ccc;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center; 
+    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.1);
+}
+
+
+ 
+
+
+/* FOOTER */
+.footer{
+    width: 100%;
+    background: linear-gradient(to right, #4f5b60, #A3CEF1);
+    padding: 80px 0 30px;
+    color: #ccc;
+    border-top-left-radius: 125px;
+    font-size: 13px;
+    line-height: 20px;
+    display: grid;
+    grid-template-rows: auto auto auto;
+    gap: 2rem;
+    justify-items: center;
+    align-items: center;
+}
+
+h5{
+    font-size: 20px;
+}
+
+.col{
+    justify-self: center;
+    align-self: center;
+    line-height: 1.8;
+    text-align: center;
+}
+
+.col a i{
+    color: var(--secondary-color);
+    font-size: 20px;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 50px;
+    margin-right: 15px;
+}
+
+.footer .col span{
+    font-size: 16px;
+}
+
+.col h5{
+    margin-bottom: 20px;
+    font-size:26px;
+}
+
+.email-id{
+    border-bottom: 1px solid #ccc;
+    margin: 16px 0;
+}
+
+.footer .col h6{
+    font-size: 16px;
+    font-weight: 600;
+}
+
+
+

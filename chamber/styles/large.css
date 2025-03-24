@@ -12,4 +12,27 @@
     nav{
         grid-template-rows: 1fr;
     }
+    .footer{
+        display: grid;
+        grid-template-columns: auto auto auto;
+    }
+    #cards{
+        display: grid;
+        grid-template-columns: auto auto auto;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    /* .grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        grid-gap: 5px;
+        align-items: center;
+    }
+     */
 }
+@media only screen and (min-width: 38rem){
+
+}
+
+

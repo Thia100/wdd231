@@ -4,10 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="author" content="Fathia Diekola Gbolahan">
-    <meta name="description" content="Fathia Diekola Gbolahan Chamber of Commerce Team Project. This page provides a list of local business and other organizations that belong to the Osun state chamber of commerce.">
+    <meta name="description" content="This page provides a list of local business and other organizations that belong to the Osun state chamber of commerce.">
     <title>Osun Chamber of Commerce | Homepage</title>
     <link rel="stylesheet" href="styles/normalize.css">
     <link rel="icon" href="favicon.ico">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
     <link rel="stylesheet" href="styles/small.css">
     <link rel="stylesheet" href="styles/large.css">
@@ -16,8 +17,7 @@
     <meta property="og:title" content="Osun Chamber of Commerce">
     <meta property="og:type" content="website">
     <!-- Get appropriate image. Referenced image is from github repository -->
-    <meta property="og:image" content="https://thia100.github.io/wdd231/chamber/images/ogimage.jpeg">
-    <!-- Get github url to add -->
+    <meta property="og:image" content="https://thia100.github.io/wdd231/chamber/images/ogimage.jpeg" width="250" height="200">
     <meta property="og:url" content="https://thia100.github.io/wdd231/chamber/directory.html">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -41,7 +41,34 @@
     </nav>
     <main>
         <h1>Home</h1>
+        <div class="menu">
+            <button id="grid">⏹️Grid</button>
+            <button id="list">📄List</button>
+        </div>
+        <hr>
+        <div id="cards"></div>
     </main>
-    <footer></footer>
+    <footer class="footer">
+        <div class="col">
+            <h5>Get In Touch</h5>
+            <h6>Osun Chamber of Commerce</h6>
+            <p>Nigeria, Osun state</p>
+            <p>7 Awodapo close</p>
+            <p class="email-id">info@gmail.com</p>
+            <span>+234 907-730-312</span>
+        </div>
+        <div class="col">
+            <h5>Stay Connected!</h5>
+            <a href="#"><i class="fa fa-youtube-play" aria-hidden="true"></i></a>
+            <a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+            <a href="#"><i class="fa fa-linkedin-square" aria-hidden="true"></i></a>
+        </div>
+        <div class="col">
+            <p>WDD231 Class Project</p>
+            <P>Fathia Diekola Gbolahan</P>
+            <p>&copy; 2025 Osun Chamber of Commerce</p>
+            <p>Last Modification</p>
+        </div>
+    </footer>
 </body>
 </html>
