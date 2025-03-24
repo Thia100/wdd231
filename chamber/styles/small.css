@@ -14,9 +14,10 @@ body{
     background-color: var(--background-color);
 }
 header{
+    display: flex;
     display: grid;
-    grid-template-columns: 44px auto 44px;
-    align-items: end;
+    grid-template-columns: 150px  auto 44px;
+    align-items: center;
 } 
 /* NAVIGATION */
 nav{
@@ -35,7 +36,6 @@ nav{
     width: 100%;
     text-align: right;
     padding: .25rem 2vw;
-
 }
 
 ul.menuLinks li a{
@@ -67,6 +67,10 @@ nav ul{
 nav.open{
     grid-template-rows: 1fr;
 }
+header p{
+    color: var(--primary-color);
+}
+
 
 /* MAIN */
 .menu {
