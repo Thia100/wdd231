@@ -6,6 +6,8 @@ hamburgerElement.addEventListener('click', () =>{
     hamburgerElement.classList.toggle('open');
 })
 
+document.getElementById('currentYear').textContent = new Date().getFullYear();
+document.getElementById('lastModified').textContent = document.lastModified;
 
 
 async function getMemberData(path) {
