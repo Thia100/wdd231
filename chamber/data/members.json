@@ -1,7 +1,7 @@
 [
     {
         "name": "Tech Innovators Inc.",
-        "address": "Osun state, Iree, Number 23 Balogun street",
+        "address": "Osun, Iree, Number 23 Balogun street",
         "phoneNumber": "+234-907-345-677-32",
         "websiteURL": "https://techinnovators.com",
         "image": "./images/tech_innovators.jpg",
@@ -28,7 +28,7 @@
     },
     {
         "name": "Lola's Farm",
-        "address": "Eleyele, Akindoyin, Opp Maye's second gate",
+        "address": "Akindoyin, Opp Maye's second gate",
         "phoneNumber": "+234-709-325-677-86",
         "websiteURL": "https://lola'sfarm.com",
         "image": "./images/lola's_farm.png",
@@ -46,7 +46,7 @@
     },
     {
         "name": "Terra Balance",
-        "address": "Off Parakin road, opposite OAU road, Ile-Ife",
+        "address": "Off Parakin road, opposite OAU road, Ile",
         "phoneNumber": "+234-807-315-677-92",
         "websiteURL": "https://terrabalance.com",
         "image": "./images/Terra-balance.png",

@@ -16,23 +16,31 @@
         display: grid;
         grid-template-columns: auto auto auto;
     }
-    #cards{
+    #cards.grid{
         display: grid;
         grid-template-columns: auto auto auto;
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
+        gap: 3rem;
     }
-    /* .grid {
-        display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-        grid-gap: 5px;
+    header h1{
+        font-weight: 500;
+        font-size: 28px;
+    }
+    #cards.list section {
+        display: flex;
+        flex-direction: row;
         align-items: center;
+        justify-content: space-between;
     }
-     */
+    /* #cards.grid{
+        display: grid;
+        grid-template-columns: auto auto auto;
+        gap: 2rem;
+    } */
+    
 }
-@media only screen and (min-width: 38rem){
 
-}
 
 

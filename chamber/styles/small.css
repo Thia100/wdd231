@@ -16,9 +16,11 @@ body{
 header{
     display: flex;
     display: grid;
-    grid-template-columns: 150px  auto 44px;
+    grid-template-columns: 120px  auto 44px;
     align-items: center;
 } 
+
+
 /* NAVIGATION */
 nav{
     background-color: var(--header);
@@ -26,7 +28,6 @@ nav{
 #myButton::before{
     content: "\2630";
 }
-
 #myButton{
     font-size: 2rem;
     background: none;
@@ -37,15 +38,14 @@ nav{
     text-align: right;
     padding: .25rem 2vw;
 }
-
 ul.menuLinks li a{
     display: block;
     padding: .85rem 2vw;
     color: black;
     text-decoration: none;
+    font-size: 18px;
+    
 } 
-
-
 li.current-menu-item a{
     background-color: rgba(0, 0, 0, 0.2);
 }
@@ -55,7 +55,6 @@ ul.menuLinks {
 #myButton.open::before{
     content: "X";
 }
-
 nav{
     display: grid;
     grid-template-rows: 0fr;
@@ -67,15 +66,16 @@ nav ul{
 nav.open{
     grid-template-rows: 1fr;
 }
-header p{
+header h1{
     color: var(--primary-color);
+    font-weight: 700;
+    font-size: 18px;
 }
 
 
 /* MAIN */
 .menu {
 	margin: 1rem auto;
-	border: 1px solid rgba(0, 0, 0, 0.1);
 	padding: 0.5rem;
 	background-color: var(--primary-color);
 	text-align: center;
@@ -86,9 +86,10 @@ header p{
 } 
 #cards section p{
     color: #023047;
+    line-height: 1.8;
 }
 main {
-    margin: 50px auto;
+    margin: 10px auto;
     max-width: 1500px;
 }
 #cards section .member-website{
@@ -99,28 +100,14 @@ main {
 }
 
 
-/* Grid View */
-#cards.grid {
-    display: grid;
-    gap: 3rem;
-    
-    justify-items: center;
-    align-items: center;
-    margin: 3rem 0;
-    line-height: 1.8;
-}
+
+
 
 /* List View */
 #cards.list {
     display: flex;
     flex-direction: column;
     gap: 10px;
-}
-#cards.list section {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-between;
 }
 
 #cards.list section h2 {
@@ -178,6 +165,7 @@ h5{
     align-self: center;
     line-height: 1.8;
     text-align: center;
+    color:black;
 }
 
 .col a i{
