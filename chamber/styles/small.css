@@ -1,36 +1,45 @@
 :root {
-    --background-color: #fbf4ef;
+    --background-color: #ffffff;
     --primary-color: #023047;
     --secondary-color: #BF4342;
     --header: #A3CEF1;
 }
-
-* {
+*{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
-
+html, body{
+    height: 100%;
+}
 body {
     font-family: "Nunito", sans-serif;
     background-color: var(--background-color);
 }
-
 header {
     display: grid;
     grid-template-columns: 120px auto 44px;
     align-items: center;
 }
 
+
+
 /* NAVIGATION */
 nav {
     background-color: var(--header);
 }
 
+ul.menuLinks a:hover{
+    background-color: rgba(117, 110, 110, 0.2);
+}
+
+ul.menuLinks {
+    list-style-type: none;
+}
+
 #myButton::before {
     content: "\2630";
 }
-
 #myButton {
     font-size: 2rem;
     background: none;
@@ -41,7 +50,6 @@ nav {
     text-align: right;
     padding: .25rem 2vw;
 }
-
 ul.menuLinks li a {
     display: block;
     padding: .85rem 2vw;
@@ -49,13 +57,9 @@ ul.menuLinks li a {
     text-decoration: none;
     font-size: 18px;
 }
-
+/* CURRENT ITEM */
 li.current-menu-item a {
     background-color: rgba(0, 0, 0, 0.2);
-}
-
-ul.menuLinks {
-    list-style-type: none;
 }
 
 #myButton.open::before {
@@ -82,45 +86,61 @@ header h1 {
     font-size: 18px;
 }
 
+
+
 /* MAIN */
-.menu {
-    margin: 1rem auto;
-    padding: 0.5rem;
+main {
+    min-height: 100%;
+    width: 100%; /* Full width on small screens */
+    max-width: 1500px; /* Max width on large screens */
+    margin: 0 auto; /* Center */
+    padding: 0 1rem;
+    
+}
+
+.menu{
     background-color: var(--primary-color);
     text-align: center;
+    padding: 0.5rem ;
+    margin: 1rem auto;
 }
 
-.menu button {
+.menu button{
     padding: 1rem;
-    font-weight: 700;
+    font-weight: 500;
+    margin-right: 2rem;
+    cursor: pointer;
+    transition: ease 0.5s;
 }
 
-#cards section p {
-    color: #023047;
-    line-height: 1.8;
+#cards {
+    overflow: auto;
+    padding-bottom: 200px;
 }
 
-main {
-    margin: 10px auto;
-    max-width: 1500px;
-}
 
-#cards section .member-website {
-    color: #BF4342;
+#cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    column-gap: 2.5rem;
+    row-gap: 5rem;
+    justify-content: center;
+    width: 100%;
+    margin-top: 5rem;
 }
-
-#cards section .member-website:visited {
+#cards section{
+    background-color: var(--background-color);
+    text-align: center;
+    padding: 1.5rem 0;
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.1);
     color: var(--primary-color);
+    line-height: 1.5;
+    
 }
 
-#cards.list section h2 {
-    margin: 0;
-    flex: 1;
-}
-
-#cards.list section p {
-    margin: 0;
-    flex: 1;
+#cards section:hover{
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.1) inset;
+    transition: ease 0.5s;
 }
 
 #cards.list section img {
@@ -128,51 +148,20 @@ main {
     height: auto;
 }
 
-#cards section {
-    background-color: #fff;
-    margin: 30px auto;
-    padding: 15px 10px;
-    border: 1px solid #ccc;
-    border-radius: 10px;
-    text-align: center;
-    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.1);
-}
-
-#cards.grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 20px;
-    padding: 20px;
-    width: 100%;
-}
 
 
 /* FOOTER */
-.footer {
-    width: 100%;
-    background: linear-gradient(to right, #4f5b60, #A3CEF1);
-    padding: 80px 0 30px;
-    color: #ccc;
-    border-top-left-radius: 125px;
-    font-size: 13px;
-    line-height: 20px;
-    display: grid;
-    grid-template-rows: auto auto auto;
-    gap: 2rem;
-    justify-items: center;
-    align-items: center;
-}
+footer {
+    position: relative;
+    height: auto;
+    margin-top: -100px;
+    clear: both;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    background: linear-gradient(to right, #ccdfe7, #A3CEF1);
+    line-height: 1.5;
 
-h5 {
-    font-size: 20px;
-}
-
-.col {
-    justify-self: center;
-    align-self: center;
-    line-height: 1.8;
-    text-align: center;
-    color: black;
 }
 
 .col a i {
@@ -184,21 +173,161 @@ h5 {
     margin-right: 15px;
 }
 
-.footer .col span {
-    font-size: 16px;
+h6{
+    font-size: 20px;
+    margin-bottom: 1rem;
 }
 
-.col h5 {
-    margin-bottom: 20px;
-    font-size: 26px;
+.col {
+    text-align: center;
+    color: black;
 }
-
 .email-id {
     border-bottom: 1px solid #ccc;
     margin: 16px 0;
 }
 
-.footer .col h6 {
-    font-size: 16px;
-    font-weight: 600;
-}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

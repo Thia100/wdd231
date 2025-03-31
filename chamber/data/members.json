@@ -4,7 +4,7 @@
         "address": "Osun, Iree, Number 23 Balogun street",
         "phoneNumber": "+234-907-345-677-32",
         "websiteURL": "https://techinnovators.com",
-        "image": "./images/tech_innovators.jpg",
+        "image": "./images/tech_inovators.webp",
         "membershipLevel": 3,
         "description": "Leading provider of cutting-edge technology solutions."
     },
@@ -49,7 +49,7 @@
         "address": "Off Parakin road, opposite OAU road, Ile",
         "phoneNumber": "+234-807-315-677-92",
         "websiteURL": "https://terrabalance.com",
-        "image": "./images/Terra-balance.png",
+        "image": "./images/Terra-balance.webp",
         "membershipLevel": 3,
         "description": "Merging tech and agriculture."
     },

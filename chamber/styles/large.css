@@ -1,41 +1,40 @@
-@media only screen and (min-width: 38rem) {
+@media only screen and (min-width: 38rem){
     #myButton{
         display: none;
     }
+
     ul.menuLinks, ul.menuLinks.open{
         display: flex;
         justify-content: flex-end;
     }
-    ul.menuLinks a:hover{
-        background-color: rgba(225, 225, 225, 0.2);
-    }
+
     nav{
         grid-template-rows: 1fr;
     }
-    .footer{
-        display: grid;
-        grid-template-columns: auto auto auto;
-    }
-    #cards.grid{
-        display: grid;
-        grid-template-columns: auto auto auto;
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-        gap: 3rem;
-    }
+
     header h1{
         font-weight: 500;
         font-size: 28px;
     }
-    #cards.list section {
+    
+    #cards.list section  {
         display: flex;
+        flex-wrap: wrap;
         flex-direction: row;
         align-items: center;
         justify-content: space-between;
+        padding: 1rem;
+        width: 100%;
+        max-width: 100%;
+
+    }
+    #cards.list {
+        display: grid;
+        grid-template-columns: 1fr; 
     }
     
+
+
+    
+
 }
-
-
-
