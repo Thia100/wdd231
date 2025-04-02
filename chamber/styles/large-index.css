@@ -27,4 +27,14 @@
     .b-cards{
         margin-top: 8rem;
     }
+    .container h1{
+        font-size: 34px;
+        position: absolute;
+        left: 40%;
+    }
+    .container a{
+        position: absolute;
+        left: 48%;
+
+    }
 }
