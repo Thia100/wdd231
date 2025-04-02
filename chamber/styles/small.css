@@ -27,6 +27,11 @@ header {
 /* NAVIGATION */
 nav {
     background-color: var(--header);
+    position: sticky; 
+    top: 0; /* Stick to the top of the viewport */
+    z-index: 1000; /* Ensure it stays above other content */
+    width: 100%; 
+    transition: background-color 0.3s; 
 }
 
 ul.menuLinks a:hover{
@@ -59,7 +64,7 @@ ul.menuLinks li a {
 }
 /* CURRENT ITEM */
 li.current-menu-item a {
-    background-color: rgba(0, 0, 0, 0.2);
+    background-color: rgba(232, 144, 144, 0.2);
 }
 
 #myButton.open::before {
@@ -93,7 +98,7 @@ main {
     min-height: 100%;
     width: 100%; /* Full width on small screens */
     max-width: 1500px; /* Max width on large screens */
-    margin: 0 auto; /* Center */
+    margin: 0 auto;
     padding: 0 1rem;
     
 }

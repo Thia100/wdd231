@@ -10,18 +10,9 @@ document.getElementById('currentYear').textContent = new Date().getFullYear();
 document.getElementById('lastModified').textContent = document.lastModified;
 
 
-async function getMemberData(path) {
-    const response = await fetch(path);
-    const data = await response.json();
-    console.log(data);
 
-    if (Array.isArray(data)) {
-        displayMembers(data); // Pass the data to displayMembers
-    }
-}
 
-// Call the function with the path to your JSON file
-// Fetch member data and display it
+
 async function getMemberData(path) {
     const response = await fetch(path); // Fetch data from the provided path
     const data = await response.json(); // Parse the fetched data as JSON
@@ -96,3 +87,7 @@ function showList() {
 	display.classList.add("list");
 	display.classList.remove("grid");
 }
+
+
+
+

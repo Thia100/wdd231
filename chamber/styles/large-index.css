@@ -1,0 +1,30 @@
+@media only screen and (min-width: 38rem){
+    #myButton{
+        display: none;
+    }
+
+    ul.menuLinks, ul.menuLinks.open{
+        display: flex;
+        justify-content: flex-end;
+    }
+
+    nav{
+        grid-template-rows: 1fr;
+    }
+
+    header h1{
+        font-weight: 500;
+        font-size: 28px;
+    }
+    .b-cards, .weather-section{
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        gap: 5rem;
+    }
+    .b-cards{
+        margin-top: 8rem;
+    }
+}

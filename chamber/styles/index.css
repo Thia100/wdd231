@@ -1,0 +1,281 @@
+:root {
+    --background-color: #ffffff;
+    --primary-color: #023047;
+    --secondary-color: #BF4342;
+    --header: #A3CEF1;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html, body{
+    height: 100%;
+}
+body {
+    font-family: "Nunito", sans-serif;
+    background-color: var(--background-color);
+}
+header {
+    display: grid;
+    grid-template-columns: 120px auto 44px;
+    align-items: center;
+}
+
+
+
+
+
+/* NAVIGATION */
+nav {
+    background-color: var(--header);
+    position: sticky; 
+    top: 0; 
+    z-index: 1000;
+    width: 100%; 
+    transition: background-color 0.3s; 
+}
+
+ul.menuLinks a:hover{
+    background-color: rgba(157, 122, 122, 0.2);
+}
+
+ul.menuLinks {
+    list-style-type: none;
+}
+
+#myButton::before {
+    content: "\2630";
+}
+#myButton {
+    font-size: 2rem;
+    background: none;
+    border: none;
+    color: var(--primary-color);
+    cursor: pointer;
+    width: 100%;
+    text-align: right;
+    padding: .25rem 2vw;
+}
+ul.menuLinks li a {
+    display: block;
+    padding: .85rem 2vw;
+    color: black;
+    text-decoration: none;
+    font-size: 18px;
+}
+/* CURRENT ITEM */
+li.current-menu-item a {
+    background-color: rgba(232, 144, 144, 0.2);
+}
+
+#myButton.open::before {
+    content: "X";
+}
+
+nav {
+    display: grid;
+    grid-template-rows: 0fr;
+    transition: grid-template-rows 0.5s ease-out;
+}
+
+nav ul {
+    overflow: hidden;
+}
+
+nav.open {
+    grid-template-rows: 1fr;
+}
+
+header h1 {
+    color: var(--primary-color);
+    font-weight: 700;
+    font-size: 18px;
+}
+
+
+
+
+/* MAIN */
+main {
+    min-height: 100%;
+    width: 100%;   
+    margin: 0 auto; 
+}
+
+.myCover{
+    width: 100%;
+    height: 500px;
+    object-fit: cover;
+
+}
+.container{
+    width: 100%;
+    height: 500px;
+    position: relative;
+}
+.container a{
+    position: absolute;
+    left: 45%;
+    top: 50%;
+    text-decoration: none;
+    color: #F4EDEB;
+    background-color: var(--secondary-color);
+    padding: 1rem 2.5rem;
+    border-radius:30px ;
+    font-size: 24px;
+    font-weight: 500;
+    transition: background-color 0.3s;
+}
+.container a:hover{
+    background-color: #A03A3A;
+}
+
+
+
+
+.home-section{
+    margin-top: 5rem;
+}
+.b-cards img {
+    width: 100px;
+    border-radius: 10px;
+    height: auto;
+}
+
+.weather-section{
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+}
+.w-cards {
+    background-color: #ffffff;
+    border: 1px solid #ccc;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 350px; 
+    height: 350px;
+}
+.w-cards h2{
+    width: 100%;
+    margin: 0;
+    font-size: 26px;
+    text-align: left;
+    display: block;
+    background-color: var(--primary-color);
+    color: #FFFFFF;
+    display: block;
+    padding: 5px;
+}
+.w-cards section p{
+    line-height: 1.8;
+    text-align: center; 
+    margin-left: 1rem;
+    color: black;
+}
+
+/* SEE IF YOU CAN CHANGE THE POSITION TO FIT THAT IN THE IMAGE */
+/* .weather-icon{
+    display: flex;
+    
+    
+} */
+
+
+
+.b-cards {
+    display: flex; 
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    margin: 2rem; 
+}
+
+
+.b-cards section {
+    background-color: #ffffff;
+    border: 1px solid #ccc; 
+    border-radius: 10px; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+    width: 350px; 
+    height: 350px; 
+    display: flex; 
+    flex-direction: column; 
+    align-items: center; 
+    padding: 1rem;
+    box-sizing: border-box; 
+}
+
+.b-cards section h3 {
+    font-size: 1.5rem;
+    color: #023047; 
+    margin: 0.5rem 0; 
+    text-align: center; 
+}
+
+/* Styles for the card description */
+.b-cards section p {
+    font-size: 1rem; 
+    color: black;
+    text-align: center; 
+    margin: 0.5rem 0;
+}
+
+/* Styles for the card links */
+.b-cards section a {
+    text-decoration: none; 
+    color: #ffffff; 
+    background-color: var(--secondary-color);
+    padding: 0.5rem 1rem; 
+    border-radius: 5px; 
+    margin-top: auto; 
+    transition: background-color 0.3s; 
+}
+
+/* Hover effect for buttons */
+.b-cards section a:hover {
+    background-color: #A03A3A; 
+}
+
+
+
+/* FOOTER */
+footer {
+    position: relative;
+    height: auto;
+    margin-top: 200px;
+    clear: both;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    background: linear-gradient(to right, #ccdfe7, #A3CEF1);
+    line-height: 1.5;
+
+}
+
+.col a i {
+    color: var(--secondary-color);
+    font-size: 20px;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 50px;
+    margin-right: 15px;
+}
+
+h6{
+    font-size: 20px;
+    margin-bottom: 1rem;
+}
+
+.col {
+    text-align: center;
+    color: black;
+}
+.email-id {
+    border-bottom: 1px solid #ccc;
+    margin: 16px 0;
+}
+

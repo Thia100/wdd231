@@ -6,7 +6,8 @@
         "websiteURL": "https://techinnovators.com",
         "image": "./images/tech_inovators.webp",
         "membershipLevel": 3,
-        "description": "Leading provider of cutting-edge technology solutions."
+        "email": "techinnovators@gmail.com",
+        "description": "Leading provider of technology."
     },
     {
         "name": "Green Energy Solutions",
@@ -14,6 +15,7 @@
         "phoneNumber": "+234-807-345-677-95",
         "websiteURL": "https://greenenergy.com",
         "image": "./images/green_energy.jpeg",
+        "email": "genergy@gmail.com",
         "membershipLevel": 2,
         "description": "Specializing in renewable energy systems."
     },
@@ -23,6 +25,7 @@
         "phoneNumber": "+234-445-345-637-21",
         "websiteURL": "https://globalfoods.com",
         "image": "./images/global_foods.jpeg",
+        "email": "globalfoods@gmail.com",
         "membershipLevel": 1,
         "description": "Distributor of international gourmet foods."
     },
@@ -32,6 +35,7 @@
         "phoneNumber": "+234-709-325-677-86",
         "websiteURL": "https://lola'sfarm.com",
         "image": "./images/lola's_farm.png",
+        "email": "lola's_farm@gmail.com",
         "membershipLevel": 2,
         "description": "Distibutor of naturally raised livestock."
     },
@@ -41,6 +45,7 @@
         "phoneNumber": "+234-907-345-331-22",
         "websiteURL": "https://creativedesigns.com",
         "image": "./images/creative_designs.png",
+        "email": "creativedesigns@gmail.com",
         "membershipLevel": 1,
         "description": "Innovative graphic and web design services."
     },
@@ -50,6 +55,7 @@
         "phoneNumber": "+234-807-315-677-92",
         "websiteURL": "https://terrabalance.com",
         "image": "./images/Terra-balance.webp",
+        "email": "terrabalance@gmail.com",
         "membershipLevel": 3,
         "description": "Merging tech and agriculture."
     },
@@ -59,6 +65,7 @@
         "phoneNumber": "+234-807-673-677-05",
         "websiteURL": "https://olamotors.com",
         "image": "./images/ola_motors.png",
+        "email": "olamotors@gmail.com",
         "membershipLevel": 2,
         "description": "Provides vehicles for commercial and family use."
     }
