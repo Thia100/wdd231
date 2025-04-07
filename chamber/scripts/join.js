@@ -10,12 +10,6 @@ document.getElementById('currentYear').textContent = new Date().getFullYear();
 document.getElementById('lastModified').textContent = document.lastModified;
 
 
-// Set form timestamp
-document.addEventListener('DOMContentLoaded', function() {
-    document.getElementById('form-timestamp').value = new Date().toISOString();
-});
-
-
 const openButton = document.querySelector('#openButton');
 const dialogBox = document.querySelector('#dialogBox');
 const closeButton = document.querySelector('#closeButton');
