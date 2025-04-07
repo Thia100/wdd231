@@ -142,6 +142,5 @@ closeButton.addEventListener('click', () =>{
 });
 
 
-const getString = window.location.search;
-console.log(getString);
+
 
