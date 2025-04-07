@@ -1,0 +1,59 @@
+@media only screen and (min-width: 38rem){
+    #myButton{
+        display: none;
+    }
+
+    ul.menuLinks, ul.menuLinks.open{
+        display: flex;
+        justify-content: flex-end;
+    }
+
+    nav{
+        grid-template-rows: 1fr;
+    }
+
+    header h1{
+        font-weight: 500;
+        font-size: 28px;
+    }
+    .container h1{
+        font-size: 30px;
+        position: absolute;
+        left: 40%;
+    }
+    .container a{
+        position: absolute;
+        left: 48%;
+    }
+    h2{
+        font-size: 30px;
+    }
+}
+@media (min-width: 992px) {
+    .form-and-cards {
+      flex-direction: row;
+      align-items: flex-start;
+    }
+    .container h1{
+        font-size: 25px;
+    }
+    
+    .join-form {
+      flex: 2;
+    }
+    
+    .membership-cards {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      position: sticky;
+      top: 20px;
+    }
+    
+    .card {
+      width: 100%;
+      margin-bottom: 1.5rem;
+    }
+}
+
+

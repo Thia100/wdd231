@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Fathia Diekola Gbolahan">
+    <meta name="description" content="">
+    <title>Join | Osun State Chamber of Commerce</title>
+
+    <script src="scripts/join.js" defer></script>
+    <link rel="stylesheet" href="styles/join.css">
+    <link rel="stylesheet" href="styles/join-larger.css">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="icon" href="favicon2.ico">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <meta property="og:title" content="Osun Chamber of Commerce">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://thia100.github.io/wdd231/chamber/images/ogimage.jpeg">
+    <meta property="og:url" content="https://thia100.github.io/wdd231/chamber/join.html">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <img src="images/logo.svg" width="150" height="150" alt="Osun Chamber of Commerce Logo">
+        <span>Osun Chamber of Commerce | Home</span>
+        <button id="myButton" aria-label="Open Menu"></button>
+    </header>
+    <nav id="animateMe" aria-label="Main Navigation">
+        <ul class="menuLinks">
+            <li><a href="index.html" title="home">Home</a></li>
+            <li><a href="directory.html" title="directory">Directory</a></li>
+            <li class="current-menu-item"><a href="join.html" title="join">Join</a></li>
+            <li><a href="#" title="discover">Discover</a></li>
+        </ul>
+    </nav>
+    <main>
+        <div class="container">
+            <img class="myCover" src="images/join-hero.webp" alt="hero image">
+            <h1>Osun state Chamber of Commerce</h1>
+        </div>
+        <h2>Join Osun State Chamber of Commerce</h2>
+        <div class="form-and-cards">
+            <form method="get" action="thankyou.html" class="join-form">
+                <fieldset>
+                    <legend>Representative's Information</legend>
+                    <label for="fname" >First Name</label>
+                    <input placeholder="First Name" title="please enter your first name" autocomplete="given-name" type="text" name="fname" id="fname" required>
+    
+                    <label for="lname">Last Name</label>
+                    <input placeholder="Last Name" title="please enter your last name" autocomplete="family-name" type="text" name="lname" id="lname" required>
+    
+                    <label for="email">Email</label>
+                    <input placeholder="thegbolahanfathia@gmail.com" type="email" name="email" title="please enter your email" autocomplete="email" id="email" required>
+    
+                    <label for="phonenumber">Phone Number</label>
+                    <input placeholder="Phone Number" type="tel" name="phonenumber" title="please enter your phone number" autocomplete="tel" id="phonenumber" required>
+    
+                    <label for="orgtitle">Organizational Title</label>
+                    <input title="please enter your role in the organization(letters, hyphens, and spaces only, min. 7 characters)"  autocomplete="organization-title" type="text" name="orgtitle" id="orgtitle" pattern="^[A-Za-z\s\-]{7,}$" required >
+                </fieldset>
+                <fieldset>
+                    <legend>Organization Information</legend>
+    
+                    <label for="org-name" >Business Name</label>
+                    <input placeholder="Business Name" title="please enter your Business name" autocomplete="organization" type="text" name="org-name" id="org-name" required>
+                    <fieldset>
+                        <legend for="membership-level">Select Membership Level</legend>
+                        <label for="np">
+                            <input type="radio" id="np" name="membership" value="np">NP Membership (Non-Profit, No Fee)
+                        </label>
+      
+                        <label for="bronze">
+                            <input type="radio" id="bronze" name="membership" value="bronze">Bronze Membership
+                        </label>
+
+                        <label for="silver">
+                            <input type="radio" id="silver" name="membership" value="silver">Silver Membership
+                        </label>
+                        
+                        <label for="gold">
+                            <input type="radio" id="gold" name="membership" value="gold">Gold Membership
+                        </label>
+                    </fieldset>
+                    <label for="org-description">Organization Description</label>
+                    <textarea name="org-description" title="please enter some of the organization's information" id="org-description" cols="40" rows="3"></textarea>
+                </fieldset>
+                <input type="hidden" id="form-timestamp" name="timestamp" value="">
+                <input type="submit" value="Apply for Membership" id="submit">
+            </form>
+
+            <div class="membership-cards">
+                <div class="card np">
+                    <h3>NP Membership</h3>
+                    <p>For non-profit organizations</p>
+                    <p><strong>Cost: Free</strong></p>
+                    <button id="openButton1">Learn More →</button>
+                    <dialog id="dialogBox">
+                        <div></div>
+                        <button id="closeButton">&times;</button>
+                    </dialog>
+                </div>
+
+                <div class="card bronze">
+                    <h3>Bronze Membership</h3>
+                    <p>Basic business benefits</p>
+                    <p><strong>Cost: $200/year</strong></p>
+                    <button id="openButton2">Learn More →</button>
+                    <dialog id="dialogBox">
+                        <div></div>
+                        <button id="closeButton">close</button>
+                    </dialog>
+                </div>
+
+                <div class="card silver">
+                    <h3>Silver Membership</h3>
+                    <p>Enhanced business support</p>
+                    <p><strong>Cost: $400/year</strong></p>
+                    <button id="openButton3">Learn More →</button>
+                    <dialog id="dialogBox">
+                        <div></div>
+                        <button id="closeButton">close</button>
+                    </dialog>
+                </div>
+                
+                <div class="card gold">
+                    <h3>Gold Membership</h3>
+                    <p>Premium business advantages</p>
+                    <p><strong>Cost: $600/year</strong></p>
+                    <button id="openButton4">Learn More →</button>
+                    <dialog id="dialogBox">
+                        <div></div>
+                        <button id="closeButton">close</button>
+                    </dialog>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div class="col">
+            <h6>Get In Touch</h6>
+            <p>Nigeria, Osun state</p>
+            <p>7 Awodapo close</p>
+            <p class="email-id">info@gmail.com</p>
+            <span>+234 907-730-312</span>
+        </div>
+        <div class="col">
+            <h6>Stay Connected!</h6>
+            <a href="#" aria-label="YouTube"><i class="fa fa-youtube-play" aria-hidden="true"></i></a>
+            <a href="#" aria-label="Twitter"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+            <a href="#" aria-label="LinkedIn"><i class="fa fa-linkedin-square" aria-hidden="true"></i></a>
+        </div>
+        <div class="col">
+            <p>WDD231 Class Project</p>
+            <p>Fathia Diekola Gbolahan</p>
+            <p>&copy; <span id="currentYear">2025</span> Osun Chamber of Commerce</p>
+            <p>Last Modified: <span id="lastModified"></span></p>
+        </div>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,389 @@
+:root {
+    --background-color: #ffffff;
+    --primary-color: #023047;
+    --secondary-color: #BF4342;
+    --header: #A3CEF1;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html, body{
+    height: 100%;
+}
+body {
+    font-family: "Open Sans", sans-serif;
+    background-color: var(--background-color);
+}
+header {
+    display: grid;
+    grid-template-columns: 120px auto 44px;
+    align-items: center;
+}
+
+
+
+
+
+
+/* NAVIGATION */
+nav {
+    background-color: var(--header);
+    position: sticky; 
+    top: 0; 
+    z-index: 1000;
+    width: 100%; 
+    transition: background-color 0.3s; 
+}
+
+ul.menuLinks a:hover{
+    background-color: rgba(157, 122, 122, 0.2);
+}
+
+ul.menuLinks {
+    list-style-type: none;
+}
+
+#myButton::before {
+    content: "\2630";
+}
+#myButton {
+    font-size: 2rem;
+    background: none;
+    border: none;
+    color: var(--primary-color);
+    cursor: pointer;
+    width: 100%;
+    text-align: right;
+    padding: .25rem 2vw;
+}
+ul.menuLinks li a {
+    display: block;
+    padding: .85rem 2vw;
+    color: black;
+    text-decoration: none;
+    font-size: 18px;
+}
+/* CURRENT ITEM */
+li.current-menu-item a {
+    background-color: rgba(232, 144, 144, 0.2);
+}
+
+#myButton.open::before {
+    content: "X";
+}
+
+nav {
+    display: grid;
+    grid-template-rows: 0fr;
+    transition: grid-template-rows 0.5s ease-out;
+}
+
+nav ul {
+    overflow: hidden;
+}
+
+nav.open {
+    grid-template-rows: 1fr;
+}
+
+header span {
+    color: var(--primary-color);
+    font-weight: 700;
+    font-size: 18px;
+}
+
+
+
+/* MAIN STUFF  */
+main {
+    min-height: 100%;
+    width: 100%;   
+    margin: 0 auto; 
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.myCover{
+    width: 100%;
+    height: 500px;
+    object-fit: cover;
+
+}
+.container h1{
+    position: absolute;
+    color: var(--primary-color);
+    font-weight: 700;
+    display: flex;
+    flex-wrap: wrap;
+    font-size: 19px;
+    left: 25%;
+    top: 30%;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.form-and-cards{
+    margin: 3rem 2rem 0 2rem;
+
+}
+
+h2{
+    text-align: center;
+    margin-top: 10rem;
+    color: var(--primary-color);
+    background-color: rgba(108, 102, 102, 0.1);
+    padding: 1rem;
+    font-size: 23px;
+}
+
+.join-form {
+    display: grid;
+    gap: 1.5rem;
+    margin-bottom: 2rem;
+}
+  
+fieldset {
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    padding: 1.5rem;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+  
+legend {
+    padding: 0 0.5rem;
+    font-weight: bold;
+    font-size: 20px;
+    color: var(--primary-color);
+}
+  
+label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: 600;
+}
+  
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+input[type="password"],
+textarea {
+    width: 100%;
+    padding: 0.75rem;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 1rem;
+    margin-bottom: 1rem;
+}
+  
+input:focus,
+textarea:focus,
+select:focus {
+    outline: none;
+    border-color: var(--secondary);
+    box-shadow: 0 0 0 2px rgba(52, 152, 219, 0.2);
+}
+
+input[type="radio"] {
+    margin-right: 0.5rem;
+}
+  
+
+  
+input[type="submit"] {
+    background-color: var(--secondary-color);
+    color: white;
+    border: none;
+    padding: 0.75rem 1.5rem;
+    font-size: 1rem;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+  
+input[type="submit"]:hover {
+    background-color: #2980b9;
+}
+
+.content-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.membership-cards {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+}
+
+.card {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.card h3 {
+    margin-top: 0;
+    color: #2c3e50;
+}
+
+.card.np { border-top: 4px solid #27ae60; }
+.card.bronze { border-top: 4px solid #cd7f32; }
+.card.silver { border-top: 4px solid #c0c0c0; }
+.card.gold { border-top: 4px solid #ffd700; }
+
+.membership-cards button {
+    margin-top: 15px;
+    color: var(--secondary-color);
+    font-weight: bold;
+    cursor: pointer;
+    border: none;
+    background: none;
+}
+#closeButton{
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    font-size: 40px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+
+
+/* MODAL DIALOG */
+dialog{
+    background-color: white;
+    margin: 4% auto;
+    padding: 25px;
+    border:1px solid #ddd;
+    width: 80%;
+    max-width: 600px;
+}
+
+dialog h4{
+    border-bottom: 1px solid #ddd;
+    width: fit-content;
+    color: var(--primary-color);
+    font-size: 20px;
+    margin-bottom: 1.5rem;
+}
+dialog p {
+    line-height: 1.8;
+}
+
+.form-and-cards {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+  
+
+.membership-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1.5rem;
+}
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+footer {
+    position: relative;
+    height: auto;
+    margin-top: 200px;
+    clear: both;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    background: linear-gradient(to right, #ccdfe7, #A3CEF1);
+    line-height: 1.5;
+
+}
+
+.col a i {
+    color: var(--secondary-color);
+    font-size: 20px;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 50px;
+    margin-right: 15px;
+}
+
+h6{
+    font-size: 20px;
+    margin-bottom: 1rem;
+}
+
+.col {
+    text-align: center;
+    color: black;
+}
+.email-id {
+    border-bottom: 1px solid #ccc;
+    margin: 16px 0;
+}
+
