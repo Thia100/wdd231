@@ -117,6 +117,7 @@ nav.open {
     color: white;
     font-size: 1.5rem;
 }
+
 .cta-button button{
     padding: 1rem 2.5rem;
     cursor: pointer;
@@ -124,6 +125,10 @@ nav.open {
     color: white;
     border-color: white;
     font-size: 1rem;
+}
+.cta-button button:hover{
+    background-color: #ff70a6;
+    border-color: #ff70a6;
 }
 
 
