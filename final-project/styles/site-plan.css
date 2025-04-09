@@ -35,7 +35,7 @@ header .fa{
 }
 .hero{
     /* different images on different screen sizees */
-    background-image: url(/final-project/images/hero-salon.webp);
+    background-image: url('/final-project/images/hero-salon.webp');
     width: 100%;
     height: 600px;
     background-repeat: no-repeat;
