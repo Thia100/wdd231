@@ -33,9 +33,9 @@ header .fa{
     transition: ease .5s;
     /* think of appropriate color */
 }
-.hero{
+.hero-img{
     /* different images on different screen sizees */
-    background-image:linear-gradient(rgba(0, 0, 0, 0.8), rgba(0,0,0,0.1)), url('/final-project/images/hero-salon.webp');
+    background-image:linear-gradient(rgba(0, 0, 0, 0.8), rgba(0,0,0,0.1));
     width: 100%;
     height: 600px;
     background-repeat: no-repeat;
