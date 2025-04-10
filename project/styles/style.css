@@ -1,0 +1,135 @@
+:root{
+    --buttons:#e6598f;
+    --header:#31d4f5;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,body{
+    height: 100%;
+}
+
+header{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  cursor: pointer;
+  padding: 2rem;
+  align-items: center;
+  transition: ease .5s;
+  background-color:#e8eded;
+}
+
+.logo{
+    justify-self: start;
+}
+
+.media-icons{
+    justify-self: end;
+}
+
+header .fa{
+    padding: .5rem;
+    color: var(--buttons);
+}
+
+
+
+
+/* NAVIGATION */
+nav{
+    display: grid;
+    grid-template-rows: 0fr;
+    transition: grid-template-rows 0.5s ease-out;
+    width: 100%;
+    background-color: var(--header);
+}
+
+ul.menuLinks a:hover{
+    /* you could change hover to change font color for desktop mode */
+    background-color: rgba(88, 83, 83, 0.2);
+}
+
+ul.menuLinks {
+    list-style-type: none;
+}
+
+#myButton::before {
+    content: "\2630";
+}
+
+#myButton {
+    font-size: 2rem;
+    background: none;
+    border: none;
+    color: var(--buttons);
+    cursor: pointer;
+    padding: .25rem 2vw;
+}
+
+ul.menuLinks li a {
+    display: block;
+    padding: .85rem 2vw;
+    color: rgb(39, 38, 38);
+    text-decoration: none;
+    font-size: 18px;
+}
+
+#myButton.open::before {
+    content: "X";
+}
+
+nav ul {
+    overflow: hidden;
+}
+
+nav.open {
+    grid-template-rows: 1fr;
+} 
+
+/* CURRENT ITEM */
+li.current-menu-item a {
+    background-color: rgba(65, 58, 58, 0.2);
+}
+
+
+
+
+
+
+
+
+/* MAIN */
+main{
+    min-height: 100%;
+    width: 100%;
+    margin: 0 auto;
+}
+.hero img{
+    width: 100%;
+    height: 600px;
+    background-repeat: no-repeat;
+    background-size:cover;
+}
+.cta-button{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+
+
+
+
+
+/* FOOTER */
+footer{
+    position: relative;
+    height: auto;
+    margin-top: -100px;
+    clear: both;
+}

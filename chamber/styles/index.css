@@ -34,6 +34,9 @@ nav {
     z-index: 1000;
     width: 100%; 
     transition: background-color 0.3s; 
+    display: grid;
+    grid-template-rows: 0fr;
+    transition: grid-template-rows 0.5s ease-out;
 }
 
 ul.menuLinks a:hover{
@@ -71,12 +74,6 @@ li.current-menu-item a {
 
 #myButton.open::before {
     content: "X";
-}
-
-nav {
-    display: grid;
-    grid-template-rows: 0fr;
-    transition: grid-template-rows 0.5s ease-out;
 }
 
 nav ul {
