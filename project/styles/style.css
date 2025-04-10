@@ -73,9 +73,10 @@ ul.menuLinks {
 ul.menuLinks li a {
     display: block;
     padding: .85rem 2vw;
-    color: rgb(39, 38, 38);
+    color: black;
     text-decoration: none;
     font-size: 18px;
+    font-family: "Montserrat", sans-serif; 
 }
 
 #myButton.open::before {
@@ -98,10 +99,6 @@ li.current-menu-item a {
 
 
 
-
-
-
-
 /* MAIN */
 main{
     min-height: 100%;
@@ -113,12 +110,113 @@ main{
     height: 600px;
     background-repeat: no-repeat;
     background-size:cover;
+    position: relative;
 }
 .cta-button{
+    position: absolute;
+    font-family: "Montserrat", sans-serif; 
+    top: 20%;
+    left: 20%;
     display: flex;
+    flex-wrap: wrap;
+    flex-direction:column;
+    align-items: center;
+    font-size: 1.2rem;
+    color: white;
+}
+.cta-button button{
+    padding: 1rem 2.5rem;
+    cursor: pointer;
+    color: white;
+    margin-top: 1rem;
+    background: rgba(69, 68, 68, 0.2);
+    border-color: white;
+    font-size: 1rem;
+}
+
+
+/* SECTIONS */
+.section-2{
+    min-height: 100vh;
     flex-direction: column;
     align-items: center;
+    width: 80%;
+    margin: 7% auto;
+    display: flex;
 }
+h4{
+    font-size: 3rem;
+    margin:2rem 0rem;
+    color: var(--primary);
+}
+.faq{
+    max-width: 700px;
+    margin-top: 2rem;
+    padding-bottom: 1rem;
+    border-bottom: 2px solid black;
+    cursor: pointer;
+}
+.question{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.question h3{
+    font-size: 1.5rem;
+    transition: transform .5s ease-in;
+    color: var(--secondary);
+}
+.answer p{
+    padding-top: 1rem;
+    line-height: 1.6;
+    font-size: 1.4rem;
+}
+.section_2 i{
+    font-size: 4rem;
+}
+.answer{
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 1.4s ease;
+}
+.faq.active .answer{
+    max-height: 300px;
+    animation: fade 1s ease-in-out;
+}
+.faq.active i{
+    transform: rotate(180deg);
+}
+@keyframes fade{
+    from{
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+    to{
+        opacity: 1;
+        transform: translateY(0px);
+    }
+}
+
+.purpose{
+    border-bottom: 2px solid #d9d9d9;
+    flex-direction: column;
+    align-items: center;
+    display: flex;
+    width: 80%;
+    margin: 5% auto;
+}
+
+.purpose p{
+    line-height: 1.6;
+}
+h2{
+    font-size: 2rem;
+    margin:2rem 0rem;
+    color: var(--primary);
+}
+
+
 
 
 

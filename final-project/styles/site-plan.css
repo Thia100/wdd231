@@ -33,9 +33,9 @@ header .fa{
     transition: ease .5s;
     /* think of appropriate color */
 }
-.hero-img{
+.hero{
     /* different images on different screen sizees */
-    background-image:linear-gradient(rgba(0, 0, 0, 0.8), rgba(0,0,0,0.1));
+    background-image:linear-gradient(rgba(0, 0, 0, 0.8), rgba(0,0,0,0.1)), url("../images/hero-salon.webp");
     width: 100%;
     height: 600px;
     background-repeat: no-repeat;
@@ -144,16 +144,11 @@ nav.open {
 
 .cta-button{
     display: flex;
-    flex-direction: column;
-    justify-content: center;
     align-items: center;
-    position: absolute;
-    gap: 1.5rem;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    width: 100%;
-    height: 100%;
+    justify-content: center;
+    flex-direction: column;
+    color: white;
+    font-size: 24px;
     font-family: "Montserrat", sans-serif; 
     color: white;
     font-size: 1.5rem;
