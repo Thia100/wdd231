@@ -132,6 +132,12 @@ main{
     background: rgba(69, 68, 68, 0.2);
     border-color: white;
     font-size: 1rem;
+    overflow: hidden;
+    z-index: 1;
+}
+
+.cta-button button:hover{
+    background-color: var(--buttons);
 }
 
 
