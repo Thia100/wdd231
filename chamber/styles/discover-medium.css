@@ -1,0 +1,24 @@
+@media only screen and (min-width:38rem){
+    nav{
+        grid-template-rows: 1fr;
+    }
+    ul.menuLinks, ul.menuLinks.open{
+        display: flex;
+        justify-content: flex-end;
+    }
+    #myButton{
+        display: none;
+    }
+    #someWhere div{
+        grid-template-areas: 
+        "photograph name"
+        "photograph description"
+        "photograph location";
+        transition: transform 0.3s, box-shadow 0.3s;
+    }
+    #someWhere div:hover{
+        transform: scale(1.05);
+        box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+    }
+    
+}

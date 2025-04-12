@@ -1,7 +1,7 @@
 :root {
     --background-color: #ffffff;
     --primary-color: #023047;
-    --secondary-color: #BF4342;
+    --secondary-color: #aa0e0e;
     --header: #A3CEF1;
 }
 *{
@@ -113,14 +113,16 @@ main {
 
 }
 .container h1{
-    position: absolute;
     color: var(--primary-color);
     font-weight: 700;
-    display: flex;
-    flex-wrap: wrap;
-    font-size: 19px;
-    left: 25%;
-    top: 30%;
+    position: absolute;
+    bottom: 60%;     
+    left: 50%;         
+    transform: translateX(-50%); 
+    font-size: clamp(14px, 3vw, 30px);
+    text-align: center;
+    width: 90%;     
+    max-width: 600px; 
 }
 
 .container {

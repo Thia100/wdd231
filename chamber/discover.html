@@ -2,16 +2,19 @@
 <html lang="en-US">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="author" content="Fathia Diekola Gbolahan">
-    <meta name="description" content="This page provides a list of local business and other organizations that belong to the Osun state chamber of commerce.">
-    <title>Directory | Osun State Chamber of Commerce</title>
+    <meta name="description" content="discover page for Osun Sate Chanmer of Commerce">
+    <title>Discover | Osun State Chamber of Commerce</title>
+    <script src="scripts/discover.js" type="module" defer></script>
+
+    <link rel="stylesheet" href="styles/discover-small.css">
+    <link rel="stylesheet" href="styles/discover-medium.css">
+    <link rel="stylesheet" href="styles/discover-large.css">
     <link rel="stylesheet" href="styles/normalize.css">
     <link rel="icon" href="favicon2.ico">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="styles/directory.css">
-    <link rel="stylesheet" href="styles/directory-large.css">
-    <script src="scripts/script.js" defer></script>
+
     <meta property="og:title" content="Osun Chamber of Commerce">
     <meta property="og:type" content="website">
     <meta property="og:image" content="https://thia100.github.io/wdd231/chamber/images/ogimage.jpeg">
@@ -22,36 +25,36 @@
 </head>
 <body>
     <header>
-        <img src="images/logo.svg" width="150" height="150" alt="Osun Chamber of Commerce Logo">
-        <span>Osun Chamber of Commerce | Directory</span>
-        <button id="myButton" aria-label="Open Menu"></button>
+        <img src="images/logo.svg" width="150" height="150" alt="Osun state Chamber of Commerce logo">
+        <span>Osun State Chamber of Commerce | Discover</span>
+        <button id="myButton" aria-label="open menu"></button>
     </header>
-    <nav id="animateMe" aria-label="Main Navigation">
+    <nav id="animateMe">
         <ul class="menuLinks">
-            <li><a href="index.html" title="home">Home</a></li>
-            <li class="current-menu-item"><a href="directory.html" title="directory">Directory</a></li>
-            <li><a href="join.html" title="join">Join</a></li>
-            <li><a href="discover.html" title="discover">Discover</a></li>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="directory.html">Directory</a></li>
+            <li><a href="join.html">Join</a></li>
+            <li class="currentMenuItem"><a href="discover.html">Discover</a></li>
         </ul>
     </nav>
     <main>
-        <div class="menu">
-            <button id="grid" aria-label="Grid View">⏹️Grid</button>
-            <button id="list" aria-label="List View">📄List</button>
+        <div class="container">
+            <img src="images/discover-img2.webp" alt="hero image" width="100%">
+            <h1>Osun State Chamber of Commerce</h1>
         </div>
-        <div class="divider"><hr></div>
-        <div id="cards"></div>
+        <div id="someWhere"></div>
+        <div id="message-text"></div>
     </main>
-    <footer role="contentinfo">
+    <footer>
         <div class="col">
-            <h6>Get In Touch</h6>
+            <h3>Get In Touch</h3>
             <p>Nigeria, Osun state</p>
             <p>7 Awodapo close</p>
             <p class="email-id">info@gmail.com</p>
             <span>+234 907-730-312</span>
         </div>
         <div class="col">
-            <h6>Stay Connected!</h6>
+            <h3>Stay Connected!</h3>
             <a href="#" aria-label="YouTube"><i class="fa fa-youtube-play" aria-hidden="true"></i></a>
             <a href="#" aria-label="Twitter"><i class="fa fa-twitter" aria-hidden="true"></i></a>
             <a href="#" aria-label="LinkedIn"><i class="fa fa-linkedin-square" aria-hidden="true"></i></a>

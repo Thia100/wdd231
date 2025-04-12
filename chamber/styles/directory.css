@@ -1,7 +1,7 @@
 :root {
     --background-color: #ffffff;
     --primary-color: #023047;
-    --secondary-color: #BF4342;
+    --secondary-color: #aa0e0e;
     --header: #A3CEF1;
 }
 *{
@@ -85,12 +85,11 @@ nav.open {
     grid-template-rows: 1fr;
 }
 
-header h1 {
+header span {
     color: var(--primary-color);
     font-weight: 700;
     font-size: 18px;
 }
-
 
 
 /* MAIN */
@@ -142,9 +141,19 @@ main {
     line-height: 1.5;
     
 }
+#cards a{
+    background-color: var(--secondary-color);
+    color: white;
+    padding: 5px 1.5rem;
+    text-decoration: none;
+}
+#cards a:hover{
+    background-color: #c93333;
+}
 
 #cards section:hover{
-    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.1) inset;
+    /* background shadow goes inside */
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.1) inset; 
     transition: ease 0.5s;
 }
 
