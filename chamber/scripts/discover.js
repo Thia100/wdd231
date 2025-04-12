@@ -9,13 +9,65 @@ document.addEventListener('DOMContentLoaded', () => {
 });
 
 
-import {places} from "../modules/places.js";
-console.log(places);
 
-const cards = document.querySelector('#someWhere');
 
-function displayPlaces(places){
-    places.forEach( x => {
+
+document.addEventListener('DOMContentLoaded', function() {
+    const messageText = document.querySelector('#message-text');
+    // Get current visit date
+    const currentVisit = new Date();
+    const lastVisit = localStorage.getItem('lastVisit');
+    
+    // First visit
+    if (!lastVisit) {
+        messageText.textContent = "Welcome! Let us know if you have any questions.";
+    } 
+    else {
+        const lastVisitDate = new Date(parseInt(lastVisit));
+        const timeDiff = currentVisit - lastVisitDate;
+        const daysDiff = Math.floor(timeDiff / (1000 * 60 * 60 * 24));
+        
+        if (daysDiff === 0) {
+            messageText.textContent = "Back so soon! Awesome!";
+        } 
+        else {
+            messageText.textContent = `You last visited ${daysDiff} day${daysDiff !== 1 ? 's' : ''} ago.`;
+        }
+    }
+    
+    // Store current visit
+    localStorage.setItem('lastVisit', currentVisit.getTime().toString());
+});
+
+
+
+
+
+
+const requestURL = './data/discover.json';
+async function getplacesData(){
+    try{
+        const urlResponse = await fetch(requestURL);
+        if(urlResponse.ok){
+            const urlData = await urlResponse.json();
+            displayPlaces(urlData);
+            console.log(urlData);
+        } else{
+            throw new Error(await urlResponse.text());
+            
+        }
+    } catch (error){
+        console.error('fetch error:', error);
+    }
+}
+getplacesData();
+
+
+const displayPlaces = (urlData) =>{
+    const cards = document.querySelector('#someWhere');
+    cards.innerHTML = '';
+
+    urlData.forEach( x => {
         const thecard = document.createElement('div');
 
         const figure = document.createElement('figure');
@@ -52,44 +104,4 @@ function displayPlaces(places){
         cards.appendChild(thecard);
         
     });
-}
-displayPlaces(places)
-
-
-
-document.addEventListener('DOMContentLoaded', function() {
-    const messageText = document.querySelector('#message-text');
-    // Get current visit date
-    const currentVisit = new Date();
-    const lastVisit = localStorage.getItem('lastVisit');
-    
-    // First visit
-    if (!lastVisit) {
-        messageText.textContent = "Welcome! Let us know if you have any questions.";
-    } 
-    else {
-        const lastVisitDate = new Date(parseInt(lastVisit));
-        const timeDiff = currentVisit - lastVisitDate;
-        const daysDiff = Math.floor(timeDiff / (1000 * 60 * 60 * 24));
-        
-        if (daysDiff === 0) {
-            messageText.textContent = "Back so soon! Awesome!";
-        } 
-        else {
-            messageText.textContent = `You last visited ${daysDiff} day${daysDiff !== 1 ? 's' : ''} ago.`;
-        }
-    }
-    
-    // Store current visit
-    localStorage.setItem('lastVisit', currentVisit.getTime().toString());
-    
-    // Close button functionality
-    
-    // Auto-hide after 5 seconds
-    // setTimeout(() => {
-    //     visitMessage.style.opacity = '0';
-    //     setTimeout(() => {
-    //         visitMessage.style.display = 'none';
-    //     }, 500);
-    // }, 5000);
-});
+};

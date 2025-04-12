@@ -93,7 +93,7 @@ async function getMemberData(){
     }
 
 }
-getMemberData()
+getMemberData();
 
 const displayMembers = (urlData) => {
     const busCards = document.querySelector('.b-cards');
