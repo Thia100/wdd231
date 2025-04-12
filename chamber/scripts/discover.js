@@ -94,6 +94,12 @@ const displayPlaces = (urlData) =>{
         const description = document.createElement('p');
         description.innerHTML = x.description;
 
+        const learnMore = document.createElement('button');
+        // learnMore.href = x.
+        learnMore.target = '_blank';
+        learnMore.innerHTML = `<strong>Learn More >></strong>`;
+
+
 
         
         thecard.appendChild(photo);
@@ -101,6 +107,7 @@ const displayPlaces = (urlData) =>{
         thecard.appendChild(title);
         thecard.appendChild(theaddress);
         thecard.appendChild(description);
+        thecard.appendChild(learnMore);
         cards.appendChild(thecard);
         
     });

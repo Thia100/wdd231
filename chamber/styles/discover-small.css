@@ -62,7 +62,6 @@ ul.menuLinks a:hover{
     color: var(--primary-color);
     cursor: pointer;
     width: 100%;
-    /* text-align: right; */
     padding: .25rem 2vw;
 }
 nav.open{
@@ -163,33 +162,19 @@ header span {
     to { transform: translateX(0); }
 }
 
-
-
-
-/* #visit-message {
-    position: fixed;
-    bottom: 20px;
-    right: 20px;
-    padding: 15px;
-    background: #f8f9fa;
-    border-radius: 8px;
-    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
-    max-width: 300px;
-    animation: slideIn 0.5s ease-out;
-}
-
-@keyframes slideIn {
-    from { transform: translateX(100%); }
-    to { transform: translateX(0); }
-}
-
-#close-message {
-    float: right;
+#someWhere div button{
+    text-align: right;
+    overflow: hidden;
+    color: var(--primary-color);
+    margin:.5rem;
+    cursor: pointer;
     background: none;
     border: none;
-    cursor: pointer;
-    font-size: 1.2em;
-} */
+
+}
+#someWhere div button:hover{
+    color: var(--secondary-color);
+}
 
 
 
