@@ -1,6 +1,6 @@
 :root{
     --primary:#cce5ff;
-    --button:#f7cde2;
+    --secondary:#f7cde2;
     --Text:#002855;
     --button-hover:#ff70a6;
 }
@@ -59,7 +59,7 @@ header {
     font-family: "Montserrat", sans-serif; 
     position: absolute;
     font-weight: 700;
-    bottom: 50%;      /* Distance from bottom (adjust as needed) */
+    bottom: 40%;      /* Distance from bottom (adjust as needed) */
     left: 50%;         /* Center horizontally */
     transform: translateX(-50%); /* Fine-tune horizontal centering */
     font-size: clamp(14px, 3vw, 18px); /* Responsive font size */
@@ -100,7 +100,7 @@ nav {
 }
 
 ul.menuLinks a:hover{
-    background-color: var(--button);
+    background-color: var(--secondary);
     
 }
 
