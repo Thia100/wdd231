@@ -1,0 +1,32 @@
+@media only screen and (min-width: 38rem){
+    #myButton{
+        display: none;
+    }
+
+    ul.menuLinks, ul.menuLinks.open{
+        display: flex;
+        justify-content: flex-end;
+    }
+
+    nav{
+        grid-template-rows: 1fr;
+
+        position: fixed;
+        left: 0;
+        transition: .6s;
+        z-index: 10000;
+    }
+    nav ul.menuLinks{
+        position: relative;
+    }
+    nav ul.menuLinks li{
+        position: relative;
+    }
+    nav ul.menuLinks li a{
+        position: relative;
+    }
+    nav.sticky{
+        padding: 5px 100px;
+        top: 0;
+    }
+}    

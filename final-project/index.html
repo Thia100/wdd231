@@ -13,6 +13,7 @@
     <title>Nail Drip</title>
 
     <script src="scripts/index.js" defer></script>
+    <link rel="stylesheet" href="../chamber/styles/normalize.css">
     <link rel="icon" href="favicon.ico">
     <link rel="stylesheet" href="styles/index.css">
     <link rel="stylesheet" href="styles/index-medium.css">
@@ -24,8 +25,31 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
-    <header></header>
-    <main></main>
+    <header>
+        <img class="logo" src="images/naildrip.webp" alt="nail drip logo" width="60">
+        <div class="icons-button">
+            <a href="#"><i class="fa fa-shopping-cart fa-2x" aria-hidden="true"></i></a>
+            <a href="#"><i class="fa fa-user fa-2x" aria-hidden="true"></i></a>
+            <button id="myButton" aria-label="Open Menu"></button>
+        </div>
+    </header>
+    <nav id="animateMe">
+        <ul class="menuLinks">
+            <li class="current-menu-item"><a href="index.html" title="home">Home</a></li>
+            <li><a href="#" title="services">Services</a></li>
+            <li><a href="#" title="special offers">Special Offers</a></li>
+            <li><a href="#" title="shop">Shop</a></li>
+            <li><a href="#" title="contact">Contact Us</a></li>
+        </ul>
+    </nav>
+    <main>
+        <div class="banner">
+            <div class="cta-button">
+                <h1>The Ultimate Luxurious Nail Salon</h1>
+                <button id="cta">Book Now</button>
+            </div>
+        </div>
+    </main>
     <footer></footer>
 </body>
 </html>
