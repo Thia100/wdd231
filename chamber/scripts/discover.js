@@ -43,8 +43,8 @@ document.addEventListener('DOMContentLoaded', function() {
 
 
 
-
 const requestURL = './data/discover.json';
+
 async function getplacesData(){
     try{
         const urlResponse = await fetch(requestURL);
@@ -54,7 +54,6 @@ async function getplacesData(){
             console.log(urlData);
         } else{
             throw new Error(await urlResponse.text());
-            
         }
     } catch (error){
         console.error('fetch error:', error);
