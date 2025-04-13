@@ -59,7 +59,7 @@ header {
     font-family: "Montserrat", sans-serif; 
     position: absolute;
     font-weight: 700;
-    bottom: 40%;      /* Distance from bottom (adjust as needed) */
+    bottom: 30%;      /* Distance from bottom (adjust as needed) */
     left: 50%;         /* Center horizontally */
     transform: translateX(-50%); /* Fine-tune horizontal centering */
     font-size: clamp(14px, 3vw, 18px); /* Responsive font size */
@@ -166,7 +166,7 @@ h2{
     margin:2rem 0rem;
     color: var(--Text);
 }
-.section-1 p{
+.section-1 p,.section-1 ul {
     font-size: 1.2rem;
 }
 
