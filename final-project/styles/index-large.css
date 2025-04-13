@@ -13,7 +13,7 @@
 
         position: fixed;
         left: 0;
-        transition: .6s;
+        transition: .5s ease-in-out;
         z-index: 10000;
     }
     nav ul.menuLinks{
@@ -26,7 +26,7 @@
         position: relative;
     }
     nav.sticky{
-        padding: 5px 100px;
+        transition: .5s ease-in-out;
         top: 0;
     }
 }    
