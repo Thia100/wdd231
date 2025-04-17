@@ -1,0 +1,87 @@
+[
+    {
+        "id": 1,
+        "name": "Classic Manicure",
+        "price": 20000,
+        "duration": "30 mins",
+        "description": "Includes nail shaping, cuticle care, and regular polish."
+      },
+      {
+        "id": 2,
+        "name": "Gel Manicure",
+        "price": 35000,
+        "duration": "45 mins",
+        "description": "Chip-resistant gel polish with a high-gloss finish."
+      },
+      {
+        "id": 3,
+        "name": "Acrylic Full Set",
+        "price": 50000,
+        "duration": "1 hr",
+        "description": "Full set of acrylic extensions with regular polish."
+      },
+      {
+        "id": 4,
+        "name": "Acrylic Fill-In",
+        "price": 30000,
+        "duration": "40 mins",
+        "description": "Refill for acrylic nails with shaping and polish."
+      },
+      {
+        "id": 5,
+        "name": "Dip Powder Nails",
+        "price": 45000,
+        "duration": "50 mins",
+        "description": "Lightweight and durable nails using powder dips."
+      },
+      {
+        "id": 6,
+        "name": "Spa Pedicure",
+        "price": 40000,
+        "duration": "1 hr",
+        "description": "Includes exfoliation, massage, cuticle care, and polish."
+      },
+      {
+        "id": 7,
+        "name": "Gel Pedicure",
+        "price": 50000,
+        "duration": "1 hr",
+        "description": "Long-lasting gel polish with a complete pedicure service."
+      },
+      {
+        "id": 8,
+        "name": "Nail Art Add-On",
+        "price": 10000,
+        "duration": "15 mins",
+        "description": "Custom nail designs, rhinestones, or decals (add-on)."
+      },
+      {
+        "id": 9,
+        "name": "French Tips",
+        "price": 25000,
+        "duration": "35 mins",
+        "description": "Classic French tip design on any manicure style."
+      },
+      {
+        "id": 10,
+        "name": "Paraffin Wax Treatment",
+        "price": 15000,
+        "duration": "20 mins",
+        "description": "Warm wax treatment for softening hands or feet."
+      },
+      {
+        "id": 11,
+        "name": "Nail Repair (Per Nail)",
+        "price": 5000,
+        "duration": "10 mins",
+        "description": "Fix broken or cracked nails with reinforcement gel."
+      },
+      {
+        "id": 12,
+        "name": "Cuticle Care Only",
+        "price": 10000,
+        "duration": "15 mins",
+        "description": "Quick cuticle cleaning and nourishing treatment."
+      }
+]
+  

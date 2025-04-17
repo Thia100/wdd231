@@ -1,0 +1,36 @@
+
+  @media only screen and (min-width: 38rem){
+    #myButton{
+        display: none;
+    }
+    ul.menuLinks, ul.menuLinks.open{
+        display: flex;
+        justify-content: flex-end;
+    }
+    nav{
+        grid-template-rows: 1fr;
+
+        position: fixed;
+        left: 0;
+        transition: .5s ease-in-out;
+        z-index: 10000;
+    }
+    nav.sticky{
+        transition: .5s ease-in-out;
+        top: 0;
+    }
+    .text1-img{
+        display: flex;
+        align-items: center;
+        flex-direction: row;  
+        gap: 20px;            
+    }
+    .text-content {
+        display: flex;
+        flex-direction: column;  
+        gap: 1rem;
+    }
+    .posts{
+        grid-template-columns: repeat(2, 1fr);
+    }
+}    

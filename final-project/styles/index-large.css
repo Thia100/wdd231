@@ -1,32 +1,6 @@
-@media only screen and (min-width: 38rem){
-    #myButton{
-        display: none;
-    }
 
-    ul.menuLinks, ul.menuLinks.open{
-        display: flex;
-        justify-content: flex-end;
+@media only screen and (min-width: 64rem){
+    .posts{
+        grid-template-columns: repeat(3, 1fr); 
     }
-
-    nav{
-        grid-template-rows: 1fr;
-
-        position: fixed;
-        left: 0;
-        transition: .5s ease-in-out;
-        z-index: 10000;
-    }
-    nav ul.menuLinks{
-        position: relative;
-    }
-    nav ul.menuLinks li{
-        position: relative;
-    }
-    nav ul.menuLinks li a{
-        position: relative;
-    }
-    nav.sticky{
-        transition: .5s ease-in-out;
-        top: 0;
-    }
-}    
+}

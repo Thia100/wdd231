@@ -107,23 +107,7 @@ nav.open {
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+/* BANNER */
 .banner{
     background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0,0,0,0.1)), url("../images/hero-salon1.webp");
     width: 100%;
@@ -142,7 +126,7 @@ nav.open {
     bottom: 30%;      /* Distance from bottom (adjust as needed) */
     left: 50%;         /* Center horizontally */
     transform: translateX(-50%); /* Fine-tune horizontal centering */
-    font-size: clamp(14px, 3vw, 18px); /* Responsive font size */
+    font-size: clamp(14px, 3vw, 26px); /* Responsive font size */
     text-align: center;
     width: 90%;        /* Prevent text from touching edges */
     max-width: 600px;  /* Optional: Limit text width on large screens */
@@ -157,9 +141,231 @@ nav.open {
     font-size: 1rem;
     margin-top: 20px;
 }
+
 .cta-button button:hover{
     background-color: var(--button-hover);
     border-color: var(--button-hover);
     transition: .5s ease-in-out;
 }
+
+
+
+
+
+/* SECTION 1 */
+.section1{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8rem;
+    padding: 1.5rem;
+    max-width: 1500px;
+    margin: 0 auto;
+}
+.text1-img{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 1rem;
+}
+.text1-img img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 1.5rem;
+}
+.images-modal{
+    display: flex;
+    gap: 8rem;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+.images-modal img{
+    max-width: 100%;
+    height: auto;
+    border-radius: 50%;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+.text-content p{
+    line-height: 1.8;
+    font-size: 24px;
+}
+
+
+
+
+
+
+/* SECTION 2 */
+.section2{
+    background-color: var(--secondary);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 3rem 0;
+    margin: 8rem 0;
+}
+ h2{
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    font-size: 2.6rem;
+    color: var(--Text);
+}
+
+.nail-services{
+    background: #fceff3;
+    margin: 20px auto;
+    padding: 24px 30px;
+    width: 90%;
+    max-width: 400px;
+    overflow: hidden;
+    color: #3b2f2f;
+    border: none;
+
+    border-top-left-radius: 200px;
+    border-top-right-radius: 200px;
+    border-bottom-left-radius: 12px;
+    border-bottom-right-radius: 12px; 
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.05);
+}
+
+.service-line {
+    font-family: "Lato", sans-serif;
+    font-size: 18px;
+    font-style: oblique;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5rem;
+    margin: 50px 0;
+    position: relative;
+}
+
+.service-name,
+.service-price {
+    display: inline-block;
+    margin: 6px 0;
+}
+
+.service-line::before {
+    content: '';
+    position: absolute;
+    top: 90%;
+    left: 0;
+    right: 0;
+    border-top: 2px dashed var(--Text); /* pastel blue line */
+    z-index: 0;
+    overflow: hidden;
+}
+
+
+
+/* SECTION3 */
+.section3{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.section2 span, .section3 span{
+    color: #f31182;
+}
+/* v, .section2 span{
+    font-family: "Montserrat", sans-serif;
+    font-style: italic;
+    font-size: px;
+    font-weight: 300;
+    letter-spacing: 1.5px; 
+} */
+.posts{
+    display: grid;
+    font-family: "Lato", sans-serif;
+    gap: 2rem;
+    padding: 2rem;
+    max-width: 1500px;
+    margin: 0 auto;
+    color: var(--Text);
+}
+.posts .tips{
+    border:1px solid var(--Text);
+    transition: transform 0.3s ease;
+    padding: 0 2rem;
+   
+}
+.posts .tips .comments{
+    display: flex;
+    gap: 20px;
+    margin: 20px 0;
+    font-size: 16px;
+    font-weight: 300;
+    align-items: center;
+    justify-content: left;
+}
+.posts .tips .comments span{
+    font-weight: 300;
+    font-size: 20px;
+}
+.posts .tips h3{
+    margin: 30px 0;
+    font-size: 34px;
+}
+.posts .tips p{
+    font-size: 24px;
+    letter-spacing: 1.5px;
+}
+.section3 .fa{
+    color: #124d91;
+}
+
+
+
+
+
+
+
+
+
+
+
+/* FOOTER */
+/* footer {
+    position: relative;
+    height: auto;
+    margin-top: 00px;
+    clear: both;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    background: linear-gradient(to right, #ccdfe7, #A3CEF1);
+    line-height: 1.5;
+}
+
+.col a i {
+    color: var(--secondary-color);
+    font-size: 20px;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 50px;
+    margin-right: 15px;
+}
+
+h6{
+    font-size: 20px;
+    margin-bottom: 1rem;
+}
+
+.col {
+    text-align: center;
+    color: black;
+}
+.email-id {
+    border-bottom: 1px solid #ccc;
+    margin: 16px 0;
+}
+
+ */
+
 
