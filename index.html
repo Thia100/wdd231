@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="Fathia Diekola Gbolahan" />
+    <meta name="description" content="BYU wdd231 week 1 course homepage assignment" />
+
+    <link rel="stylesheet" href="styles/main.css" />
+    <link rel="stylesheet" href="styles/main-large.css" />
+    <link rel="stylesheet" href="styles/normalize.css" />
+
+    <script src="scripts/main.js" defer></script>
+    <script src="scripts/date.js" defer></script>
+    <script src="scripts/navigation.js" defer></script>
+    <script src="scripts/course.js" defer></script>
+
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Iceland&family=Roboto+Flex:opsz@8..144&display=swap"
+      rel="stylesheet"
+    />
+
+    <title>Course HomePage | Thia_wip</title>
+  </head>
+  <body>
+    <header>
+      <nav class="nav-bar" id="nav-bar">
+        <div class="nav container">
+
+          <div class="nav-logo">
+            <img src="images/logo.svg" alt="logo" width="150px" height="300px">
+            <span>Thia_wip</span>
+          </div>
+          
+
+          <ul class="nav-menu" id="nav-menu">
+            <li class="nav-list">
+              <a href="#" target="_blank" class="nav-item">Home</a>
+            </li>
+            <li class="nav-list">
+              <a href="#" target="_blank" class="nav-item">Chamber Project</a>
+            </li>
+            <li class="nav-list">
+              <a href="#" target="_blank" class="nav-item">Final Project</a>
+            </li>
+          </ul>
+
+          <button class="nav-toggle" id="nav-toggle">
+            <span class="hamburger"></span>
+            <span class="hamburger"></span>
+            <span class="hamburger"></span>
+          </button>
+        </div>
+      </nav>
+    </header>
+    <main class="main">
+      <h1>Home</h1>
+
+      <section class="row">
+        <section class="section biography">
+          <h2>About Me</h2>
+          <p>
+            My name is Fathia Diekola Gbolahan and I am a 19 year old female from Osun State Nigeria. 
+            I'm passionate about using code to solve medical problems and inspiring people as much as I can. 
+            My favorite color is purple and I like pineapples.
+            I don't mean self help books(I honestly find them boring) I love mystery, suspense, and horror.
+            I also enjoy exercising even though I don't have the muscles to show for it.
+
+          </p>
+        </section>
+
+        <section class="section profile-picture">
+          <h2>Student Profile</h2>
+          <img
+            src="images/profile-picture.webp"
+            width="500"
+            height="547"
+            loading="lazy"
+            alt="profile picture"
+          />
+        </section>
+
+        <section class="section certificates">
+          <h2>Web Certificate Courses</h2>
+          <div class="course-nav">
+            <button id="all">All</button>
+            <button id="cse">CSE</button>
+            <button id="wdd">WDD</button>
+          </div>
+
+          <div id="course-cards" class="course-cards"></div>
+        </section>
+      </section>
+    </main>
+
+    <footer>
+      <div class="container">
+        <div class="socials">
+          <a href=""></a>
+          <a href=""></a>
+          <a href=""></a>
+        </div>
+        <div class="copyright-currentyear">
+          <p>
+            <span id="currentyear"></span> Fathia Diekola Gbolahan Osun Nigeria
+          </p>
+          <p>Last Modifications: <span id="currentdate"></span></p>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

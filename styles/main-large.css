@@ -1,0 +1,40 @@
+@media screen and (min-width: 900px) {
+  .nav-menu {
+    display: flex;
+    position: static; 
+    flex-direction: row; 
+    height: auto; 
+    background: transparent;
+    padding: 0;
+    width: 900px;
+  }
+  .nav-toggle {
+    display: none;
+  }
+   .row{
+    display: grid;
+    grid-template-rows: 500px;
+    grid-template-columns: 4fr 2fr;
+    grid-template-areas: 
+    "bio  photo"
+    "certificates certificates" ;
+  } 
+
+  .biography{
+    grid-area: bio;
+  }
+
+  .profile-picture{
+    grid-area: photo;
+  }
+
+  .certificates{
+    grid-area: certificates;
+  }
+
+  .course-cards{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+  }
+}

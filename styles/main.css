@@ -1,0 +1,230 @@
+:root {
+  --card-bg: #1f1f1f;
+  --bg: #141414;
+  --link-bg: #333333;
+  --text-color: #ffffff;
+  --highlight: #c5f82a;
+  --body-font:"Roboto Flex", sans-serif;
+  --heading-font:"Iceland", sans-serif;
+
+  --fs-p: 14px;
+
+  --fw-400: 400;
+  --fw-600: 600;
+  --fw-700: 700;
+
+  --padding: 1.4rem;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body{
+  background: var(--bg);
+  color: var(--text-color);
+  font-family: var(--body-font);
+  
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 10px 20px;
+}
+
+
+
+
+
+
+.nav-bar {
+  background: var(--bg);
+  position: fixed;
+  box-shadow: 1px 2px 5px #c5f82a52;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 60px;
+  z-index: 1000;
+}
+
+.nav-logo {
+  display: flex;
+  align-items: center;
+}
+
+.nav-logo img{
+  max-width: 50px;
+  width: 100%;
+  height: auto;
+}
+
+.nav-logo span{
+  font-size: 1rem;
+  font-family: var(--heading-font);
+}
+
+.nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+
+li {
+  list-style: none;
+}
+
+.nav-menu {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  position: fixed;
+  background: var(--bg);
+  width: 100%;
+  left: -100%;
+  top: 60px;
+  padding: 20px 0;
+  height: 50%;
+  transition: left 0.4s ease;
+}
+.nav-menu.active {
+  left: 0;
+}
+
+.nav-toggle {
+  background: none;
+  display: flex;
+  flex-direction: column;
+  cursor: pointer;
+  z-index: 1002;
+  border: none;
+}
+
+.nav-item{
+  text-decoration: none;
+  font-size: 1.3rem;
+  color: var(--text-color);
+}
+.nav-item:hover{
+  color: #c5f82a;
+}
+
+/* Hamburger lines */
+.hamburger {
+  width: 35px;
+  height: 4px;
+  background: var(--text-color);
+  margin: 2px 0;
+  transition: all 0.3s ease;
+  border-radius: 2px;
+}
+
+.nav-toggle.active .hamburger:nth-child(1) {
+  transform: rotate(45deg) translate(5px, 5px);
+}
+
+.nav-toggle.active .hamburger:nth-child(2) {
+  opacity: 0;
+}
+
+.nav-toggle.active .hamburger:nth-child(3) {
+  transform: rotate(-45deg) translate(6px, -6px);
+}
+
+
+
+
+.main {
+  margin: 80px auto 0 auto;
+  max-width: 1400px;
+  padding: 20px 10px;
+}
+
+
+
+
+.section {
+  background: var(--link-bg);
+  border-radius: 4px;
+}
+
+.row {
+  display: grid;
+  grid-template-columns: 350px;
+  align-items: stretch;
+  justify-content: center;
+  /* grid-template-rows: 1fr 1fr; */
+  gap: 50px;
+}
+
+h2 {
+  text-align: center;
+  background: var(--card-bg);
+  width: 100%;
+  padding: 4px 0;
+  font-family: var(--heading-font);
+  font-size: 2.4rem;
+  font-weight: 100;
+}
+
+.section p,
+.section .course-nav {
+  padding: 10px;
+  font-size: 1.3rem;
+  line-height: 2rem;
+  
+}
+
+.profile-picture img {
+  width: 100%;
+  max-width: 400px;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+  padding: 10px;
+  border-radius: 20px;
+  /* try to align img to center */
+}
+
+
+
+.certificates .course-nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  gap: 10px;
+}
+
+.course-nav button {
+  cursor: pointer;
+  border: 1px solid white;
+  background: var(--link-bg);
+  box-shadow: 1px 2px 4px #c5f82a52;
+  color: var(--text-color);
+  padding: 4px 30px;
+  border-radius: 20px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.course-nav button:hover{
+  transform: scale(1.1);
+  box-shadow: 1px 4px 20px #c5f82a52;
+}
+.course-cards {
+  display: grid;
+  grid-template-columns: 1fr;
+  padding: 20px;
+}
+.course-cards div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 8px;
+  background: green;
+  margin-bottom: 20px;
+}
