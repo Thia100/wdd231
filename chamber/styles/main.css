@@ -262,6 +262,7 @@ footer{
 .footer{
     max-width: 1250px;
     display: flex;
+    justify-content: center;
     flex-direction: column;
     gap: 10px;
     color: #fff;
