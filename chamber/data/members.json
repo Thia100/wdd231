@@ -1,0 +1,102 @@
+[
+  {
+    "name": "TechNova Solutions",
+    "address": "123 Innovation Drive, Lagos, Nigeria",
+    "phone": "+234-801-234-5678",
+    "website": "https://www.technova.com",
+    "image": "images/technova.webp",
+    "membershipLevel": 3,
+    "industry": "Software Development",
+    "founded": 2015
+  },
+  {
+    "name": "AgroFuture Farms",
+    "address": "45 Greenfield Road, Kaduna, Nigeria",
+    "phone": "+234-802-555-7890",
+    "website": "https://www.agrofuture.com",
+    "image": "images/agrofuture.webp",
+    "membershipLevel": 2,
+    "industry": "Agriculture",
+    "founded": 2010
+  },
+  {
+    "name": "BlueWave Logistics",
+    "address": "78 Portway Avenue, Port Harcourt, Nigeria",
+    "phone": "+234-803-678-1122",
+    "website": "https://www.bluewave-logistics.com",
+    "image": "images/bluewave.webp",
+    "membershipLevel": 1,
+    "industry": "Transportation & Logistics",
+    "founded": 2005
+  },
+  {
+    "name": "Medix HealthCare",
+    "address": "12 Unity Street, Abuja, Nigeria",
+    "phone": "+234-804-789-2233",
+    "website": "https://www.medixhealthcare.com",
+    "image": "images/medix.webp",
+    "membershipLevel": 3,
+    "industry": "Healthcare",
+    "founded": 2018
+  },
+  {
+    "name": "SolarBright Energy",
+    "address": "99 Sunlight Boulevard, Kano, Nigeria",
+    "phone": "+234-805-123-4455",
+    "website": "https://www.solarbrightenergy.com",
+    "image": "images/solarbright.webp",
+    "membershipLevel": 2,
+    "industry": "Renewable Energy",
+    "founded": 2012
+  },
+  {
+    "name": "PrimeEdu Academy",
+    "address": "34 Knowledge Lane, Ibadan, Nigeria",
+    "phone": "+234-806-567-7788",
+    "website": "https://www.primeeduacademy.com",
+    "image": "images/primeedu.webp",
+    "membershipLevel": 1,
+    "industry": "Education",
+    "founded": 2008
+  },
+  {
+    "name": "FreshBite Foods",
+    "address": "21 Market Street, Enugu, Nigeria",
+    "phone": "+234-807-889-9900",
+    "website": "https://www.freshbitefoods.com",
+    "image": "images/freshbite.webp",
+    "membershipLevel": 2,
+    "industry": "Food & Beverages",
+    "founded": 2016
+  },
+  {
+    "name": "UrbanStyle Fashion",
+    "address": "56 Trend Avenue, Lagos, Nigeria",
+    "phone": "+234-808-111-2233",
+    "website": "https://www.urbanstylefashion.com",
+    "image": "images/urbanstyle.webp",
+    "membershipLevel": 1,
+    "industry": "Fashion & Retail",
+    "founded": 2011
+  },
+  {
+    "name": "FinTrust Bank",
+    "address": "77 Finance Road, Abuja, Nigeria",
+    "phone": "+234-809-222-3344",
+    "website": "https://www.fintrustbank.com",
+    "image": "images/fintrust.webp",
+    "membershipLevel": 3,
+    "industry": "Banking & Finance",
+    "founded": 1999
+  },
+  {
+    "name": "EcoBuild Constructions",
+    "address": "88 Builder Street, Jos, Nigeria",
+    "phone": "+234-810-333-4455",
+    "website": "https://www.ecobuild.com",
+    "image": "images/ecobuilds.webp",
+    "membershipLevel": 2,
+    "industry": "Construction & Real Estate",
+    "founded": 2013
+  }
+]

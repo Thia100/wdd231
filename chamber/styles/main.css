@@ -1,0 +1,281 @@
+:root{
+    --heading-font:"Montserrat", sans-serif;
+    --body-font:"Open Sans", sans-serif;
+
+    --primary-color: #183153;
+    --secondary-color:#e63946;
+
+}
+
+
+
+
+
+
+
+
+
+/* GEN STYLING */
+body{
+    font-family: var(--body-font);
+}
+.container{
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 10px 20px;
+
+    width: auto;
+}
+li{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+
+
+
+
+/* NAVIGATION */
+.logo img{
+    max-width: 50px;
+    width: 100%;
+    height: auto;
+}
+.logo{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+.logo-h1{
+    font-family: var(--heading-font);
+    font-weight: 600;
+    color: #fff;
+}
+
+.nav-bar{
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 80px;
+    background: var(--primary-color);
+}
+.nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.nav-item{
+    color: var(--primary-color);
+    font-size: 1.2rem;
+    transition: .4s;
+}
+.nav-item:hover, .business-card a:hover{
+    color: #ae474f;
+    font-size: 1.22rem;
+}
+.nav-item.active{
+    position: relative;
+}
+.nav-item.active::after{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 3px;
+    background-color: var(--secondary-color);
+    bottom: -5px;
+    left: 0;
+}
+
+.nav-menu{
+    position: fixed;
+    top: 80px;
+    left: -200%;
+    z-index: 1001;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 70px;
+    background: #dad7d7;
+    transition: left .5s;
+    /* proper centering */
+}
+.nav-menu.active{
+    left: 0;
+}
+.nav-toggle{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 45px;
+  height: 20px;
+  gap: 6px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  z-index: 1002;
+}
+
+.hamburger{
+  display: block;
+  height: 3px;
+  width: 100%;
+  background-color: #fff;
+  border-radius: 2px;
+  transition: all 0.3s ease;
+}
+.nav-toggle.active .hamburger:nth-child(1) {
+  transform: rotate(45deg) translate(5px, 5px);
+}
+.nav-toggle.active .hamburger:nth-child(2) {
+  opacity: 0;
+}
+.nav-toggle.active .hamburger:nth-child(3) {
+  transform: rotate(-45deg) translate(5px, -5px);
+}
+
+
+/* HERO SECTION */
+.hero-section{
+    background: url(../images/hero-img.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 0 10px;
+    width: 100%;
+    height: 80vh;
+    color: #fff;
+}
+h1{
+    font-size: 2rem;
+    font-family: var(--heading-font);
+}
+.hero-section p{
+    font-weight: 500;
+}
+
+
+
+
+
+
+/* DIRECTORY SECTION */
+section.directory-section{
+    margin: 60px 0;
+    /* background: ; */
+}
+.directory-nav{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    padding: 10px 0;
+    background: var(--primary-color);
+    max-width: 1300px;
+    margin: 0 auto;
+}
+.directory-nav button{
+    background:none;
+    border: none;
+    cursor: pointer;
+    transition: ease-in-out;
+    color: #fff;
+}
+
+
+
+
+/* BUSINESS CARDS */
+.business-cards{
+    margin-top: 40px;
+    padding: 10px;
+    
+}
+.business-card{
+    background-color:#fff;
+    color: var(--primary-color);
+    padding: 10px;
+    margin: 20px;
+    box-shadow: 0 0 10px -4px  rgba(0, 0, 0, 0.5);
+    display: flex;
+    gap: 4px;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+.business-card a{
+    color: #3a6db4;
+    transition: .4s;
+}
+
+
+.business-cards.grid, .business-cards.list{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+}
+.business-cards.grid img {
+  display: block;
+  max-width: 200px;
+  width: 100%;
+  height: auto;
+  margin: 0 auto;
+}
+.business-cards.grid h2 {
+  display: none; 
+}
+.business-cards.list img {
+  display: none;
+}
+.business-cards.list h2 {
+  display: block;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/* FOOTER */
+footer{
+    padding: 10px 20px;
+    margin: 0 auto;
+    background: var(--primary-color);
+}
+.footer{
+    max-width: 1250px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    color: #fff;
+    line-height: 1.6;
+}
+
+.social-links{
+    align-self: center;
+}
+.social-link{
+    color: #fff;
+    transition: transform .4s ease-in-out;
+}
+.social-link:hover{
+    transform: translateY(-4px);
+}
+

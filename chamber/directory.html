@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Fathia Diekola Gbolahan">
+    <meta name="description" content="Browse our chamber of commerce directory to find local companies, addresses, and contact details. Connect with trusted businesses in your community.">
+    <title>Directory | Thia_wip</title>
+
+    <link rel="stylesheet" href="styles/css-reset.css">
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/main-large.css">
+    <script src="../scripts/navigation.js" defer></script>
+    <script src="scripts/members.js" defer></script>
+    <script src="../scripts/date.js" defer></script>
+
+    <link rel="icon" href="images/favicon.ico">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Open+Sans&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/37660fa63d.js" crossorigin="anonymous"></script>
+
+    <meta property = "og:title" content="osun chamber of commerce">
+    <meta property = "og:description" content="Discover local businesses in our Chamber of Commerce directory. Browse company listings with addresses, contact details, and key information to connect with trusted members of the community.">
+    <meta property = "og:image" content="osun chamber of commerce">
+    <meta property = "og:url" content="https://thia100.github.io/wdd231/chamber.html">
+    
+</head>
+<body>
+    <header>
+        <nav class="nav-bar" id="nav-bar">
+            <div class="nav container">
+
+                <div class="logo">
+                    <img src="images/Osunlogo.svg" alt="osun chamber of commerce logo" width="280" height="280" >
+                    <span class="logo-h1">Osun Chamber of Commerce</span>
+                </div>
+
+                <ul id="nav-menu" class="nav-menu">
+                    <li><a href="#" class="nav-item" target="_blank">Home</a></li>
+                    <li><a href="#" class="nav-item active" target="_blank">Directory</a></li>
+                    <li><a href="#" class="nav-item" target="_blank">Join</a></li>
+                    <li><a href="#" class="nav-item" target="_blank">Discover</a></li>
+                </ul>
+
+                <button class="nav-toggle" id="nav-toggle" aria-label="nav-toggle">
+                    <span class="hamburger"></span>
+                    <span class="hamburger"></span>
+                    <span class="hamburger"></span>
+                </button>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section class="hero-section">
+            <h1>Osun Chamber of Commerce</h1>
+            <p>Strenthening commerce, inspiring innovation</p>
+        </section>
+
+        <section class="directory-section">
+            <div class="directory-nav">
+                <button id="grid" aria-label="grid-toggle"><i class="fa-solid fa-grip fa-2x"></i></button>
+                <button id="list" aria-label="list-toggle"><i class="fa-solid fa-list fa-2x"></i></button>
+            </div>
+            <div id="business-cards" class="business-cards  container grid"></div>
+        </section>
+    </main>
+    <footer>
+        <section class="footer">
+            <div class="contact-info">
+            <span class="logo-h1">Osun Chamber of Commerce</span>
+            <p>Number 7, Awodapo close</p>
+            <p>Akindoyin street</p>
+            <p>osunchamber@gmail.com</p>
+            <p>(+234) 909 778 001 23</p>
+        </div>
+        <div class="social-links">
+            <a aria-label="link to github" href="https://github.com/Thia100" target="_blank"><i class="fa-brands fa-github fa-2x social-link"></i></a>
+            <a aria-label="link to linkedin" href="https://www.linkedin.com/in/fathia-gbolahan" target="_blank"><i class="fa-brands fa-linkedin-in fa-2x social-link"></i></a>
+            <a aria-label="link to x" href="https://x.com/thia_wip" target="_blank"><i class="fa-brands fa-x-twitter fa-2x social-link"></i></a>
+        </div>
+        <div class="author-info">
+            <p>WDD231 Class Project</p>
+            <p>Fathia Diekola Gbolahan</p>
+            <p><span id="currentyear"></span> &#x2022; Fathia Diekola Gbolahan &#x2022; Osun, Nigeria</p>
+            <p><span id="last-modified"></span></p>
+        </div>
+        </section>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,56 @@
+@media screen and (min-width:900px) {
+    .nav-bar{
+        height: 100px;
+    }
+    .nav-menu {
+    display: flex;
+    position: static;
+    flex-direction: row;
+    height: auto;
+    background: transparent;
+    padding: 0;
+    width: 900px;
+  }
+  .nav-toggle {
+    display: none;
+  }
+  .nav-item{
+    color: #fff;
+  }
+  .logo img{
+    max-width: 80px;
+    width: 100%;
+    height: auto;
+    }
+  .logo .logo-h1{
+    font-size: 1.2rem;
+  }
+  h1{
+    font-size: 2.5rem;
+  }
+  .hero-section p{
+    font-size: 1.2rem;
+  }
+
+  .business-cards.list{
+    grid-template-columns: 1fr;
+  }
+
+  .business-cards.list .business-card{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+
+
+  .footer{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0 auto;
+  }
+    
+}

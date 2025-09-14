@@ -1,0 +1,41 @@
+{
+    "family1":
+    {
+        "familyname": "Gbolahan",
+        "moveindate": "12 sep",
+        "numberofmembers": 4,
+        "ifvisited":true,
+        "familyinfo":[
+            {"name":"Fathia",
+            "gender":"female",
+            "dob":"16 may 2006"},
+            {"name" : "Ganiyat",
+            "gender": "female",
+            "dob": "6 april 2006"},
+            {"name": "Farida",
+            "gender": "female",
+            "dob": "12 july 2004"}
+        ]
+       
+    },
+    "family2":{
+        "familyname": "Gbolahan",
+        "moveindate": "12 sep",
+        "numberofmembers": 4,
+        "ifvisited":true,
+        "familyinfo":[
+            {"name":"Fathia",
+            "gender":"female",
+            "dob":"16 may 2006"},
+            {"name" : "Ganiyat",
+            "gender": "female",
+            "dob": "6 april 2006"},
+            {"name": "Farida",
+            "gender": "female",
+            "dob": "12 july 2004"}
+        ]
+
+    }
+
+
+}
