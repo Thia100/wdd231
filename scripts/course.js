@@ -68,7 +68,7 @@ const courses = [
 ];
 
 function displayCourses(filteredCourses) {
-  const courseListContainer = document.querySelector("#web-certificates");
+  const courseListContainer = document.querySelector("#courses-section");
   courseListContainer.innerHTML = "";
 
   filteredCourses.forEach((course) => {
@@ -91,17 +91,40 @@ function displayCourses(filteredCourses) {
   });
 }
 
+function calculateTotalCredits(coursesToShow) {
+  return coursesToShow.reduce((total, course) => total + course.credits, 0);
+}
+
+function updateCreditDisplay(credits) {
+  const creditDisplay = document.getElementById("credit");
+  creditDisplay.textContent = credits;
+}
+
+
+
 document.getElementById("all").addEventListener("click", () => {
   displayCourses(courses);
+  const totalCredits = calculateTotalCredits(courses);
+  updateCreditDisplay(totalCredits);
 });
 
+// Event listener for "CSE" button
 document.getElementById("cse").addEventListener("click", () => {
   const cseCourses = courses.filter((course) => course.subject === "CSE");
   displayCourses(cseCourses);
+  const totalCredits = calculateTotalCredits(cseCourses);
+  updateCreditDisplay(totalCredits);
 });
 
+// Event listener for "WDD" button
 document.getElementById("wdd").addEventListener("click", () => {
   const wddCourses = courses.filter((course) => course.subject === "WDD");
   displayCourses(wddCourses);
+  const totalCredits = calculateTotalCredits(wddCourses);
+  updateCreditDisplay(totalCredits);
 });
+
+// Initial display - show all courses and total credits
 displayCourses(courses);
+const initialCredits = calculateTotalCredits(courses);
+updateCreditDisplay(initialCredits);

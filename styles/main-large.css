@@ -1,33 +1,39 @@
 @media screen and (min-width: 900px) {
-  section.main {
+  .grid-section {
     grid-template-columns: 3fr 1fr;
     grid-template-areas:
       "bio  photo"
       "certificates certificates";
   }
 
-  section.web-courses {
+  .web-certificates {
     grid-area: certificates;
   }
 
-  .web-certificates {
+  .courses-section {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 20px;
     align-items: center;
     justify-content: space-around;
-  }
+  } 
   .nav-menu {
     display: flex;
     position: static;
     flex-direction: row;
     height: auto;
     background: transparent;
-    padding: 0;
     width: 900px;
   }
   .nav-toggle {
     display: none;
   }
-  
+  .logo span{
+    font-size: 1.5rem;
+  }
+  .logo img{
+    max-width: 70px;
+    width: 100%;
+    height: auto;
+  }
 }
