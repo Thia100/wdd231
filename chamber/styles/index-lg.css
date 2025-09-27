@@ -1,0 +1,70 @@
+@media screen and (min-width: 900px) {
+  .nav-toggle {
+    display: none;
+  }
+  .nav-menu {
+    display: flex;
+    position: static;
+    flex-direction: row;
+    height: auto;
+    background: transparent;
+    padding: 0;
+    width: 900px;
+  }
+  .herotext-section {
+    gap: 150px;
+  }
+  .cta-links {
+    gap: 80px;
+  }
+  .cta-links a:nth-child(1) {
+    border-radius: 22px;
+    padding: 14px 34px;
+    font-size: 1.5rem;
+    font-weight: 500;
+  }
+  .cta-links a:last-child {
+    border-radius: 26px;
+    padding: 16px 14px;
+    font-size: 1.5rem;
+    font-weight: 500;
+  }
+  .about-us-wrapper p {
+    font-size: 1.5rem;
+  }
+  .current-events-heading {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    text-align: center;
+    justify-content: space-between;
+    margin: 0;
+  }
+  .current-events-heading > a {
+    align-self: center;
+    justify-self: center;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+  }
+
+  .future-weather {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(200px, 400px));
+    justify-content: space-around;
+  }
+  .hero-section {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .footer {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0 auto;
+  }
+}
