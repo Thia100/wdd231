@@ -2,7 +2,6 @@
   .current-events-grid {
     display: grid;
     grid-template-columns: repeat(3, minmax(350px, 400px));
-    grid-template-rows: repeat(2, auto-fit);
     grid-template-areas:
       "main event1 event2"
       "main event3 event4";

@@ -348,7 +348,6 @@ h1{
 .current-events-grid{
   display: grid;
   grid-template-columns:minmax(200px, 700px);
-  grid-template-rows: repeat(5, auto-fit);
   margin: 0 auto;
   width: 100%;
   max-width: 1400px;
@@ -414,7 +413,6 @@ h1{
   margin-top: 50px;
   display: grid;
   grid-template-columns:minmax(200px, 400px);
-  grid-template-rows: repeat(3, auto-fit);
   align-items:center;
   justify-content: center;
   gap: 20px;
