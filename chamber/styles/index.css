@@ -147,7 +147,7 @@ h2{
   position: relative;
 }
 .hero-section{
-  background: url("/chamber/images/home-hero.webp");
+  background: url("../images/home-hero.webp");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: right center;
@@ -359,7 +359,7 @@ h2{
   width: 100%;
   height: auto;
   border-radius: 12px;
-}
+} 
 .event-text{
   height: 100%;
   display: flex;
