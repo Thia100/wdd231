@@ -1,0 +1,190 @@
+nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 80px;
+  z-index: 10;
+  background: plum;
+}
+li {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+}
+
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 20px;
+}
+
+.navMenu {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  left: -100%;
+  top: 80px;
+  background: plum;
+  transition: left 0.5s ease-in-out;
+}
+.navMenu.active {
+  left: 0;
+}
+.navMenu ul {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.navMenu li {
+  display: flex;
+}
+.navMenu li a {
+  margin-top: 40px;
+}
+
+.navbar > button {
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+
+
+
+
+
+
+
+
+
+.heroContainer{
+    padding-top: 60px;
+    height: 90vh;
+}
+.hero{
+    margin-top: 30px;
+    padding: 20px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 100px;
+}
+.hero img{
+    max-width: 500px;
+    width: 100%;
+    height: auto;
+}
+.heroText{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.heroButtons{
+    margin-top: 20px;
+}
+.heroButtons button, .proficiencyLevel button{
+    padding: 10px 14px;
+    border-radius: 12px;
+}
+.heroButtons button:nth-child(1){
+    margin-right: 20px;
+    background: greenyellow;
+}
+.heroButtons button:last-child{
+    background: rebeccapurple;
+}
+
+
+
+
+
+.firstSection{
+    background: rgba(237, 233, 233, 0.719);
+    padding: 20px;
+}
+
+.container{
+    max-width: 1300px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.whyCard{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+.whyCard .card{
+    background: plum;
+    padding: 0 10px;
+    text-align: center;
+    border-radius: 10px;
+}
+
+
+
+
+.secondSection{
+    padding: 20px;
+}
+.secondSection h2{
+    text-align: end;
+    padding: 10px;
+}
+
+
+.courseModalButton{
+    background: #3B82F6;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+    padding: 10px;
+}
+
+
+
+
+
+
+
+
+
+
+
+.thirdSection h2{
+    text-align: center;
+}
+
+.thirdSection{
+    padding: 20px;
+}
+
+.thirdSectionContent{
+    max-width: 1000px;
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.proficiencyLevel{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 50px;
+}
+.brain, .dev{
+    font-weight: 700;
+}
+.dev{
+    color: #3B82F6;
+}

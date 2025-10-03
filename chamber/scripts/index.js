@@ -2,19 +2,11 @@ import { displayDynamicText } from "./dynamic-text.mjs";
 import { displaySpotlightMembers } from "./member-spotlight.mjs";
 import { getWeatherData } from "./weather.mjs";
 
-
-
-document.addEventListener("DOMContentLoaded", () =>{
+document.addEventListener("DOMContentLoaded", () => {
   displayDynamicText();
-});
-
-document.addEventListener("DOMContentLoaded", () =>{
   getWeatherData();
-})
-
-document.addEventListener("DOMContentLoaded", () =>{
   displaySpotlightMembers();
-})
+});
 
 
 const toggle = document.querySelector("#nav-toggle");
@@ -25,13 +17,10 @@ toggle.addEventListener("click", () => {
   menu.classList.toggle("active");
 });
 
-
-
 const currentYear = new Date().getFullYear();
 const lastModified = document.lastModified;
 
 document.querySelector("#currentyear").textContent = `© ${currentYear}`;
-document.querySelector("#last-modified").textContent = `Last Modified ${lastModified}`;
-
-
-
+document.querySelector(
+  "#last-modified"
+).textContent = `Last Modified ${lastModified}`;

@@ -1,0 +1,63 @@
+@media screen and (min-width: 500px) {
+  .courseModalButton {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media screen and (min-width: 800px) {
+  .navbar {
+    padding: 0 80px;
+  }
+  .navbar > button {
+    display: none;
+  }
+
+  .navMenu {
+    position: static;
+    background: none;
+    flex-direction: row;
+    align-items: center;
+    margin-left: auto;
+    width: auto;
+    height: auto;
+  }
+  .navMenu ul {
+    flex-direction: row;
+    align-items: center;
+    gap: 20px;
+  }
+  .navMenu li a {
+    margin: 0;
+    padding-left: 20px;
+  }
+  .navMenu button {
+    margin-top: 0;
+    margin-left: 20px;
+  }
+
+  .heroContainer {
+    display: flex;
+    align-items: center;
+  }
+
+  .hero {
+    margin: 0 auto;
+    padding: 0;
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: center;
+    gap: auto;
+  }
+  .whyCard {
+    flex-direction: row;
+  }
+  .courseModalButton {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media screen and (min-width: 1000px) {
+  .courseModalButton {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}

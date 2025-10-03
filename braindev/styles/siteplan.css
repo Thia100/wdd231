@@ -1,0 +1,69 @@
+:root {
+  --primary-color: #183153;
+  --secondary-color: #fafafa;
+  --accent-color: #2684bf;
+  --text-color: #515050;
+
+  --heading-font: "Montserrat", sans-serif;
+  --body-font: "Inter", sans-serif;
+  --code-font: "Fira Code", monospace;
+}
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  line-height: 1.8;
+  color: var(--text-color);
+  font-family: var(--body-font);
+}
+h1,
+h2 {
+  color: #183153;
+  font-family: var(--heading-font);
+}
+.planContainer {
+  padding: 20px;
+}
+.brain {
+  color: var(--primary-color);
+}
+.dev {
+  color: var(--accent-color);
+}
+.scenerios {
+  background: var(--secondary-color);
+  padding: 20px 40px 40px 40px;
+}
+.scenerios ul li {
+  margin-top: 14px;
+}
+.scenerios ol {
+  margin-left: 40px;
+}
+.colorTypoWireframe {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  margin: 0 auto;
+  padding: 20px;
+  justify-items: center;
+  gap: 10px;
+}
+main {
+  max-width: 1200px;
+  width: 100%;
+  margin: 0 auto;
+}
+h1 {
+  text-align: center;
+  margin-top: 60px;
+}
+a{
+    text-decoration: none;
+    color: var(--accent-color);
+    transition: .5s ease;
+}
+a:hover{
+    text-decoration: underline;
+}

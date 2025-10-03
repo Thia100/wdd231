@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="Fathia Diekola Gbolahan" />
+    <meta name="description" content="" />
+    <title>Modal Practice</title>
+  </head>
+  <body>
+    <main>
+      <section>
+        <h1>My modal practice</h1>
+        <button id="openModal">Open</button>
+
+        <dialog id="myModal">
+          <h2>Dialog Box</h2>
+          <div class="dialog-text">
+            <p>This is my first practice</p>
+            <p>This is me practicing again</p>
+          </div>
+          <button id="closeModal">Close</button>
+        </dialog>
+      </section>
+    </main>
+
+    <style>
+      dialog {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        align-items: center;
+        background: rgba(223, 132, 223, 0.816);
+        width: 400px;
+        height: 300px;
+        border: 3px solid rgb(200, 25, 25);
+      }
+      ::backdrop {
+        background-color: rgb(0 0 0 / 50%);
+      }
+      dialog div {
+        margin-top: 20px;
+      }
+      dialog button {
+        align-self: flex-end;
+      }
+      dialog:not([open]) {
+        display: none;
+      }
+    </style>
+
+    <script>
+      const openModal = document.querySelector("#openModal");
+      const closeModal = document.querySelector("#closeModal");
+      const modal = document.querySelector("#myModal");
+
+      openModal.addEventListener("click", () => {
+        modal.showModal(); // use showModal() for backdrop
+      });
+
+      closeModal.addEventListener("click", () => {
+        modal.close();
+      });
+    </script>
+  </body>
+</html>

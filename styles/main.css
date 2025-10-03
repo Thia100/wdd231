@@ -220,21 +220,17 @@ h2{
 .credit{
   text-align: center;
 }
-
-
-.course-card {
-  display: flex;
-  align-items: center;
-  justify-content: center;
+.course-card{
   padding: 4px 0;
-  background:#636b79 ;
   color: #fff;
+  background: #636b79;
+  cursor: pointer;
 }
 
 .course-card.completed{
   background-color:#a8adb4c1 ;
   color: #000;
-}
+} 
 
 
 
@@ -271,3 +267,28 @@ footer {
 
 
 
+
+
+
+dialog {
+  max-width: 400px;
+  padding: 20px;
+  border: 2px solid #47126b;
+  border-radius: 10px;
+  background: #f8f8ff;
+}
+
+dialog::backdrop {
+  background: rgba(0, 0, 0, 0.5);
+}
+
+#closeModal {
+  margin-top: 20px;
+  align-self: flex-end;
+  background: #47126b;
+  color: #fff;
+  padding: 6px 12px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}

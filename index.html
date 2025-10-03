@@ -1,40 +1,67 @@
 <!DOCTYPE html>
 <html lang="en-US">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="author" content="Fathia Diekola Gbolahan">
-  <meta name="description" content="BYU WDD231 course homepage assignment">
-  <title>Home | Fathia Diekola Gbolahan</title>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="Fathia Diekola Gbolahan" />
+    <meta name="description" content="BYU WDD231 course homepage assignment" />
+    <title>Home | Fathia Diekola Gbolahan</title>
 
-  <script src="https://kit.fontawesome.com/37660fa63d.js" crossorigin="anonymous"></script>
-  
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300..800&family=Raleway:wght@100..900&display=swap" rel="stylesheet">
+    <script
+      src="https://kit.fontawesome.com/37660fa63d.js"
+      crossorigin="anonymous"
+    ></script>
 
-  <link rel="stylesheet" href="styles/normalize.css">
-  <link rel="stylesheet" href="styles/main.css">
-  <link rel="stylesheet" href="styles/main-large.css">
-  <script src="scripts/navigation.js" defer></script>
-  <script src="scripts/course.js" defer></script>
-  <script src="scripts/date.js" defer></script>
-</head>
-<body>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300..800&family=Raleway:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
 
+    <link rel="stylesheet" href="styles/normalize.css" />
+    <link rel="stylesheet" href="styles/main.css" />
+    <link rel="stylesheet" href="styles/main-large.css" />
+    <script src="scripts/navigation.js" defer></script>
+    <script src="scripts/course.js" defer></script>
+    <script src="scripts/date.js" defer></script>
+  </head>
+  <body>
     <header>
       <nav class="nav-bar">
         <div class="nav container">
-
           <div class="logo">
-            <img src="images/logo.svg" alt="Thia_wip logo" width="400" height="400">
+            <img
+              src="images/logo.svg"
+              alt="Thia_wip logo"
+              width="400"
+              height="400"
+            />
             <span>Fathia Gbolahan</span>
           </div>
 
           <ul class="nav-menu" id="nav-menu">
-            <li><a href="/index.html" class="nav-item active" aria-label="home navigation">Home</a></li>
-            <li><a href="./chamber/directory.html" class="nav-item" aria-label="chamber navigation">Chamber Project</a></li>
-            <li><a href="#" class="nav-item" aria-label="final navigation">Final Project</a></li>
+            <li>
+              <a
+                href="/index.html"
+                class="nav-item active"
+                aria-label="home navigation"
+                >Home</a
+              >
+            </li>
+            <li>
+              <a
+                href="./chamber/directory.html"
+                class="nav-item"
+                aria-label="chamber navigation"
+                >Chamber Project</a
+              >
+            </li>
+            <li>
+              <a href="#" class="nav-item" aria-label="final navigation"
+                >Final Project</a
+              >
+            </li>
           </ul>
 
           <button class="nav-toggle" id="nav-toggle" aria-label="nav toggle">
@@ -46,51 +73,88 @@
       </nav>
     </header>
     <main class="container">
-
       <h1>Home</h1>
       <section class="grid-section">
-
         <section class="about-me">
           <h2>About Me</h2>
           <p>
             My name is Fathia Diekola Gbolahan and I am a 19 year old female
             from Osun State Nigeria. I'm passionate about using code to solve
-            medical problems and inspiring people as much as I can. My
-            favorite color is purple and I like pineapples. I don't mean self
-            help books (I honestly find them boring) I love mystery, suspense,
-            and horror. I also enjoy exercising even though I don't have the
-            muscles to show for it.
+            medical problems and inspiring people as much as I can. My favorite
+            color is purple and I like pineapples. I don't mean self help books
+            (I honestly find them boring) I love mystery, suspense, and horror.
+            I also enjoy exercising even though I don't have the muscles to show
+            for it.
           </p>
         </section>
 
         <section class="student-photo">
           <h2>Student Photo</h2>
-          <img src="images/profile-picture.webp" alt="profile picture of Fathia" width="500" height="547">
+          <img
+            src="images/profile-picture.webp"
+            alt="profile picture of Fathia"
+            width="500"
+            height="547"
+          />
         </section>
 
         <section class="web-certificates">
           <h2>Web Certificates Courses</h2>
           <div class="course-nav">
             <button aria-label="show all courses" id="all">All</button>
-            <button aria-label="show computer science courses" id="cse">cse</button>
-            <button aria-label="show web design and development courses" id="wdd">wdd</button>
+            <button aria-label="show computer science courses" id="cse">
+              cse
+            </button>
+            <button
+              aria-label="show web design and development courses"
+              id="wdd"
+            >
+              wdd
+            </button>
           </div>
+
           <div class="courses-section" id="courses-section"></div>
         </section>
       </section>
-      <p class="credit">The total number of credits is:<span id="credit"></span></p>
+      <p class="credit">
+        The total number of credits is:<span id="credit"></span>
+      </p>
     </main>
 
     <footer>
       <div class="social-links">
-        <a aria-label="link to github" href="https://github.com/Thia100" target="_blank"><i class="fa-brands fa-github fa-2x social-link"></i></a>
-        <a aria-label="link to linkedin" href="https://www.linkedin.com/in/fathia-gbolahan" target="_blank"><i class="fa-brands fa-linkedin-in fa-2x social-link"></i></a>
-        <a aria-label="link to x" href="https://x.com/thia_wip" target="_blank"><i class="fa-brands fa-x-twitter fa-2x social-link"></i></a>
+        <a
+          aria-label="link to github"
+          href="https://github.com/Thia100"
+          target="_blank"
+          ><i class="fa-brands fa-github fa-2x social-link"></i
+        ></a>
+        <a
+          aria-label="link to linkedin"
+          href="https://www.linkedin.com/in/fathia-gbolahan"
+          target="_blank"
+          ><i class="fa-brands fa-linkedin-in fa-2x social-link"></i
+        ></a>
+        <a aria-label="link to x" href="https://x.com/thia_wip" target="_blank"
+          ><i class="fa-brands fa-x-twitter fa-2x social-link"></i
+        ></a>
       </div>
       <div class="date-currentyear">
-        <p><span id="currentyear"></span> &#x2022; Fathia Diekola Gbolahan &#x2022; Osun, Nigeria</p>
+        <p>
+          <span id="currentyear"></span> &#x2022; Fathia Diekola Gbolahan
+          &#x2022; Osun, Nigeria
+        </p>
         <p><span id="last-modified"></span></p>
       </div>
     </footer>
-</body>
+
+    <dialog id="courseModal">
+      <h2 id="courseTitle"></h2>
+      <p id="courseDescription"></p>
+      <p><strong>Credits:</strong> <span id="courseCredits"></span></p>
+      <p><strong>Certificate:</strong> <span id="courseCertificate"></span></p>
+      <p><strong>Technologies:</strong> <span id="courseTechnology"></span></p>
+      <button id="closeModal">Close</button>
+    </dialog>
+  </body>
 </html>

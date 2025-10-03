@@ -71,22 +71,38 @@ function displayCourses(filteredCourses) {
   const courseListContainer = document.querySelector("#courses-section");
   courseListContainer.innerHTML = "";
 
+  const modal = document.querySelector("#courseModal");
+  const courseTitle = document.querySelector("#courseTitle");
+  const courseDescription = document.querySelector("#courseDescription");
+  const courseCredits = document.querySelector("#courseCredits");
+  const courseCertificate = document.querySelector("#courseCertificate");
+  const courseTechnology = document.querySelector("#courseTechnology");
+
+  const closeModal = document.querySelector("#closeModal");
+
   filteredCourses.forEach((course) => {
-    const card = document.createElement("div");
+    const card = document.createElement("button");
     card.classList.add("course-card");
 
     if (course.completed) {
       card.classList.add("completed");
     }
 
-    const subject = document.createElement("p");
-    subject.textContent = `${course.subject}`;
+    card.textContent = `${course.subject} ${course.number}`;
 
-    const number = document.createElement("p");
-    number.textContent = `${course.number}`;
+    card.addEventListener("click", () => {
+      courseTitle.textContent = course.title;
+      courseDescription.textContent = course.description;
+      courseCredits.textContent = course.credits;
+      courseCertificate.textContent = course.certificate;
+      courseTechnology.textContent = course.technology.join(", ");
 
-    card.appendChild(subject);
-    card.appendChild(number);
+      modal.showModal();
+    });
+    closeModal.addEventListener("click", () => {
+      modal.close();
+    });
+
     courseListContainer.appendChild(card);
   });
 }
@@ -99,8 +115,6 @@ function updateCreditDisplay(credits) {
   const creditDisplay = document.getElementById("credit");
   creditDisplay.textContent = credits;
 }
-
-
 
 document.getElementById("all").addEventListener("click", () => {
   displayCourses(courses);
