@@ -344,7 +344,7 @@ dialog {
   background: var(--secondary-color);
   color: var(--text-color);
 
-  animation: dialogBoxFadeIn  .5s ease ;
+  animation: dialogBoxFadeIn .5s ease ;
 }
 dialog::backdrop {
   background: rgba(0, 0, 0, 0.6);
@@ -383,7 +383,7 @@ dialog::backdrop {
   }
 }
 
-.heroTextFadeIn {
+.fadeUp {
  animation: fadeIn 1s ease-in-out;
 }
 @keyframes fadeUp {
@@ -396,3 +396,4 @@ dialog::backdrop {
    margin-bottom: 0;
   }
 }
+

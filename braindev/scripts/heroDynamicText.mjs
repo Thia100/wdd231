@@ -16,9 +16,9 @@ export function displayHeroDynamicText() {
     const randomIndex = Math.floor(Math.random() * heroDynamicTextArray.length);
     heroDynamicTextContainer.textContent = heroDynamicTextArray[randomIndex];
 
-    heroDynamicTextContainer.classList.remove("heroTextFadeIn");
+    heroDynamicTextContainer.classList.remove("fadeUp");
     void heroDynamicTextContainer.offsetWidth;
-    heroDynamicTextContainer.classList.add("heroTextFadeIn");
+    heroDynamicTextContainer.classList.add("fadeUp");
   }
   showHeroDynamicText();
   setInterval(showHeroDynamicText, 3000);
