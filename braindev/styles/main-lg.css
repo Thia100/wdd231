@@ -2,9 +2,20 @@
   .courseModalButton {
     grid-template-columns: repeat(2, 1fr);
   }
+  .proficiencyLevel {
+    flex-direction: row;
+  }
+  .socialLinks {
+    grid-template-columns: repeat(3, 50px);
+  }
+  .footerInfo {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
 }
 
-@media screen and (min-width: 800px) {
+@media screen and (min-width: 900px) {
   .navbar {
     padding: 0 80px;
   }
@@ -23,30 +34,12 @@
   }
   .navMenu ul {
     flex-direction: row;
-    align-items: center;
-    gap: 20px;
+    gap: 40px;
+    margin: 0 3.5rem 0 0;
+    padding: 0;
   }
   .navMenu li a {
     margin: 0;
-    padding-left: 20px;
-  }
-  .navMenu button {
-    margin-top: 0;
-    margin-left: 20px;
-  }
-
-  .heroContainer {
-    display: flex;
-    align-items: center;
-  }
-
-  .hero {
-    margin: 0 auto;
-    padding: 0;
-    flex-direction: row-reverse;
-    align-items: center;
-    justify-content: center;
-    gap: auto;
   }
   .whyCard {
     flex-direction: row;
@@ -54,10 +47,30 @@
   .courseModalButton {
     grid-template-columns: repeat(3, 1fr);
   }
+  .socialLinks {
+    grid-template-columns: repeat(6, 50px);
+  }
+
+  /* .footerInfo {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  } */
 }
 
 @media screen and (min-width: 1000px) {
   .courseModalButton {
     grid-template-columns: repeat(4, 1fr);
+  }
+}
+@media screen and (min-width: 1100px) {
+  .heroContainer {
+    padding-top: 130px;
+  }
+  .hero {
+    flex-direction: row-reverse;
+    justify-content: center;
+    align-content: center;
+    gap: 10rem;
   }
 }
