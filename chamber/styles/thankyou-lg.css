@@ -1,0 +1,21 @@
+@media screen and (min-width: 900px) {
+  .nav-toggle {
+    display: none;
+  }
+  .nav-menu {
+    display: flex;
+    position: static;
+    flex-direction: row;
+    height: auto;
+    background: transparent;
+    padding: 0;
+    width: 900px;
+  }
+  .footer {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0 auto;
+  }
+}

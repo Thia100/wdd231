@@ -1,0 +1,334 @@
+:root {
+  --heading-font: "Montserrat", sans-serif;
+  --body-font: "Open Sans", sans-serif;
+
+  --primary-color: #183153;
+  --secondary-color: #e63946;
+  --text-color: #fff;
+
+  --logo-fw: 600;
+}
+
+body {
+  font-family: var(--body-font);
+}
+h2,
+h3,
+h4 {
+  font-family: var(--heading-font);
+}
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 10px 20px;
+  width: 100%;
+}
+li {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+}
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+.nav-logo img {
+  max-width: 60px;
+  width: 100%;
+  height: auto;
+}
+.nav-logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+}
+.nav-logo span {
+  font-family: var(--heading-font);
+  font-weight: var(--logo-fw);
+  color: var(--text-color);
+}
+.nav-bar {
+  position: fixed;
+  width: 100%;
+  height: 80px;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+  background: var(--primary-color);
+}
+.nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.nav-menu {
+  position: fixed;
+  top: 80px;
+  left: -100%;
+  z-index: 1001;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  background: var(--primary-color);
+  transition: left 0.5s ease-in-out;
+  padding: 0 10px;
+}
+.nav-menu.active {
+  left: 0;
+}
+.nav-item {
+  color: var(--text-color);
+  font-size: 1.22rem;
+  transition: 0.5s ease;
+}
+.nav-item:hover {
+  color: var(--secondary-color);
+  font-size: 1.24rem;
+}
+.nav-item.active {
+  position: relative;
+}
+.nav-item.active::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 3px;
+  background: var(--secondary-color);
+  bottom: -5px;
+  left: 0;
+}
+.nav-toggle {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 45px;
+  height: 20px;
+  gap: 6px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  z-index: 1002;
+}
+.hamburger {
+  display: block;
+  height: 3px;
+  width: 100%;
+  background-color: #fff;
+  border-radius: 2px;
+  transition: all 0.3s ease;
+}
+.nav-toggle.active .hamburger:nth-child(1) {
+  transform: rotate(45deg) translate(5px, 5px);
+}
+.nav-toggle.active .hamburger:nth-child(2) {
+  opacity: 0;
+}
+.nav-toggle.active .hamburger:nth-child(3) {
+  transform: rotate(-45deg) translate(5px, -5px);
+}
+
+h1 {
+  color: #fff;
+  padding: 0 0 80px 20px;
+  font-weight: 400;
+  font-size: clamp(2.5rem, 1.955rem + 2.73vw, 4rem);
+  font-family: var(--heading-font);
+}
+.heroBanner {
+  background: var(--primary-color);
+  height: 50vh;
+  display: flex;
+  align-items: flex-end;
+}
+.container2 {
+  max-width: 1400px;
+  margin: 0 auto;
+  width: 100%;
+  padding: 10px;
+}
+main {
+  background: var(--text-color);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 40px;
+}
+
+.formWrapper {
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  margin-top: 60px;
+  width: 100%;
+}
+h2 {
+  text-align: center;
+  margin-bottom: 60px;
+  color: var(--primary-color);
+}
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+select,
+textarea {
+  width: 100%;
+  padding: 0.75rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 1rem;
+}
+input[type="submit"] {
+  background-color: #a4161a;
+  color: white;
+  border: none;
+  padding: 0.75rem;
+  border-radius: 5px;
+  font-size: 1rem;
+  cursor: pointer;
+  font-weight: bold;
+}
+legend {
+  padding: 0 10px;
+}
+fieldset {
+  display: flex;
+  flex-direction: column;
+  padding: 20px 10px;
+  gap: 20px;
+}
+textarea {
+  resize: vertical;
+}
+
+.membershipLevelsWrapper {
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  margin-top: 60px;
+  width: 100%;
+}
+.membershipLevelCards {
+  display: grid;
+  grid-template-columns: minmax(200px, 350px);
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+  text-align: center;
+  margin: 0 auto;
+}
+.membershipLevelCards .membershipLevelCard {
+  background: var(--primary-color);
+  border-radius: 10px;
+  color: #fff;
+  padding: 30px 20px;
+  opacity: 0;
+  transform: translateY(40px);
+  animation: slideUp 0.9s ease-out forwards;
+}
+.membershipLevelCard:nth-child(1) {
+  animation-delay: 0.2s;
+}
+.membershipLevelCard:nth-child(2) {
+  animation-delay: 0.3s;
+}
+.membershipLevelCard:nth-child(3) {
+  animation-delay: 0.4s;
+}
+.membershipLevelCard:nth-child(4) {
+  animation-delay: 0.4s;
+}
+@keyframes slideUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.membershipLevelCards .membershipLevelCard button {
+  padding: 6px 10px;
+  margin-top: 20px;
+  border-radius: 10px;
+  cursor: pointer;
+  font-size: 1rem;
+  background: none;
+  border: 1px solid #fff;
+  color: #fff;
+  transition: 0.3s ease, transform 0.3s ease;
+}
+.membershipLevelCards .membershipLevelCard button:hover {
+  background: var(--secondary-color);
+  transform: scale(1.2);
+}
+.myModal {
+  border: none;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+  max-width: 500px;
+  margin: 20px auto 0 auto;
+  width: 100%;
+  color: var(--primary-color);
+}
+.myModal > div:first-child {
+  background-color: #183153;
+  color: #fff;
+  padding: 1rem 1.2rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.myModal ul {
+  text-align: start;
+}
+.myModal ul li {
+  list-style: disc;
+  margin-bottom: 0.5rem;
+}
+.myModal p,
+.myModal ul {
+  padding: 1rem 1.5rem;
+}
+
+footer {
+  padding: 10px;
+  margin: 0 auto;
+  background: var(--primary-color);
+}
+.footer {
+  max-width: 1100px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  gap: 10px;
+  color: #fff;
+  line-height: 1.6;
+}
+.social-links {
+  align-self: center;
+}
+.social-link {
+  color: #fff;
+  transition: transform 0.4s ease-in-out;
+}
+.social-link:hover {
+  transform: translateY(-4px);
+}
+
+.fa-asterisk {
+  color: red;
+  font-size: 0.7rem;
+}

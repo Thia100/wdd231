@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Fathia Diekola Gbolahan">
+    <meta name="description" content="Contact us for inquiries, support, or collaborations. We're always ready to connect and assist you.">
+    <title>Join Us | Osun state Chamber of Commerce</title>
+
+    <link rel="icon" href="images/favicon.ico">
+    <link rel="stylesheet" href="styles/join.css">
+    <link rel="stylesheet" href="styles/join-lg.css">
+    <script src="scripts/join.js" defer></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Open+Sans&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/37660fa63d.js" crossorigin="anonymous"></script>
+
+    <meta property="og:title" content="Osun state Chamber of Commerce">
+    <meta property="og:description" content="The Osun State Chamber of Commerce promotes trade, industry, and investment opportunities in Osun State. We connect businesses, support entrepreneurs, and drive economic growth through advocacy, partnerships, and resources.">
+    <meta property="og:image" content="https://thia100.github.io/wdd231/chamber/images/og-image.png">
+    <meta property="og:url" content="https://thia100.github.io/wdd231/chamber/index.html">
+</head>
+<body>
+    <header>
+        <nav class="nav-bar">
+            <div class="nav container">
+
+                <div class="nav-logo">
+                    <img src="images/chamber-logo.svg" alt="osun state chamber of commerce logo" width="280" height="280">
+                    <span>Osun chamber of commerce</span>
+                </div>
+
+                <ul class="nav-menu" id="nav-menu">
+                    <li><a href="index.html" target="_blank" class="nav-item">Home</a></li>
+                    <li><a href="directory.html" target="_blank" class="nav-item">Directory</a></li>
+                    <li><a href="join.html" target="_blank" class="nav-item active">Join</a></li>
+                    <li><a href="#" target="_blank" class="nav-item">Discover</a></li>
+                </ul>
+
+                <button class="nav-toggle" id="nav-toggle" aria-label="menu toggle">
+                    <span class="hamburger"></span>
+                    <span class="hamburger"></span>
+                    <span class="hamburger"></span>
+                </button>
+            </div>
+        </nav>
+    </header>
+    <div class="heroBanner">
+        <h1>Contact Us</h1>
+    </div>
+
+    <main class="container2">
+        <div class="formWrapper">
+            <h2>Membership Application Form</h2>
+            <form method="get" action="thankyou.html">
+                <label for="fname">First Name<span><i class="fa-solid fa-asterisk"></i></span><input type="text" id="fname" name="firstName" required title="Enter your first name" autocomplete="given-name"></label>
+                
+                <label for="lname">Last Name<span><i class="fa-solid fa-asterisk"></i></span><input type="text" id="lname" name="lastName" required title="Enter your last name" autocomplete="family-name"></label>
+
+                <label for="orgTitle">Organizational Title:<input type="text" id="orgTitle" name="organizationalTitle" title="Enter organizational title (letters, hyphens, spaces only, minimum 7 characters)" pattern="^[A-Za-z\s-]{7,}$"></label>
+                
+                <label for="email">Email Address<span><i class="fa-solid fa-asterisk"></i></span><input type="email" id="email" name="emailAddress" required title="Enter your email" placeholder="gbolahan@gmail.com" autocomplete="email"></label>
+                
+                <label for="phone">Phone Number<span><i class="fa-solid fa-asterisk"></i></span><input type="tel" id="phone" name="phoneNumber" required title="Enter your phone number" autocomplete="tel"></label>
+               
+                <label for="orgName">Organization Name<span><i class="fa-solid fa-asterisk"></i></span><input type="text" id="orgName" name="organizationName" required title="Enter your organization's name" autocomplete="organization"></label>
+                
+
+                <fieldset>
+                    <legend>Select Membership Level</legend>
+                    <label><input type="radio" name="membershipLevel" value="np"> NP Membership (Non-profit - No Fee)</label>
+                    <label><input type="radio" name="membershipLevel" value="bronze"> Bronze Membership</label>
+                    <label><input type="radio" name="membershipLevel" value="silver"> Silver Membership</label>
+                    <label><input type="radio" name="membershipLevel" value="gold"> Gold Membership</label>
+                </fieldset>
+
+
+                <label for="orgDescription">Organization Description:<textarea id="orgDescription" name="organizationDescription" title="Enter a brief description of your organization"></textarea></label>
+
+                <input type="hidden" id="timestamp" name="timestamp" value="">
+
+                <input type="submit" value="Submit Application">
+            </form>
+        </div>
+        
+
+        <div class="membershipLevelsWrapper">
+            <h2>Membership levels</h2>
+            <div class="membershipLevelCards">
+                <div class="membershipLevelCard">
+                    <h3>NP Membership</h3>
+                    <button class="openModal">Learn More</button>
+                    <dialog class="myModal"></dialog>
+                </div>
+                <div class="membershipLevelCard">
+                    <h3>Bronze Membership</h3>
+                    <button class="openModal">Learn More</button>
+                    <dialog class="myModal"></dialog>
+                </div>
+                <div class="membershipLevelCard">
+                    <h3>Silver Membership</h3>
+                    <button class="openModal">Learn More</button>
+                    <dialog class="myModal"></dialog>
+                </div>
+                <div class="membershipLevelCard">
+                    <h3>Gold Membership</h3>
+                    <button class="openModal">Learn More</button>
+                    <dialog class="myModal"></dialog>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div class="footer">
+            <div class="contact-info">
+                <span class="logo-h1">Osun Chamber of Commerce</span>
+                <p>Number 7, Awodapo close</p>
+                <p>Akindoyin street</p>
+                <p>osunchamber@gmail.com</p>
+                <p>(+234) 909 778 001 23</p>
+            </div>
+            <div class="social-links">
+                <a aria-label="link to github" href="https://github.com/Thia100" target="_blank"><i class="fa-brands fa-github fa-2x social-link"></i></a>
+                <a aria-label="link to linkedin" href="https://www.linkedin.com/in/fathia-gbolahan" target="_blank"><i class="fa-brands fa-linkedin-in fa-2x social-link"></i></a>
+                <a aria-label="link to x" href="https://x.com/thia_wip" target="_blank"><i class="fa-brands fa-x-twitter fa-2x social-link"></i></a>
+            </div>
+            <div class="author-info">
+                <p>WDD231 Class Project</p>
+                <p>Fathia Diekola Gbolahan</p>
+                <p><span id="currentyear"></span> &#x2022; Fathia Diekola Gbolahan &#x2022; Osun, Nigeria</p>
+                <p><span id="last-modified"></span></p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
