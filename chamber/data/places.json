@@ -1,0 +1,61 @@
+[
+  {
+    "name": "Lekki Conservation Centre",
+    "address": "Km 19 Lekki-Epe Expressway, Lekki Peninsula II, Lekki, Lagos State",
+    "cost":  "₦1,000 extra",
+    "description": "A large nature reserve (≈78 hectares) run by the Nigerian Conservation Foundation. It's great for nature walks, bird watching, and the canopy walk—one of the longest in Africa—offering a thrilling view above the trees.",
+    "photo_url": "./images/conservation.webp"
+  },
+  {
+    "name": "Tarkwa Bay Beach",
+    "address": "Accessible only by boat from Marina (CMS), Tarzan Marine (Victoria Island), or Mekwe Jetty, Lagos Harbour",
+    "cost": "₦300-₦500 for tents/chairs",
+    "description": "A relaxing island beach great for swimming, sunbathing, beach games, surfing, and chilling by the water. Offers a peaceful escape from the busy city.",
+    "photo_url": "./images/beach.webp"
+  },
+  {
+    "name": "New Afrika Shrine",
+    "address": "1 NERDC Road, Agidingbi, Alausa, Ikeja, Lagos",
+    "cost": "₦500",
+    "description": "A cultural and music venue built as a successor to Fela Kuti's original Shrine. Known for Afrobeat performances, vibrant atmosphere, and great food and drinks.",
+    "photo_url": "./images/shrine.webp"
+  },
+  {
+    "name": "Freedom Park Lagos",
+    "address": "Old Prison Ground, Broad Street, Lagos Island, Lagos State",
+    "cost": "₦200",
+    "description": "A former colonial prison turned into a cultural and recreational park. Features art installations, food courts, live performances, and historical monuments.",
+    "photo_url": "./images/park.webp"
+  },
+  {
+    "name": "Nike Art Gallery",
+    "address": "2 Elegushi Road, 3rd Roundabout, Lekki Phase 1, Lagos State",
+    "cost":  "Free",
+    "description": "One of the largest art galleries in West Africa, showcasing traditional and contemporary Nigerian artworks, textiles, and sculptures.",
+    "photo_url": "./images/nike.webp"
+  },
+  {
+    "name": "Hi-Impact Amusement Park",
+    "address": "Km 12 Lagos-Ibadan Expressway, Ibafo (outskirts of Lagos)",
+    "cost": "₦5,000",
+    "description": "A modern amusement and resort park featuring thrilling rides, arcade games, cinemas, restaurants, and outdoor entertainment suitable for families and friends.",
+    "photo_url": "./images/amusement.webp"
+  },
+  {
+    "name": "Zen Archery",
+    "address": "Ilupeju, Lagos State",
+    "cost": "₦8,000",
+    "description": "A fun and unique activity for individuals or small groups to learn and practice archery with professional guidance.",
+    "photo_url": "./images/archery.webp"
+  },
+  {
+    "name": "Upside Down House Lagos",
+    "address": "Lekki, Lagos State",
+    "cost":"₦7,000",
+    "description": "A quirky photo attraction where furniture and décor are installed upside down for creative and fun pictures.",
+    "photo_url": "./images/upside-down.webp"
+  }
+]
+
+
+
