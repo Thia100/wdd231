@@ -48,6 +48,7 @@ function displayPlaces(item) {
     img.loading = "lazy";
     img.width = "420";
     img.height = "420";
+    img.alt = `${place.name}`;
     const figcaption = document.createElement("figcaption");
     figcaption.innerHTML = place.name;
     figure.appendChild(img);
