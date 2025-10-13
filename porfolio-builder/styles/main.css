@@ -1,0 +1,157 @@
+:root {
+  --font: "Roboto", sans-serif;
+
+  --form-container-bg: #abc4ff;
+  --form-section-bg: #ccdbfd;
+}
+body {
+  font-family: var(--font);
+  color: #1a1a1b;
+}
+
+.formContainer {
+  background: var(--form-container-bg);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+}
+h1 {
+  text-align: center;
+  font-size: 2.5rem;
+}
+h1 + p {
+  text-align: center;
+  margin-bottom: 40px;
+}
+.templateSelection {
+  display: grid;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+.templateSelection button {
+  cursor: pointer;
+  border: 1px solid #fff;
+  padding: 8px;
+  border-radius: 10px;
+}
+.templateSelection button.active{
+    border: 1px solid #fff;
+    background: #cdb4db;
+    
+}
+.formContainer section {
+  max-width: 1000px;
+  width: 100%;
+  margin: 20px auto 0 auto;
+  background: var(--form-section-bg);
+  padding: 20px;
+  border-radius: 12px;
+}
+label {
+  display: block;
+  font-size: 1.2rem;
+}
+input[type="text"],
+input[type="tel"],
+input[type="email"],
+textarea {
+  border-radius: 10px;
+  border: 1px solid #4e4f50;
+  width: 100%;
+  padding: 10px;
+}
+textarea {
+  resize: vertical;
+}
+.formGroup {
+  margin: 15px 0;
+}
+.aboutMe {
+  margin-top: 70px;
+}
+.skillGroup {
+  margin: 50px 0 30px 0;
+}
+.skillGroup #addSkillBtn,
+#addProjectBtn {
+  background: #bdb2ff;
+  width: 80%;
+  display: block;
+  margin: 40px auto 0 auto;
+  cursor: pointer;
+  border: 1px solid #fff;
+  padding: 8px 0;
+  border-radius: 10px;
+}
+#skillsList {
+  margin-top: 10px;
+  padding: 0 20px;
+}
+.skillTag {
+  display: inline-flex;
+  align-items: center;
+  background: #ffc6ff;
+  padding: 4px 10px;
+  margin: 5px;
+  border-radius: 6px;
+}
+.removeSkillBtn {
+  font-weight: 600;
+  background: none;
+  border: none;
+  cursor: pointer;
+  width: auto;
+  margin-left: 8px;
+}
+
+legend {
+  font-size: 1.4rem;
+  text-align: center;
+  padding: 0 8px;
+}
+fieldset {
+  border: 1px solid #8d99ae;
+  margin-top: 80px;
+  padding: 10px 20px;
+}
+.portfolioButtons {
+  margin-top: 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  align-items: center;
+  justify-content: center;
+}
+.portfolioButtons button {
+  width: 50%;
+  cursor: pointer;
+}
+#previewBtn {
+  background: #bdb2ff;
+  border: 1px solid #fff;
+  padding: 8px 0;
+  border-radius: 10px;
+}
+#generateBtn {
+  border: 1px solid #fff;
+  padding: 8px 0;
+  border-radius: 10px;
+  background: #ffc6ff;
+}
+
+@media screen and (min-width: 640px) {
+  .portfolioButtons {
+    flex-direction: row;
+  }
+  .templateSelection {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media screen and (min-width: 900px) {
+  .templateSelection {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}

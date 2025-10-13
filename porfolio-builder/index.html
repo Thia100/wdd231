@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Fathia Diekola Gbolahan">
+    <meta name="description" content="">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="stylesheet" href="styles/css-reset.css">
+    <link rel="stylesheet" href="styles/main.css">
+    <script src="scripts/main.js" defer></script>
+    <title>Portfolio Builder | Thia_wip</title>
+
+</head>
+<body> 
+    <main>
+        <div class="formContainer">
+            <section>
+                <h1>Portfolio Builder</h1>
+                <p>Create your professional porfolio in minutes</p>
+
+                <form id="portfolioForm">
+
+                    <div class="templateSelection">
+                        <button type="button" class="templateBtn" id="modernTemplate">Modern</button>
+                        <button type="button" class="templateBtn" id="bugmodeTemplate">Bugmode (Dark)</button>
+                        <button type="button" class="templateBtn" id="classicButton">Classic</button>
+                        <button type="button" class="templateBtn" id="minimalButton">Minimal</button>
+                    </div>
+                    <div class="formGroup">
+                        <label for="fullName">Full Name</label>
+                        <input type="text" id="fullName" required autocomplete="name" placeholder="Fathia Diekola Gbolahan" title="Enter your fullname">
+                    </div>
+
+                    <div class="formGroup">
+                        <label for="professionalTitle">Professional Title</label>
+                        <input type="text" id="professionalTitle" required autocomplete="organization-title" placeholder="Software developer" title="Enter your professional title">
+                    </div>
+
+                    <div class="formGroup">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" required autocomplete="email" placeholder="thegbolahanfathia@gmail.com" title="Enter your email">
+                    </div>
+
+                    <div class="formGroup">
+                        <label for="phoneNumber">Phone</label>
+                        <input type="tel" id="phoneNumber" required placeholder="+1 (555) 123-4567" title="Enter a valid phone number">
+                    </div>
+
+                    <div class="formGroup aboutMe">
+                        <label for="aboutMe">About Me</label>
+                        <textarea id="aboutMe" title="Enter a brief description about you" placeholder="Aspiring software developer with a strong interest in building functional and elegant web apps." required rows="6"></textarea>
+                    </div>
+
+                    <div class="formGroup skillGroup">
+                        <div class="skillsSection">
+                            <label for="skillInput">Skills</label>
+                            <input type="text" id="skillInput" placeholder="React, Figma, python">
+                            <div id="skillsList"></div>
+                            <button type="button" id="addSkillBtn">Add Skill</button>
+                        </div>
+                    </div>
+
+                   
+                    <fieldset id="projectSection">
+                        <legend>Projects</legend>
+                        <div class="projectGroup">
+                            <div class="formGroup">
+                                <label for="projectTitle">Project Title</label>
+                                <input type="text" id="projectTitle" required title="Enter your project title"> 
+                            </div>
+
+                            <div class="formGroup">
+                                <label for="projectDescription">Description</label>
+                                <textarea id="projectDescription" title="Enter a brief description of the project" required rows="6"></textarea>
+                            </div>
+
+                            <div class="formGroup">
+                                <label for="projectLink">Link</label>
+                                <input type="text" id="projectLink" title="Enter the link to the project" required>
+                            </div>
+
+                        </div>
+                        <button type="button" id="addProjectBtn">Add Project</button>
+                    </fieldset>
+                    <div class="portfolioButtons">
+                        <button type="button" id="previewBtn">Preview</button>
+                        <button  type="button" id="generateBtn">Download HTML</button>
+                    </div>
+                </form>
+            </section>
+
+            <div id="portfolioPreview" class="hidden"></div>
+        </div>
+    </main>
+    <footer></footer>
+</body>
+</html>
