@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="Fathia Diekola Gbolahan" />
+    <meta name="description" content="" />
+    <title></title>
+    <style>
+      section {
+        height: 80vh;
+        background: rgb(21, 20, 20);
+      }
+      #section2{
+        transition: .5s ease;
+      }
+      #section2.show {
+        background: pink;
+        color: red;
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+        <section>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nisi dolore ullam illo quam mollitia autem quis labore temporibus ducimus dolor repellendus nihil omnis libero, exercitationem quia similique tenetur quas corporis praesentium aut nulla velit quidem error! Maiores exercitationem quos est rerum error facilis dolor quia tempore voluptatum, dolores quidem unde illum aperiam vero recusandae. Quas illum labore nemo voluptatum, eaque eum adipisci consequuntur ad quaerat deserunt voluptas impedit necessitatibus earum dicta aliquam, commodi amet minus excepturi eveniet! Sed sit quasi nihil distinctio sint, ratione officia et nulla ad? Doloribus placeat enim exercitationem minima et perferendis fuga similique consectetur quis ut!</p>
+        </section>
+      <section id="section1">
+        <h1>Intersection Observer</h1>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus
+          doloribus sequi, aut aperiam in vero deserunt, consequatur praesentium
+          facere officiis ab quibusdam accusantium fugit debitis quam ipsam
+          illo? Optio doloribus fuga impedit itaque! Itaque neque officiis, esse
+          assumenda sapiente laborum ex ab, at nemo non quaerat. Dignissimos
+          quod eius rerum. Lorem ipsum dolor sit amet consectetur adipisicing
+          elit. Nemo obcaecati, quae minima ad perferendis quaerat aspernatur
+          reiciendis vitae repudiandae, repellendus praesentium soluta facilis.
+          Minima quasi perspiciatis, at ullam facilis distinctio eos aliquid
+          eaque sunt quod laborum in esse voluptatum ea quae necessitatibus
+          reiciendis illum sit maxime ut? Amet, illo cupiditate?
+        </p>
+      </section>
+
+      <section id="section2">
+        <h1>Section 2</h1>
+        <p>
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Odit facilis
+          dolorum similique, blanditiis minus perspiciatis iusto eligendi
+          corrupti doloremque iure officiis adipisci a nisi voluptatum, aperiam
+          esse nesciunt recusandae ab molestias hic omnis soluta ratione. Magni
+          quis voluptates voluptate consectetur odio illo veritatis dolorum
+          molestiae totam. Totam culpa consequuntur pariatur sapiente? Cum
+          eveniet, corrupti doloremque eos repellendus officia nesciunt illo?
+        </p>
+      </section>
+
+      <section id="section3">
+        <h1>Section3</h1>
+        <p>
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolor natus
+          iste at ut temporibus aut magni quaerat necessitatibus, quis amet
+          tempora, soluta nemo maiores officia molestiae, eius ratione nihil.
+          Quibusdam architecto illo iste mollitia itaque fugit quam,
+          reprehenderit, sed numquam tempore quod, quos animi vel quaerat facere
+          quia expedita? Vitae amet sed veniam minima ratione nihil? Quia,
+          maiores facilis vitae in est aut expedita vel animi accusantium!
+          Veritatis quam recusandae dolores ex nulla ratione exercitationem
+          cumque sint nemo nam deserunt nisi facere repellat, fugit perspiciatis
+          quisquam dicta laborum! Non, eaque. Beatae voluptas eveniet nesciunt
+          at similique magni expedita, commodi vero!
+        </p>
+      </section>
+      <section>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis exercitationem dignissimos tenetur illum, vero laboriosam! Magni aperiam ullam ea quibusdam libero? Tempore alias amet adipisci sequi neque sint, voluptatem sed officia ea, ipsum recusandae molestias aperiam dolorem perferendis! Suscipit, corporis voluptate? Provident et laborum quam dolores veritatis. Eius deserunt hic, laboriosam voluptatibus soluta molestiae vero iure error quia consequuntur nihil esse blanditiis beatae sequi dolorum possimus repudiandae tenetur, neque quibusdam mollitia reiciendis, exercitationem ratione ex ducimus? Corrupti eius reprehenderit aperiam dolore. Dolor aliquid dolores ab non reprehenderit harum praesentium doloremque repellendus enim provident quos magnam, voluptatibus laboriosam, sunt ea aut!</p>
+      </section>
+    </main>
+    <script>
+      const sectiontwo = document.querySelector("#section2");
+      const observer = new IntersectionObserver((entries) => {
+        if (entries[0].isIntersecting) {
+          entries[0].target.classList.toggle("show");
+        }
+
+        console.log(entries);
+      }, {});
+      observer.observe(sectiontwo);
+    </script>
+  </body>
+</html>

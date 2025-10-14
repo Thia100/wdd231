@@ -1,4 +1,3 @@
-// ==================== PROJECT SECTION ==================== //
 document.getElementById("addProjectBtn").addEventListener("click", () => {
   const projectSection = document.getElementById("projectSection");
   const allProjects = projectSection.querySelectorAll(".projectGroup");

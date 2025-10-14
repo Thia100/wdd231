@@ -1,0 +1,20 @@
+@media screen and (min-width: 900px) {
+  .navMenuToggle {
+    display: none;
+  }
+  .navMenu {
+    position: static;
+    background: transparent;
+    height: auto;
+    width: auto;
+    flex-direction: row;
+    padding: 0;
+    gap: 40px;
+  }
+  .skillsWrapper .skillsList {
+    grid-template-columns: repeat(5, 1fr);
+  }
+  .contactFormWrapper{
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
