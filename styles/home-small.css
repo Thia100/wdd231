@@ -2,6 +2,10 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+body{
+    background: var(--background-color);
 }
 li {
   list-style: none;
@@ -10,14 +14,19 @@ p {
   line-height: 1.5;
   font-size: 17px;
 }
-
-/* :root{
-
-} */
+:root{
+    --primary-color: #7D4F50;
+    --secondary-color: #D1BE9C;
+    --background-color:#fbfbfb;
+    --heading-bg: #CC8B86;
+    --section-bg: #e2bd7d;
+    --active: #c69b50;
+}
 
 
 .navigation {
-  background: blanchedalmond;
+  background: var(--primary-color);
+  color: #fff;
   transform: translateX(-50%);
   position: fixed;
   z-index: 1000;
@@ -41,7 +50,7 @@ p {
   height: 100vh;
   width: 90vw;
 
-  background: red;
+  background: var(--secondary-color);
   border-radius: 20px;
   padding: 20px 0 0 50px;
 
@@ -68,17 +77,17 @@ p {
 }
 .nav-bar li a {
   text-decoration: none;
-  color: aqua;
+  color: #fff;
   font-size: 18px;
   transition: all .3s ease-in-out;
 }
 .nav-bar li a:hover{
-    color: black;
+    color: #fff;
 } 
 
 .nav-bar li.active a {
-  color: black;
-  border-bottom: 2px solid black;
+  color: #fff;
+  border-bottom: 2px solid #fff;
 }
 .nav-bar li {
   padding: 20px 0;
@@ -118,7 +127,7 @@ h1 {
 }
 h2 {
   text-align: center;
-  background: blue;
+  background: var(--heading-bg);
   border-radius: 12px;
   padding: 4px 0;
 }
@@ -132,7 +141,7 @@ h2 {
   margin: 24px 20px 20px 20px;
 }
 .section-container section {
-  background: red;
+  background: var(--section-bg);
   border-radius: 12px;
 }
 
@@ -151,7 +160,7 @@ h2 {
   justify-content: space-around;
   align-items: center;
   gap: 10px;
-  margin: 20px 8px 10px 8px;
+  margin: 20px 8px 30px 8px;
 }
 .course-nav button {
   max-width: 450px;
@@ -172,31 +181,34 @@ h2 {
 }
 
 #last-modified {
-  color: red;
+  color: #fff;
 }
 
+#course-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    margin: 0 32px;
+    text-align: center;
+    gap: 25px;
+}
 #course-container span {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin: 15px 8px 15px 8px;
   border-radius: 10px;
   padding: 4px 0;
-  background-color: green;
+  background: var(--secondary-color);
 }
 #course-container span.inComplete {
-  background: black;
-  color: wheat;
+  background: var(--active);
+  color: #fff;
 }
 
 #credits {
   text-align: center;
-  margin: 20px 0 10px 0;
+  margin: 20px 6px 10px 6px;
 }
 
 footer {
   padding: 10px 30px;
-  background: firebrick;
+  background: var(--primary-color);
   text-align: center;
   margin-top: 50px;
 }
@@ -208,7 +220,7 @@ footer {
   margin-bottom: 10px;
 }
 .social-links li {
-  background: violet;
+  background: var(--active);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -222,5 +234,5 @@ footer {
 }
 .social-links li a {
   text-decoration: none;
-  color: aliceblue;
+  color: #fff;
 }
