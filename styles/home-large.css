@@ -1,0 +1,36 @@
+@media screen and (min-width: 500px) {
+  .open,
+  .close {
+    display: none;
+  }
+  .nav-menu {
+    display: flex;
+    position: static;
+    visibility: visible;
+    opacity: 1;
+    height: auto;
+    width: auto;
+    padding: 0;
+    background: transparent;
+    transform: none;
+    top: 0;
+    left: 0;
+  }
+  .nav-bar {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    margin: 0;
+  }
+}
+
+@media screen and (min-width: 740px) {
+  .section-container {
+    grid-template-columns: 2fr 1fr;
+   column-gap: 15px;
+   row-gap: 40px;
+  }
+  .section-container section:nth-child(3){
+    grid-column: 1 / 3;
+  }
+}

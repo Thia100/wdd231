@@ -1,0 +1,116 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Edit this to fit page -->
+    <title>SVG practice</title>
+    <meta name="description" content="Home page for " />
+    <meta name="author" content="Gbolahan Diekola Fathia" />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="styles/normalize.css" />
+    <link rel="stylesheet" href="styles/home-small.css" />
+    <link rel="stylesheet" href="styles/home-large.css" />
+
+    <script src="scripts/date.js" defer></script>
+    <script src="scripts/course.js" type="module"></script>
+    <script src="scripts/navigation.js" defer></script>
+  </head>
+  <body>
+    <header>
+      <nav id="navigation" class="navigation">
+        <div class="logo">
+          <img src="images/logo.svg" alt="logo" width="30" height="30" /><span
+            >Gbolahan Fathia</span
+          >
+        </div>
+        <div class="nav-menu">
+          <i class="fa-solid fa-x close"></i>
+          <ul class="nav-bar">
+            <li class="active"><a href="#">Home</a></li>
+            <li><a href="#">Chamber</a></li>
+            <li><a href="#">Final</a></li>
+          </ul>
+        </div>
+        <i class="fa-solid fa-bars open"></i>
+      </nav>
+    </header>
+
+    <main>
+      <h1>Home</h1>
+
+      <div class="section-container">
+        <section>
+          <h2>About me</h2>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores
+            nesciunt iure obcaecati quia ipsa, cum necessitatibus quo doloremque
+            quas numquam mollitia ipsam deserunt neque, at labore dolorum
+            blanditiis sit odit. Quo totam eum impedit molestias, quae fuga
+            reiciendis ab voluptates nostrum quis aperiam praesentium iste
+            reprehenderit voluptatum animi voluptatem, cupiditate excepturi
+            nesciunt natus enim modi eaque id illum! Facilis fugiat, excepturi
+            distinctio reprehenderit blanditiis quaerat! Alias voluptatibus nemo
+            soluta beatae?
+          </p>
+        </section>
+
+        <section>
+          <h2>Student photo</h2>
+          <img
+            class="profile-img"
+            src="images/fathia.webp"
+            alt="Fathia's profile image"
+            width="250"
+            height="250"
+          />
+        </section>
+
+        <section>
+          <h2>Web Certificate Courses</h2>
+          <div class="course-nav">
+            <button id="all-btn">All</button>
+            <button id="cse-btn">CSE</button>
+            <button id="wdd-btn">WDD</button>
+          </div>
+          <div id="course-container"></div>
+          <p id="credits"></p>
+        </section>
+      </div>
+    </main>
+
+    <footer>
+      <ul class="social-links">
+        <li>
+          <a href="https://github.com/Thia100"
+            ><i class="fa-brands fa-github"></i
+          ></a>
+        </li>
+        <li>
+          <a href="https://www.linkedin.com/in/fathia-gbolahan"
+            ><i class="fa-brands fa-linkedin-in"></i
+          ></a>
+        </li>
+        <li>
+          <a href="https://www.instagram.com/thia_wip/"
+            ><i class="fa-brands fa-instagram"></i
+          ></a>
+        </li>
+        <li>
+          <a href="https://wa.me/2348154585224"
+            ><i class="fa-brands fa-whatsapp"></i
+          ></a>
+        </li>
+      </ul>
+
+      <p>
+        Gbolahan Diekola Fathia | Osun, Nigeria |
+        <span id="copyright-year"></span>
+      </p>
+      <p id="last-modified">hhhh</p>
+    </footer>
+  </body>
+</html>
