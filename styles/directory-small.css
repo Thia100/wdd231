@@ -1,0 +1,266 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+:root {
+  --header-font: "Abril Fatface", serif;
+  --body-font: "Lato", sans-serif;
+  --text-color:#fff;
+  --primary-color: #03045E;
+  --secondary-color: #0077B6;
+  --highlight-color: #90E0EF;
+  --card-bg: #CAF0F8;
+  --active: #00B4D8;
+}
+li {
+  list-style: none;
+}
+body {
+  font-family: var(--body-font);
+}
+p{
+  line-height: 1.5;
+}
+a{
+  text-decoration: none;
+}
+main{
+  max-width: 1400px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+
+
+.navigation {
+  background: var(--primary-color);
+  color: var(--text-color);
+
+  transform: translateX(-50%);
+  position: fixed;
+  z-index: 1000;
+  top: 12px;
+  left: 50%;
+
+  margin: 0 auto;
+  width: 95vw;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 24px;
+  border-radius: 40px;
+}
+.nav-menu {
+  position: absolute;
+  top: 42px;
+  left: 50px;
+
+  height: 100vh;
+  width: 90vw;
+
+  background: var(--primary-color);
+  border-radius: 20px;
+  padding: 20px 0 0 50px;
+
+  display: flex;
+  flex-direction: column;
+
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(-20px);
+
+  transition:
+    opacity 0.4s ease,
+    transform 0.4s ease,
+    visibility 0.4s;
+}
+.nav-menu.active {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
+}
+.nav-bar {
+  margin-top: 40px;
+  align-self: center;
+}
+.nav-bar li a {
+  color: var(--text-color);
+  font-size: 18px;
+  transition: all 0.2s ease;
+}
+.nav-bar li a:hover {
+  font-weight: 600;
+}
+.nav-bar li.active a {
+  border-bottom: 2px solid var(--active);
+}
+.nav-bar li {
+  padding: 20px 0;
+  transition: all 0.5s;
+}
+.logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 4px;
+}
+.logo span {
+  font-size: 20px;
+}
+.open,
+.close {
+  cursor: pointer;
+  font-size: 26px;
+  transition: transform 0.5s ease-in-out;
+  padding: 10px 0;
+}
+.open:hover,
+.close:hover {
+  transform: scale(1.05);
+}
+
+
+
+.layoutToggle {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 100px;
+  margin: 200px 0 80px 0;
+}
+.layoutToggle button {
+  background: var(--text-color);
+  color: var(--primary-color);
+  border: none;
+  border-radius: 8px;
+  padding: 15px 30px;
+  font-size: 20px;
+  cursor: pointer;
+  box-shadow: 0 5px #a4b0be;
+  transition: all 0.1s ease;
+}
+.layoutToggle button:active{
+  transform: translateY(4px);
+  box-shadow: 0 1px #e0eaf5;
+}
+#memberSection {
+  display: grid;
+  grid-template-columns: 1fr;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+  gap: 20px;
+  padding: 0 60px;
+}
+.memberCard {
+  padding: 6px;
+  background: var(--card-bg);
+  border-radius: 20px;
+  border: 3px solid var(--secondary-color);
+}
+.memberCard a{
+  color: var(--primary-color);
+  transition: color .3s;
+}
+.memberCard a:hover{
+  color: var(--secondary-color);
+  border-bottom: 1px solid var(--secondary-color);
+}
+#memberSection.gridMode {
+  display: grid;
+  grid-template-columns: 1fr;
+  row-gap: 80px;
+}
+#memberSection.gridMode .memberCard {
+  max-width: 550px;
+  max-height: 550px;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  text-align: center;
+}
+#memberSection.gridMode .memberCard p {
+  margin-top: 20px;
+}
+#memberSection.gridMode .memberCard img{
+    width: 200px;
+    height: 200px;
+    /* object-fit: cover; */
+}
+#memberSection.gridMode h2 {
+  display: none;
+}
+#memberSection.listMode {
+  display: flex;
+  flex-direction: column;
+  row-gap: 60px;
+}
+#memberSection.listMode .memberCard {
+  max-width: 1300px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  text-align: center;
+  gap: 15px;
+}
+#memberSection.listMode img {
+  display: none;
+}
+
+
+
+footer {
+  margin-top: 80px;
+  background: var(--primary-color);
+  color: var(--text-color);
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+  row-gap: 40px;
+}
+.chamberInfo {
+  display: flex;
+  flex-direction: column;
+}
+.chamberInfo a {
+  color: #fff;
+  transition: all 0.3s;
+  transition: all .3s;
+  margin-bottom: 8px;
+}
+.chamberInfo a:hover {
+  color: var(--active);
+  border-bottom: 1px solid var(--active);
+}
+.socialLinks {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+.socialLinks li {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  background: var(--secondary-color);
+  padding: 10px 13px;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: transform 0.3s;
+}
+.socialLinks li:hover {
+  transform: translateY(-8px);
+}
+.socialLinks li a {
+  color: var(--text-color);
+  transition: all 0.3s;
+}

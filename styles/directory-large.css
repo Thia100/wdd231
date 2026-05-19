@@ -1,0 +1,47 @@
+@media screen and (min-width: 670px) {
+  footer {
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    column-gap: 30px;
+  }
+
+  #memberSection.gridMode {
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 50px;
+  }
+  .open,
+  .close {
+    display: none;
+  }
+  .nav-menu {
+    display: flex;
+    position: static;
+    visibility: visible;
+    opacity: 1;
+    height: auto;
+    width: auto;
+    padding: 0;
+    background: transparent;
+    transform: none;
+    top: 0;
+    left: 0;
+  }
+  .nav-bar {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    margin: 0;
+  }
+}
+
+@media screen and (min-width: 1000px) {
+  #memberSection.gridMode {
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 80px;
+  }
+  #memberSection.listMode .memberCard {
+    flex-direction: row;
+    padding: 30px 15px;
+  }
+}
