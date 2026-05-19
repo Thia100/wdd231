@@ -6,12 +6,12 @@
 :root {
   --header-font: "Abril Fatface", serif;
   --body-font: "Lato", sans-serif;
-  --text-color:#fff;
-  --primary-color: #03045E;
-  --secondary-color: #0077B6;
-  --highlight-color: #90E0EF;
-  --card-bg: #CAF0F8;
-  --active: #00B4D8;
+  --text-color: #fff;
+  --primary-color: #03045e;
+  --secondary-color: #0077b6;
+  --highlight-color: #90e0ef;
+  --card-bg: #caf0f8;
+  --active: #00b4d8;
 }
 li {
   list-style: none;
@@ -19,17 +19,13 @@ li {
 body {
   font-family: var(--body-font);
 }
-p{
+p {
   line-height: 1.5;
 }
-a{
+a {
   text-decoration: none;
 }
-main{
-  max-width: 1400px;
-  width: 100%;
-  margin: 0 auto;
-}
+
 
 
 
@@ -123,6 +119,44 @@ main{
 
 
 
+
+.heroWrapper {
+  position: relative;
+  margin-top: 300px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+}
+.heroWrapper  h1{
+  color: var(--primary-color);
+  z-index: 2;
+  text-align: center;
+  
+}
+.custom-shape-divider-bottom-1779207780 {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+  fill: var(--active);
+}
+
+.custom-shape-divider-bottom-1779207780 svg {
+  position: relative;
+  display: block;
+  width: calc(100% + 1.3px);
+  height: 150px;
+}
+
+.custom-shape-divider-bottom-1779207780 .shape-fill {
+  fill: var(--card-bg);
+}
+
 .layoutToggle {
   display: flex;
   align-items: center;
@@ -141,7 +175,7 @@ main{
   box-shadow: 0 5px #a4b0be;
   transition: all 0.1s ease;
 }
-.layoutToggle button:active{
+.layoutToggle button:active {
   transform: translateY(4px);
   box-shadow: 0 1px #e0eaf5;
 }
@@ -152,7 +186,7 @@ main{
   justify-content: center;
   margin: 0 auto;
   gap: 20px;
-  padding: 0 60px;
+  padding: 0 90px;
 }
 .memberCard {
   padding: 6px;
@@ -160,11 +194,11 @@ main{
   border-radius: 20px;
   border: 3px solid var(--secondary-color);
 }
-.memberCard a{
+.memberCard a {
   color: var(--primary-color);
-  transition: color .3s;
+  transition: color 0.3s;
 }
-.memberCard a:hover{
+.memberCard a:hover {
   color: var(--secondary-color);
   border-bottom: 1px solid var(--secondary-color);
 }
@@ -188,10 +222,10 @@ main{
 #memberSection.gridMode .memberCard p {
   margin-top: 20px;
 }
-#memberSection.gridMode .memberCard img{
-    width: 200px;
-    height: 200px;
-    /* object-fit: cover; */
+#memberSection.gridMode .memberCard img {
+  width: 200px;
+  height: 200px;
+  /* object-fit: cover; */
 }
 #memberSection.gridMode h2 {
   display: none;
@@ -215,11 +249,10 @@ main{
   display: none;
 }
 
-
-
 footer {
-  margin-top: 80px;
+  display: grid;
   background: var(--primary-color);
+  margin-top: 80px;
   color: var(--text-color);
   display: flex;
   flex-direction: column;
@@ -233,7 +266,6 @@ footer {
 .chamberInfo a {
   color: #fff;
   transition: all 0.3s;
-  transition: all .3s;
   margin-bottom: 8px;
 }
 .chamberInfo a:hover {
