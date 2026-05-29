@@ -1,36 +1,6 @@
 [
   {
-    "id": 2,
-    "companyName": "Green Harvest Farms",
-    "address": "45 Ahmadu Bello Way, Kaduna, Nigeria",
-    "phone": "+234-809-555-1122",
-    "website": "https://www.greenharvestfarms.ng",
-    "image": "greenharvest.webp",
-    "membershipLevel": 2,
-    "industry": "Agriculture"
-  },
-  {
-    "id": 3,
-    "companyName": "Skyline Fashion House",
-    "address": "8 Allen Avenue, Ikeja, Lagos, Nigeria",
-    "phone": "+234-813-777-8899",
-    "website": "https://www.skylinefashion.com",
-    "image": "skylinefashion.webp",
-    "membershipLevel": 1,
-    "industry": "Fashion"
-  },
-  {
-    "id": 4,
-    "companyName": "BrightPath Academy",
-    "address": "101 University Road, Ibadan, Nigeria",
-    "phone": "+234-802-444-7766",
-    "website": "https://www.brightpathacademy.edu",
-    "image": "brightpathacademy.webp",
-    "membershipLevel": 3,
-    "industry": "Education"
-  },
-  {
-    "id": 5,
+    "id": 1,
     "companyName": "OceanView Travels",
     "address": "22 Marina Road, Victoria Island, Lagos, Nigeria",
     "phone": "+234-815-999-2233",
@@ -40,17 +10,7 @@
     "industry": "Travel & Tourism"
   },
   {
-    "id": 6,
-    "companyName": "PrimeCare Clinic",
-    "address": "17 Garki Central Area, Abuja, Nigeria",
-    "phone": "+234-806-123-9900",
-    "website": "https://www.primecareclinic.ng",
-    "image": "primecareclinic.webp",
-    "membershipLevel": 1,
-    "industry": "Healthcare"
-  },
-  {
-    "id": 8,
+    "id": 2,
     "companyName": "BlueWave Logistics",
     "address": "31 Port Harcourt Road, Aba, Nigeria",
     "phone": "+234-807-221-4455",
@@ -60,7 +20,7 @@
     "industry": "Logistics"
   },
   {
-    "id": 9,
+    "id": 3,
     "companyName": "Elite Auto Works",
     "address": "77 Airport Road, Kano, Nigeria",
     "phone": "+234-811-908-7766",
@@ -70,17 +30,7 @@
     "industry": "Automobile"
   },
   {
-    "id": 10,
-    "companyName": "Sunrise Bakery",
-    "address": "5 Unity Street, Enugu, Nigeria",
-    "phone": "+234-805-667-2234",
-    "website": "https://www.sunrisebakery.com",
-    "image": "sunrisebakery.webp",
-    "membershipLevel": 1,
-    "industry": "Food & Beverage"
-  },
-  {
-    "id": 11,
+    "id": 4,
     "companyName": "Vertex Properties",
     "address": "18 Banana Island Road, Lagos, Nigeria",
     "phone": "+234-803-991-3344",
@@ -90,7 +40,7 @@
     "industry": "Real Estate"
   },
   {
-    "id": 12,
+    "id": 5,
     "companyName": "SparkTech Electronics",
     "address": "29 Computer Village, Ikeja, Lagos, Nigeria",
     "phone": "+234-812-345-8890",
@@ -100,37 +50,7 @@
     "industry": "Electronics"
   },
   {
-    "id": 13,
-    "companyName": "Royal Events Center",
-    "address": "64 Independence Layout, Enugu, Nigeria",
-    "phone": "+234-814-567-1112",
-    "website": "https://www.royaleventscenter.com",
-    "image": "royalevents.webp",
-    "membershipLevel": 1,
-    "industry": "Events"
-  },
-  {
-    "id": 14,
-    "companyName": "Peak Fitness Hub",
-    "address": "14 Herbert Macaulay Way, Yaba, Lagos, Nigeria",
-    "phone": "+234-816-788-2233",
-    "website": "https://www.peakfitnesshub.ng",
-    "image": "peakfitness.webp",
-    "membershipLevel": 2,
-    "industry": "Fitness"
-  },
-  {
-    "id": 15,
-    "companyName": "NovaPrint Studios",
-    "address": "3 Market Road, Onitsha, Nigeria",
-    "phone": "+234-818-112-5566",
-    "website": "https://www.novaprintstudios.com",
-    "image": "novaprint.webp",
-    "membershipLevel": 1,
-    "industry": "Printing"
-  },
-  {
-    "id": 16,
+    "id": 6,
     "companyName": "SilverLine Security",
     "address": "88 Central Business District, Abuja, Nigeria",
     "phone": "+234-809-442-7766",
@@ -140,7 +60,7 @@
     "industry": "Security Services"
   },
   {
-    "id": 17,
+    "id": 7,
     "companyName": "EcoLight Energy",
     "address": "25 Sapele Road, Benin City, Nigeria",
     "phone": "+234-817-900-5544",
@@ -150,17 +70,7 @@
     "industry": "Renewable Energy"
   },
   {
-    "id": 18,
-    "companyName": "Crystal Beauty Spa",
-    "address": "11 Bodija Estate, Ibadan, Nigeria",
-    "phone": "+234-815-220-8833",
-    "website": "https://www.crystalbeautyspa.ng",
-    "image": "crystalbeauty.webp",
-    "membershipLevel": 1,
-    "industry": "Beauty & Wellness"
-  },
-  {
-    "id": 19,
+    "id": 8,
     "companyName": "NextGen Tutors",
     "address": "40 Zaria Road, Jos, Nigeria",
     "phone": "+234-813-775-9900",
@@ -168,25 +78,5 @@
     "image": "nextgentutors.webp",
     "membershipLevel": 2,
     "industry": "Tutoring Services"
-  },
-  {
-    "id": 20,
-    "companyName": "Metro Furniture Ltd",
-    "address": "6 Aba Express Road, Port Harcourt, Nigeria",
-    "phone": "+234-811-224-7788",
-    "website": "https://www.metrofurniture.ng",
-    "image": "metrofurniture.webp",
-    "membershipLevel": 3,
-    "industry": "Furniture"
-  },
-  {
-    "id": 21,
-    "companyName": "CloudNet Communications",
-    "address": "52 Adeola Odeku Street, Victoria Island, Lagos, Nigeria",
-    "phone": "+234-802-998-4455",
-    "website": "https://www.cloudnetcommunications.com",
-    "image": "cloudnet.webp",
-    "membershipLevel": 2,
-    "industry": "Telecommunications"
   }
 ]

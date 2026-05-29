@@ -1,0 +1,51 @@
+@media screen and (min-width: 670px) {
+  .heroContainer {
+    min-height: 60vh;
+  }
+
+  .open,
+  .close {
+    display: none;
+  }
+  .nav-menu {
+    display: flex;
+    position: static;
+    visibility: visible;
+    opacity: 1;
+    height: auto;
+    width: auto;
+    padding: 0;
+    background: transparent;
+    transform: none;
+    top: 0;
+    left: 0;
+  }
+  .nav-bar {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    margin: 0;
+  }
+
+  
+
+  footer {
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    column-gap: 30px;
+  }
+}
+@media screen and (min-width: 900px) {
+  #spotlightContainer{
+    flex-direction: row;
+  }
+  .weatherSection {
+    grid-template-columns: 1fr 2fr;
+    align-items: start;
+  }
+
+  #forecastWeatherContainer {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
