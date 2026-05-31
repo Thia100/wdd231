@@ -26,10 +26,7 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
     />
 
-    <meta
-      property="og:title"
-      content="Join Lagos state chamber of commerce"
-    />
+    <meta property="og:title" content="Join Lagos state chamber of commerce" />
     <meta
       property="og:description"
       content="Connect with the official Lagos State Chamber of Commerce (LCCI). Become a verified businesses, connect with industry leaders, and trusted local partners."
@@ -72,81 +69,157 @@
         <i class="fa-solid fa-bars open"></i>
       </nav>
     </header>
-    <div class="hero">
-        <h1>Join the Lagos Chamber</h1>
-    </div>
     <main>
+        <div class="hero">
+            <h1>Join the Lagos Chamber</h1>
+        </div>
+      <div class="main">
         <form action="thankyou.html" method="get">
-            <div class="nameInfo">
-                <div class="formInput">
-                    <label for="firstName">First Name</label>
-                    <input required type="text" name="firstName" title="First Name" autocomplete="given-name" id="firstName" placeholder="Fathia">
-                </div>
-                <div class="formInput">
-                    <label for="lastName">Last Name</label>
-                    <input required type="text" name="lastName" title="Last Name" autocomplete="family-name" id="lastName" placeholder="Gbolahan">
-                </div>
-            </div>
-            
-            <div class="contactInfo">
-                <div class="formInput">
-                    <label for="emailAddress">Email address</label>
-                    <input required type="email" name="emailAddress" title="Email Address" autocomplete="email" id="emailAddress" placeholder="thegbolahanfathia@gmail.com">
-                </div>
-                <div class="formInput">
-                    <label for="phoneNumber">Phone Number</label>
-                    <input required type="tel" name="phoneNumber" title="Phone Number" autocomplete="tel" id="phoneNumber" placeholder="+2348154585224">
-                </div>
-            </div>
-
+          <div class="nameInfo">
             <div class="formInput">
-                <label for="organizationName">Organization's Name</label>
-                <input required type="text" name="organizationName" title="Organization Name" autocomplete="organization" id="organizationName">
+              <label for="firstName">First Name</label>
+              <input
+                required
+                type="text"
+                name="firstName"
+                title="First Name"
+                autocomplete="given-name"
+                id="firstName"
+                placeholder="Fathia"
+              />
             </div>
             <div class="formInput">
-                <label for="organizationalTitle">Organizational title</label>
-                <input required type="text" name="organizationalTitle" title="Organizational Title" autocomplete="organization-title" id="organizationalTitle" pattern="^[A-Za-z\s-]{7,}$">
+              <label for="lastName">Last Name</label>
+              <input
+                required
+                type="text"
+                name="lastName"
+                title="Last Name"
+                autocomplete="family-name"
+                id="lastName"
+                placeholder="Gbolahan"
+              />
             </div>
+          </div>
 
+          <div class="contactInfo">
             <div class="formInput">
-                <label for="businessDescription">Business Description</label>
-                <textarea title="Business Description" name="businessDescription" id="businessDescription"></textarea>
+              <label for="emailAddress">Email address</label>
+              <input
+                required
+                type="email"
+                name="emailAddress"
+                title="Email Address"
+                autocomplete="email"
+                id="emailAddress"
+                placeholder="thegbolahanfathia@gmail.com"
+              />
             </div>
-
-            <div class="membershipLevel">
-                <p>Select Membership Level</p>
-
-                <div>
-                    <input type="radio" id="npLevel" name="membershipLevel" value="npLevel">
-                    <label for="npLevel">NP Membership is for non profit organizations and there is no fee (np)</label>
-                </div>
-                <div>
-                    <input type="radio" id="bronzeLevel" name="membershipLevel" value="bronzeLevel">
-                    <label for="bronzeLevel">Bronze Membership (bronze)</label>
-                </div>
-                <div>
-                    <input type="radio" id="silverLevel" name="membershipLevel" value="silverLevel">
-                    <label for="silverLevel">Silver Membership (silver)</label>
-                </div>
-                <div>
-                    <input type="radio" id="goldLevel" name="membershipLevel" value="goldLevel">
-                    <label for="goldLevel">Gold Membership (gold)</label>
-                </div>
+            <div class="formInput">
+              <label for="phoneNumber">Phone Number</label>
+              <input
+                required
+                type="tel"
+                name="phoneNumber"
+                title="Phone Number"
+                autocomplete="tel"
+                id="phoneNumber"
+                placeholder="+2348154585224"
+              />
             </div>
+          </div>
 
-            <input type="hidden" id="timestamp" name="timestamp">
-            <button type="submit" id="submitBtn">Join</button>
+          <div class="formInput">
+            <label for="organizationName">Organization's Name</label>
+            <input
+              required
+              type="text"
+              name="organizationName"
+              title="Organization Name"
+              autocomplete="organization"
+              id="organizationName"
+            />
+          </div>
+          <div class="formInput">
+            <label for="organizationalTitle">Organizational title</label>
+            <input
+              required
+              type="text"
+              name="organizationalTitle"
+              title="Organizational Title"
+              autocomplete="organization-title"
+              id="organizationalTitle"
+              pattern="^[A-Za-z\s-]{7,}$"
+            />
+          </div>
+
+          <div class="formInput">
+            <label for="businessDescription">Business Description</label>
+            <textarea
+              title="Business Description"
+              name="businessDescription"
+              id="businessDescription"
+            ></textarea>
+          </div>
+
+          <div class="membershipLevel">
+            <p>Select Membership Level</p>
+
+            <div>
+              <input
+                type="radio"
+                id="npLevel"
+                name="membershipLevel"
+                value="npLevel"
+              />
+              <label for="npLevel"
+                >NP Membership is for non profit organizations and there is no
+                fee (np)</label
+              >
+            </div>
+            <div>
+              <input
+                type="radio"
+                id="bronzeLevel"
+                name="membershipLevel"
+                value="bronzeLevel"
+              />
+              <label for="bronzeLevel">Bronze Membership (bronze)</label>
+            </div>
+            <div>
+              <input
+                type="radio"
+                id="silverLevel"
+                name="membershipLevel"
+                value="silverLevel"
+              />
+              <label for="silverLevel">Silver Membership (silver)</label>
+            </div>
+            <div>
+              <input
+                type="radio"
+                id="goldLevel"
+                name="membershipLevel"
+                value="goldLevel"
+              />
+              <label for="goldLevel">Gold Membership (gold)</label>
+            </div>
+          </div>
+
+          <input type="hidden" id="timestamp" name="timestamp" />
+          <button type="submit" id="submitBtn">Join</button>
         </form>
 
         <div class="memberLevelSection">
-            <h2>Member Levels</h2>
-            <div id="memberLevelContainer"></div>
+          <h2>Member Levels</h2>
+          <div id="memberLevelContainer"></div>
         </div>
 
         <dialog id="dialog"></dialog>
+      </div>
     </main>
     <footer>
-        <div class="chamberInfo">
+      <div class="chamberInfo">
         <p>Lagos chamber of commerce</p>
         <p>No 2, Ojota,</p>
         <p>Lagos state, Nigeria</p>
