@@ -19,15 +19,7 @@ li {
 body {
   font-family: var(--body-font);
 }
-/* h2,
-h3 {
-  color: var(--primary-color);
-  margin-bottom: 25px;
-}
-p {
-  line-height: 1.5;
-  font-size: 1.15rem;
-} */
+
 a {
   text-decoration: none;
 }
@@ -120,11 +112,23 @@ a {
   transform: scale(1.05);
 }
 
+
+
+
+.hero{
+    background-color: var(--primary-color);
+    padding: 150px 0 20px 0;    
+    text-align: center;
+    color: var(--text-color);
+}
+h1{
+   font-size: clamp(1.5rem, 1.136rem + 1.82vw, 2.5rem);
+}
 main {
   max-width: 1200px;
   width: 100%;
   padding: 20px;
-  margin: 160px auto 0 auto;
+  margin: 120px auto 0 auto;
 }
 .formInput {
   display: flex;
