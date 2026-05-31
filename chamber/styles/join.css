@@ -1,0 +1,321 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+:root {
+  --header-font: "Abril Fatface", serif;
+  --body-font: "Lato", sans-serif;
+  --text-color: #fff;
+  --primary-color: #03045e;
+  --secondary-color: #0077b6;
+  --highlight-color: #90e0ef;
+  --card-bg: #caf0f8;
+  --active: #00b4d8;
+}
+li {
+  list-style: none;
+}
+body {
+  font-family: var(--body-font);
+}
+/* h2,
+h3 {
+  color: var(--primary-color);
+  margin-bottom: 25px;
+}
+p {
+  line-height: 1.5;
+  font-size: 1.15rem;
+} */
+a {
+  text-decoration: none;
+}
+
+.navigation {
+  background: var(--primary-color);
+  color: var(--text-color);
+
+  transform: translateX(-50%);
+  position: fixed;
+  z-index: 1000;
+  top: 12px;
+  left: 50%;
+
+  margin: 0 auto;
+  width: 95vw;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 24px;
+  border-radius: 40px;
+}
+.nav-menu {
+  position: absolute;
+  top: 42px;
+  left: 50px;
+
+  height: calc(100vh - 42px);
+  width: 90vw;
+
+  background: var(--primary-color);
+  border-radius: 20px;
+  padding: 20px 0 0 50px;
+
+  display: flex;
+  flex-direction: column;
+
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(-20px);
+
+  transition:
+    opacity 0.4s ease,
+    transform 0.4s ease,
+    visibility 0.4s;
+}
+.nav-menu.active {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
+}
+.nav-bar {
+  margin-top: 40px;
+  align-self: center;
+}
+.nav-bar li a {
+  color: var(--text-color);
+  font-size: 1.15rem;
+  transition: font-weight 0.2s ease;
+}
+.nav-bar li a:hover {
+  font-weight: 600;
+}
+.nav-bar li.active a {
+  border-bottom: 2px solid var(--active);
+}
+.nav-bar li {
+  padding: 20px 0;
+  transition: all 0.5s;
+}
+.logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 4px;
+}
+.logo span {
+  font-size: 1.2rem;
+}
+.open,
+.close {
+  cursor: pointer;
+  font-size: 1.45rem;
+  transition: transform 0.5s ease-in-out;
+  padding: 10px 0;
+}
+.open:hover,
+.close:hover {
+  transform: scale(1.05);
+}
+
+main {
+  max-width: 1200px;
+  width: 100%;
+  padding: 20px;
+  margin: 160px auto 0 auto;
+}
+.formInput {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  margin-bottom: 20px;
+}
+input,
+textarea {
+  border-radius: 10px;
+  padding: 6px 10px;
+  border: 1px solid #5c5c5c;
+}
+
+.membershipLevel p {
+  font-size: 1.5rem;
+  margin: 0 0 8px 20px;
+}
+.membershipLevel div {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 10px;
+}
+
+#submitBtn {
+  display: block;
+  width: 100%;
+  margin: 70px auto 20px auto;
+  padding: 12px 0;
+  cursor: pointer;
+
+  background: var(--secondary-color);
+  color: var(--text-color);
+
+  border: none;
+  border-radius: 12px;
+  transition: all 0.3s ease;
+
+  font-size: 1.35rem;
+  font-weight: 700;
+}
+#submitBtn:hover,
+.levelCard button:hover {
+  background: var(--active);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0, 119, 182, 0.3);
+}
+#submitBtn:active,
+.levelCard button:active {
+  transform: translateY(0);
+}
+
+
+
+.memberLevelSection{
+    margin-top: 100px;
+}
+h2{
+    text-align: center;
+    margin-bottom: 10px;
+}
+#memberLevelContainer {
+  max-width: 500px;
+  width: 100%;
+  margin: 0 auto;
+}
+.levelCard {
+  min-height: 150px;
+  margin: 0 auto 20px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  background: var(--card-bg);
+  border-radius: 10px;
+}
+.levelCard:nth-child(1) {
+  animation: loadIn 0.2s ease-in;
+}
+.levelCard:nth-child(2) {
+  animation: loadIn 0.4s ease-in;
+}
+.levelCard:nth-child(3) {
+  animation: loadIn 0.6s ease-in;
+}
+.levelCard:nth-child(4) {
+  animation: loadIn 0.8s ease-in;
+}
+
+@keyframes loadIn {
+  0% {
+    opacity: 0;
+    transform: translateX(40px);
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+    transform: translateY(0);
+  }
+}
+.levelCard button {
+  padding: 8px 10px;
+  cursor: pointer;
+  border-radius: 12px;
+
+  background: var(--secondary-color);
+  color: var(--text-color);
+
+  border: none;
+  border-radius: 12px;
+  transition: all 0.3s ease;
+
+  font-size: 1.15rem;
+}
+
+
+dialog{
+    padding: 10px;
+    max-width: 350px;
+    width: 100%;
+    margin: 100px auto 0 auto;
+    border: 2px solid var(--primary-color);
+    border-radius: 12px;
+}
+dialog ul{
+    margin-top: 10px;
+}
+dialog ul li{
+    list-style: disc;
+    color: var(--secondary-color);
+    margin-top: 2px;
+}
+.dialogHeader{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 0 auto 10px auto;
+}
+.closeModal{
+    border: none;
+    background: none;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+
+
+
+footer {
+  background: var(--primary-color);
+  margin-top: 80px;
+  color: var(--text-color);
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+  row-gap: 40px;
+}
+.chamberInfo {
+  display: flex;
+  flex-direction: column;
+}
+.chamberInfo a {
+  color: #fff;
+  transition: all 0.3s;
+  margin-bottom: 8px;
+}
+
+.socialLinks {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+.socialLinks li {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  background: var(--secondary-color);
+  padding: 10px 13px;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: transform 0.3s;
+}
+.socialLinks li:hover {
+  transform: translateY(-8px);
+}
+.socialLinks li a {
+  color: var(--text-color);
+  transition: all 0.3s;
+}

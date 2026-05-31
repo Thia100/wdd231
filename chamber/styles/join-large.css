@@ -1,8 +1,4 @@
 @media screen and (min-width: 670px) {
-  .heroContainer {
-    min-height: 60vh;
-  }
-
   .open,
   .close {
     display: none;
@@ -34,16 +30,26 @@
     column-gap: 30px;
   }
 }
-@media screen and (min-width: 900px) {
-  #spotlightContainer {
-    flex-direction: row;
-  }
-  .weatherSection {
-    grid-template-columns: 1fr 2fr;
-    align-items: start;
-  }
 
-  #forecastWeatherContainer {
-    grid-template-columns: repeat(3, 1fr);
+@media screen and (min-width: 700px) {
+  main {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 60px;
+  }
+  #memberLevelContainer {
+    margin: 0 auto;
+  }
+  .nameInfo,
+  .contactInfo {
+    display: flex;
+    gap: 10px;
+  }
+  .nameInfo .formInput,
+  .contactInfo .formInput {
+    flex: 1;
+  }
+  .memberLevelSection {
+    margin-top: 0;
   }
 }

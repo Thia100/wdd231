@@ -1,0 +1,50 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+:root {
+  --header-font: "Abril Fatface", serif;
+  --body-font: "Lato", sans-serif;
+  --text-color: #fff;
+  --primary-color: #03045e;
+  --secondary-color: #0077b6;
+  --highlight-color: #90e0ef;
+  --card-bg: #caf0f8;
+  --active: #00b4d8;
+}
+body {
+  font-family: var(--body-font);
+}
+
+main{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 100vh;
+    padding: 20px;
+}
+main div{
+    background: var(--card-bg);
+    color: var(--primary-color);
+    padding: 10px;
+    border-radius: 12px;
+    max-width: 400px;
+    animation: pulse 5s ease-in-out infinite;
+}
+@keyframes pulse{
+    0%{
+        transform: scale(1);
+    }
+    50%{
+        transform: scale(1.1);
+    }
+     0%{
+        transform: scale(1);
+    }
+}
+p{
+    line-height: 1.5;
+    font-size: 1.2rem;
+}

@@ -1,0 +1,51 @@
+[
+  {
+    "id": "np",
+    "name": "NP Membership",
+    "cost": 0,
+    "description": "Membership for non-profit organizations. There is no membership fee.",
+    "benefits": [
+      "Access to chamber resources",
+      "Networking opportunities",
+      "Community engagement"
+    ]
+  },
+  {
+    "id": "bronze",
+    "name": "Bronze Membership",
+    "cost": 100,
+    "description": "Entry-level paid membership with foundational benefits.",
+    "benefits": [
+      "Access to special events",
+      "Basic training opportunities",
+      "Member directory listing",
+      "Event discounts"
+    ]
+  },
+  {
+    "id": "silver",
+    "name": "Silver Membership",
+    "cost": 250,
+    "description": "Mid-tier membership with additional benefits beyond Bronze.",
+    "benefits": [
+      "All Bronze benefits",
+      "Enhanced training opportunities",
+      "Increased event discounts",
+      "Advertising opportunities"
+    ]
+  },
+  {
+    "id": "gold",
+    "name": "Gold Membership",
+    "cost": 500,
+    "description": "Highest membership level with the greatest benefits.",
+    "benefits": [
+      "All Silver benefits",
+      "Spotlight position on the home page",
+      "Priority advertising opportunities",
+      "Exclusive special events",
+      "Maximum event discounts",
+      "Premium training programs"
+    ]
+  }
+]

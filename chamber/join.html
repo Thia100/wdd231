@@ -1,0 +1,178 @@
+<!doctype html>
+<html lang="en-US">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="Fathia Diekola Gbolahan" />
+    <meta
+      name="description"
+      content="Connect with the official Lagos State Chamber of Commerce (LCCI). Become a verified businesses, connect with industry leaders, and trusted local partners."
+    />
+
+    <script src="scripts/date.js" defer></script>
+    <script src="scripts/navigation.js" defer></script>
+    <script src="scripts/display-membership-level.js" type="module"></script>
+
+    <!--Abril Fatface - header | lato - body  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Lato:wght@100;400;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    />
+
+    <meta
+      property="og:title"
+      content="Join | Lagos state chamber of commerce"
+    />
+    <meta
+      property="og:description"
+      content="Connect with the official Lagos State Chamber of Commerce (LCCI). Become a verified businesses, connect with industry leaders, and trusted local partners."
+    />
+    <meta
+      property="og:image"
+      content="https://thia100.github.io/wdd231/chamber/images/discovery-og-image.webp"
+    />
+    <meta
+      property="og:url"
+      content="https://thia100.github.io/wdd231/chamber/join.html"
+    />
+
+    <link rel="stylesheet" href="styles/normalize.css" />
+    <link rel="stylesheet" href="styles/join.css" />
+    <link rel="stylesheet" href="styles/join-large.css" />
+    <link rel="icon" href="../images/chamber-favicon.ico" />
+    <title>Join | Lagos state chamber of commerce</title>
+  </head>
+  <body>
+    <header>
+      <nav id="navigation" class="navigation">
+        <div class="logo">
+          <img
+            src="images/chamber-logo.svg"
+            alt="Lagos chamber logo"
+            width="30"
+            height="30"
+          /><span>Lagos chamber</span>
+        </div>
+        <div class="nav-menu">
+          <i class="fa-solid fa-x close"></i>
+          <ul class="nav-bar">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Discover</a></li>
+            <li><a href="#">Directory</a></li>
+            <li class="active"><a href="#">Join</a></li>
+          </ul>
+        </div>
+        <i class="fa-solid fa-bars open"></i>
+      </nav>
+    </header>
+    <main>
+        <form action="thankyou.html" method="get">
+            <div class="nameInfo">
+                <div class="formInput">
+                    <label for="firstName">First Name</label>
+                    <input required type="text" name="firstName" title="First Name" autocomplete="given-name" id="firstName">
+                </div>
+                <div class="formInput">
+                    <label>Last Name</label>
+                    <input required type="text" name="lastName" title="Last Name" autocomplete="family-name" id="lastName">
+                </div>
+            </div>
+            
+            <div class="contactInfo">
+                <div class="formInput">
+                    <label for="emailAddress">Email address</label>
+                    <input required type="text" name="emailAddress" title="Email Address" autocomplete="email" id="emailAddress">
+                </div>
+                <div class="formInput">
+                    <label for="phoneNumber">Phone Number</label>
+                    <input required type="tel" name="phoneNumber" title="Phone Number" autocomplete="tel" id="phoneNumber">
+                </div>
+            </div>
+
+            <div class="formInput">
+                <label>Organization's Name</label>
+                <input required type="text" name="organizationName" title="Organization Name" autocomplete="organization">
+            </div>
+            <div class="formInput">
+                <label for="organizationalTitle">Organizational title</label>
+                <input required type="text" name="organizationalTitle" title="Organizational Title" autocomplete="organization-title" id="organizationalTitle" pattern="^[A-Za-z\s-]{7,}$">
+            </div>
+
+            <div class="formInput">
+                <label>Business Description</label>
+                <textarea title="Business Description" name="businessDescription"></textarea>
+            </div>
+
+            <div class="membershipLevel">
+                <p>Select Membership Level</p>
+
+                <div>
+                    <input type="radio" id="npLevel" name="membershipLevel" value="npLevel">
+                    <label for="npLevel">NP Membership is for non profit organizations and there is no fee (np)</label>
+                </div>
+                <div>
+                    <input type="radio" id="bronzeLevel" name="membershipLevel" value="bronzeLevel">
+                    <label for="bronzeLevel">Bronze Membership (bronze)</label>
+                </div>
+                <div>
+                    <input type="radio" id="silverLevel" name="membershipLevel" value="silverLevel">
+                    <label for="silverLevel">Silver Membership (silver)</label>
+                </div>
+                <div>
+                    <input type="radio" id="goldLevel" name="membershipLevel" value="goldLevel">
+                    <label for="goldLevel">Gold Membership (gold)</label>
+                </div>
+            </div>
+
+            <input type="hidden" id="timestamp" name="timestamp">
+            <button type="submit" id="submitBtn">Join</button>
+        </form>
+
+        <div class="memberLevelSection">
+            <h2>Member Levels</h2>
+            <div id="memberLevelContainer"></div>
+        </div>
+
+        <dialog id="dialog"></dialog>
+    </main>
+    <footer>
+        <div class="chamberInfo">
+        <p>Lagos chamber of commerce</p>
+        <p>No 2, Ojota,</p>
+        <p>Lagos state, Nigeria</p>
+        <a href="mailto:thegbolahanfathia@gmail.com">lagoschamber@gmail.com</a>
+        <a href="tel:+2348154585224">+(234) 815-458-5224</a>
+      </div>
+      <ul class="socialLinks">
+        <li>
+          <a href="#" aria-label="instagram link"
+            ><i class="fa-brands fa-instagram"></i
+          ></a>
+        </li>
+        <li>
+          <a href="#" aria-label="facebook link"
+            ><i class="fa-brands fa-facebook-f"></i
+          ></a>
+        </li>
+        <li>
+          <a href="#" aria-label="youtube link"
+            ><i class="fa-brands fa-youtube"></i
+          ></a>
+        </li>
+      </ul>
+      <div class="studentInfo">
+        <p>Gbolahan Diekola Fathia</p>
+        <p>WDD231 class project</p>
+        <p><span id="copyright-year"></span> | Lagos chamber</p>
+        <p id="last-modified"></p>
+      </div>
+    </footer>
+  </body>
+</html>
