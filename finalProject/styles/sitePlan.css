@@ -1,0 +1,82 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --background-color: #F1F5F9;
+  /* --primary-color: #334155; */
+  --secondary-color: #0EA5E9;
+  --text-color: #1E293B;
+  --accent-color: #FF6B6B;
+  --header-font: ;
+  --text-font: ;
+}
+
+body{
+  background: var(--background-color);
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100vh;
+  background: var(--primary-color);
+  padding: 20px;
+}
+
+article {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  max-width: 1000px;
+  width: 100%;
+}
+
+.dropDownSection {
+  /* background: var(--secondary-color); */
+  max-width: 700px;
+  margin: 0 auto;
+  width: 100%;
+}
+.openClose {
+  display: flex;
+  justify-content: space-between;
+  background: white;
+  padding: 10px;
+  cursor: pointer;
+}
+.dropDownContainer {
+  background: rgb(213, 212, 212);
+  margin-bottom: 10px;
+}
+.dropDownContent {
+  padding: 10px;
+  display: none;
+  animation: slideDown ease-out 3s;
+}
+.dropDownContent.show {
+  display: block;
+  animation: slideUp;
+}
+
+@keyframes slideUp {
+  0% {
+    transform: translateY();
+  }
+  100% {
+    transform: translateY();
+  }
+}
+@keyframes slideDown {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(-2);
+  }
+}
