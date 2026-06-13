@@ -1,0 +1,98 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --primary-color: red;
+  --secondary-color: ;
+  --background-color: ;
+  --text-color: ;
+  --heading-color: ;
+  --heading-font: "Open Sans", sans-serif;
+  --text-font: "Roboto", sans-serif;
+}
+body {
+  background-color: var(--background-color);
+  color: var(--text-color);
+  font-family: var(--text-font);
+}
+h1,
+h2,
+h3,
+h4 {
+  font-family: var(--heading-font);
+  color: var(--heading-color);
+}
+p {
+  line-height: 1.5;
+}
+a {
+  text-decoration: none;
+}
+li {
+  list-style: none;
+}
+.container {
+  margin: 0 auto;
+  max-width: 1200px;
+  width: 100%;
+  padding: 20px;
+}
+
+nav {
+  background: whitesmoke;
+  max-width: 1200px;
+  width: 100%;
+  padding: 20px;
+  margin: 0 auto;
+  border-radius: 30px;
+
+  display: fixed;
+  z-index: 4;
+  top: 0;
+  bottom: 0;
+}
+.navMenu {
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+}
+.logo {
+  max-width: 100px;
+  width: 100%;
+  height: auto;
+}
+.navList {
+  display: flex;
+  align-items: center;
+}
+
+.hero {
+  background: red;
+}
+.heroSection {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 40px;
+}
+.heroText {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.heroText a {
+  text-align: center;
+}
+.heroImg {
+  max-width: 350px;
+  width: 100%;
+  height: auto;
+  margin: 0 auto;
+}
+
+.quotesSection {
+  text-align: center;
+  padding: 100px 20px;
+}
