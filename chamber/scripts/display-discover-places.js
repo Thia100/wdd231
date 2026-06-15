@@ -11,14 +11,15 @@ function displayPlaces(data) {
         
             <div class="placeContent">
                 <figure>
-                    <img src="${place.photo_url}" width="450" height="450"/>
-                    <figcaption>Image of ${place.name}<figcaption/>
+                    <img src="${place.photo_url}" alt="${place.name}" width="450" height="450"/>
+                    <figcaption>Image of ${place.name}</figcaption>
                 </figure>
                 <div class="placeDiv">
                     <h2>${place.name}</h2>
                     <p>${place.description}</p>
-                    <address><address/>
-                    <button>Learn More<button/>
+                    <address>${place.address}</address>
+                    <p><strong>Cost:</strong> ${place.cost}</p>
+                    <button>Learn More</button>
                 </div>
             </div>
         `;

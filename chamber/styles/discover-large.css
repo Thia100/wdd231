@@ -1,4 +1,4 @@
-@media screen and (min-width: 670px) {
+@media screen and (min-width: 768px) {
   .open,
   .close {
     display: none;
@@ -23,6 +23,13 @@
     margin: 0;
   }
 
+  .placeContent {
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: "image text";
+    align-items: center;
+  }
+
+
   footer {
     flex-direction: row;
     align-items: center;
@@ -30,3 +37,10 @@
     column-gap: 30px;
   }
 }
+@media screen and (min-width: 900px) {
+     #placesContainer{
+        gap: 1rem;
+    grid-template-columns: repeat(2, 1fr);
+} 
+}
+
