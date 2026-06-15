@@ -1,0 +1,235 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+:root {
+  --header-font: "Abril Fatface", serif;
+  --body-font: "Lato", sans-serif;
+  --text-color: #fff;
+  --primary-color: #03045e;
+  --secondary-color: #0077b6;
+  --highlight-color: #90e0ef;
+  --card-bg: #caf0f8;
+  --active: #00b4d8;
+}
+li {
+  list-style: none;
+}
+body {
+  font-family: var(--body-font);
+}
+p {
+  line-height: 1.5;
+}
+a {
+  text-decoration: none;
+}
+
+.navigation {
+  background: var(--primary-color);
+  color: var(--text-color);
+
+  transform: translateX(-50%);
+  position: fixed;
+  z-index: 1000;
+  top: 12px;
+  left: 50%;
+
+  margin: 0 auto;
+  width: 95vw;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 24px;
+  border-radius: 40px;
+}
+.nav-menu {
+  position: absolute;
+  top: 42px;
+  left: 50px;
+
+  height: 100vh;
+  width: 90vw;
+
+  background: var(--primary-color);
+  border-radius: 20px;
+  padding: 20px 0 0 50px;
+
+  display: flex;
+  flex-direction: column;
+
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(-20px);
+
+  transition:
+    opacity 0.4s ease,
+    transform 0.4s ease,
+    visibility 0.4s;
+}
+.nav-menu.active {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
+}
+.nav-bar {
+  margin-top: 40px;
+  align-self: center;
+}
+.nav-bar li a {
+  color: var(--text-color);
+  font-size: 18px;
+  transition: all 0.2s ease;
+}
+.nav-bar li a:hover {
+  font-weight: 600;
+}
+.nav-bar li.active a {
+  border-bottom: 2px solid var(--active);
+}
+.nav-bar li {
+  padding: 20px 0;
+  transition: all 0.5s;
+}
+.logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 4px;
+}
+.logo span {
+  font-size: 20px;
+}
+.open,
+.close {
+  cursor: pointer;
+  font-size: 26px;
+  transition: transform 0.5s ease-in-out;
+  padding: 10px 0;
+}
+.open:hover,
+.close:hover {
+  transform: scale(1.05);
+}
+
+
+
+
+.hero {
+  background-image: url("../images/home-hero.webp");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  height: 80vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  padding: 20px;
+  color: var(--text-color);
+}
+h1 {
+  font-size: clamp(2rem, 1.636rem + 1.82vw, 3rem);
+}
+.heroContainer a {
+  color: var(--text-color);
+  background: var(--primary-color);
+  font-size: 1.15rem;
+  padding: 10px 80px;
+  border-radius: 20px;
+  margin-top: 40px;
+  display: inline-block;
+}
+
+
+
+.main{
+    max-width: 1200px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+#placesContainer > div{
+    background-color: var(--card-bg);
+    margin-top: 40px;
+    border-radius: 20px;
+}
+.placeContent{
+    padding: 20px;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 30px;
+}
+.placeContent button{
+    background:var(--primary-color);
+    color: var(--text-color);
+   display: flex;
+   
+}
+figure{
+    text-align: center;
+    margin: 0 auto;
+}
+figure img{
+    border-radius: 25px;
+    max-width: 450px;
+    width: 100%;
+    height: auto;
+}
+figcaption{
+    font-size: 16px;
+    color: grey;
+    margin-top: 10px;
+}
+
+
+
+
+footer {
+  display: grid;
+  background: var(--primary-color);
+  margin-top: 80px;
+  color: var(--text-color);
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+  row-gap: 40px;
+}
+.chamberInfo {
+  display: flex;
+  flex-direction: column;
+}
+.chamberInfo a {
+  color: #fff;
+  transition: all 0.3s;
+  margin-bottom: 8px;
+}
+
+.socialLinks {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+.socialLinks li {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  background: var(--secondary-color);
+  padding: 10px 13px;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: transform 0.3s;
+}
+.socialLinks li:hover {
+  transform: translateY(-8px);
+}
+.socialLinks li a {
+  color: var(--text-color);
+  transition: all 0.3s;
+}

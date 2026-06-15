@@ -1,15 +1,107 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en-US">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="author" content="Fathia Diekola Gbolahan">
-    <meta name="description" content="">
-    <title></title>
-</head>
-<body>
-    <header></header>
-    <main></main>
-    <footer></footer>
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="Fathia Diekola Gbolahan" />
+    <meta name="description" content="" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Lato:wght@100;400;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    />
+
+    <link rel="stylesheet" href="styles/normalize.css" />
+    <link rel="stylesheet" href="styles/discover.css" />
+    <link rel="stylesheet" href="styles/discover-large.css" />
+
+    <script src="scripts/navigation.js" defer></script>
+    <script src="scripts/display-discover-places.js" type="module"></script>
+    <script src="scripts/date.js" defer></script>
+
+    <title>Discover page | Lagos state chamber of commerce</title>
+  </head>
+  <body>
+    <header>
+      <nav id="navigation" class="navigation">
+        <div class="logo">
+          <img
+            src="images/chamber-logo.svg"
+            alt="Lagos chamber logo"
+            width="30"
+            height="30"
+          /><span>Lagos chamber</span>
+        </div>
+        <div class="nav-menu">
+          <i class="fa-solid fa-x close"></i>
+          <ul class="nav-bar">
+            <li><a href="#">Home</a></li>
+            <li class="active"><a href="#">Discover</a></li>
+            <li><a href="#">Directory</a></li>
+            <li><a href="#">Join</a></li>
+          </ul>
+        </div>
+        <i class="fa-solid fa-bars open"></i>
+      </nav>
+    </header>
+    <main>
+      
+        <div class="hero">
+          <div class="heroContainer">
+            <h1>Lagos state chamber of commerce</h1>
+            <p>Driving innovation since <span>1988</span></p>
+            <a href="#">Join</a>
+          </div>
+        </div>
+
+
+        <div class="main">
+            <div id="placesContainer"></div>
+        </div>
+
+        
+
+        
+      
+    </main>
+    <footer>
+      <div class="chamberInfo">
+        <p>Lagos chamber of commerce</p>
+        <p>No 2, Ojota,</p>
+        <p>Lagos state, Nigeria</p>
+        <a href="mailto:thegbolahanfathia@gmail.com">lagoschamber@gmail.com</a>
+        <a href="tel:+2348154585224">+(234) 815-458-5224</a>
+      </div>
+      <ul class="socialLinks">
+        <li>
+          <a href="#" aria-label="instagram link"
+            ><i class="fa-brands fa-instagram"></i
+          ></a>
+        </li>
+        <li>
+          <a href="#" aria-label="facebook link"
+            ><i class="fa-brands fa-facebook-f"></i
+          ></a>
+        </li>
+        <li>
+          <a href="#" aria-label="youtube link"
+            ><i class="fa-brands fa-youtube"></i
+          ></a>
+        </li>
+      </ul>
+      <div class="studentInfo">
+        <p>Gbolahan Diekola Fathia</p>
+        <p>WDD231 class project</p>
+        <p><span id="copyright-year"></span> | Lagos chamber</p>
+        <p id="last-modified"></p>
+      </div>
+    </footer>
+  </body>
 </html>

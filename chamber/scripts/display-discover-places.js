@@ -1,0 +1,31 @@
+import discoverPlaces from "../data/discover-places.mjs";
+const placesContainer = document.querySelector("#placesContainer");
+
+const data = discoverPlaces;
+
+function displayPlaces(data) {
+  placesContainer.innerHTML = "";
+  data.forEach((place) => {
+    const placeDiv = document.createElement("div");
+    placeDiv.innerHTML = `
+        
+            <div class="placeContent">
+                <figure>
+                    <img src="${place.photo_url}" width="450" height="450"/>
+                    <figcaption>Image of ${place.name}<figcaption/>
+                </figure>
+                <div class="placeDiv">
+                    <h2>${place.name}</h2>
+                    <p>${place.description}</p>
+                    <address><address/>
+                    <button>Learn More<button/>
+                </div>
+            </div>
+        `;
+    placesContainer.appendChild(placeDiv);
+    console.log(place);
+  });
+}
+
+displayPlaces(data);
+console.log(data);
