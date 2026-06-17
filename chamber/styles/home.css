@@ -123,8 +123,6 @@ a {
 }
 
 
-
-
 .main {
   margin: 0 auto;
   max-width: 1200px;
@@ -205,8 +203,6 @@ a {
   font-family: var(--header-font);
 } 
 
-
-
 .main section {
   margin: 80px 0;
 }
@@ -269,11 +265,8 @@ a {
 }
 .weatherCard {
   background: white;
-
   padding: 20px;
-
   border-radius: 16px;
-
   text-align: center;
 }
 
