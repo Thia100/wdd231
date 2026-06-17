@@ -128,7 +128,7 @@ h3 {
 h1 {
   font-size: clamp(2rem, 1.636rem + 1.82vw, 3rem);
   font-family: var(--header-font);
-  color: #f8f9fa;
+  color: #fff;
   font-weight: 100;
 }
 .heroContainer a {
