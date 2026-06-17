@@ -24,9 +24,7 @@ function displayPlaces(data) {
             </div>
         `;
     placesContainer.appendChild(placeDiv);
-    console.log(place);
   });
 }
-
 displayPlaces(data);
-console.log(data);
+

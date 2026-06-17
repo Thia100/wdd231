@@ -1,69 +1,71 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en-US">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="author" content="Fathia Diekola Gbolahan">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="Fathia Diekola Gbolahan" />
     <meta
       name="description"
       content="Explore the official Lagos State Chamber of Commerce (LCCI) homepage. Connect with top verified businesses, industry leaders, and trusted local partners."
-    >
+    />
 
     <script src="scripts/date.js" defer></script>
     <script src="scripts/navigation.js" defer></script>
     <script src="scripts/weather.js" defer></script>
     <script src="scripts/display-spotlight.js" type="module"></script>
 
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Lato:wght@100;400;700&display=swap"
       rel="stylesheet"
-    >
+    />
 
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
-    >
+    />
 
     <meta
       property="og:title"
       content="Home | Lagos state chamber of commerce"
-    >
+    />
     <meta
       property="og:description"
       content="Explore the official Lagos State Chamber of Commerce (LCCI) homepage. Connect with top verified businesses, industry leaders, and trusted local partners."
-    >
+    />
     <meta
       property="og:image"
       content="https://thia100.github.io/wdd231/chamber/images/discovery-og-image.webp"
-    >
+    />
     <meta
       property="og:url"
       content="https://thia100.github.io/wdd231/chamber"
-    >
+    />
 
-    <link rel="stylesheet" href="styles/normalize.css">
-    <link rel="stylesheet" href="styles/home.css">
-    <link rel="stylesheet" href="styles/home-large.css">
-    <link rel="icon" href="../images/chamber-favicon.ico">
+    <link rel="stylesheet" href="styles/normalize.css" />
+    <link rel="stylesheet" href="styles/home.css" />
+    <link rel="stylesheet" href="styles/home-large.css" />
+    <link rel="icon" href="../images/chamber-favicon.ico" />
     <title>Home | Lagos state chamber of commerce</title>
-</head>
-<body>
+  </head>
+  <body>
     <header>
-        <nav id="navigation" class="navigation">
+      <nav id="navigation" class="navigation">
         <div class="logo">
           <img
             src="images/chamber-logo.svg"
             alt="Lagos chamber logo"
             width="30"
             height="30"
-          ><span>Lagos chamber</span>
+          /><span>Lagos chamber</span>
         </div>
         <div class="nav-menu">
           <i class="fa-solid fa-x close"></i>
           <ul class="nav-bar">
-            <li class="active"><a href="index.html" target="_blank">Home</a></li>
+            <li class="active">
+              <a href="index.html" target="_blank">Home</a>
+            </li>
             <li><a href="discover.html" target="_blank">Discover</a></li>
             <li><a href="directory.html" target="_blank">Directory</a></li>
             <li><a href="join.html" target="_blank">Join</a></li>
@@ -83,57 +85,75 @@
           </div>
         </div>
 
-        <div id="spotlightContainer">
-
-        </div>
+        <div id="spotlightContainer"></div>
       </div>
-        
 
-        <div class="main">
-            <p><span>Lagos Chamber of Commerce</span> and Industry is dedicated to supporting businesses across Lagos and Nigeria 
-                with the resources, advocacy, and connections needed to thrive in a dynamic economy. From promoting trade 
-                and investment opportunities to empowering entrepreneurs and enterprises, the Chamber provides businesses with 
-                the support they need for sustainable growth and success.
+      <div class="main">
+        <p>
+          <span>Lagos Chamber of Commerce</span> and Industry is dedicated to
+          supporting businesses across Lagos and Nigeria with the resources,
+          advocacy, and connections needed to thrive in a dynamic economy. From
+          promoting trade and investment opportunities to empowering
+          entrepreneurs and enterprises, the Chamber provides businesses with
+          the support they need for sustainable growth and success.
+        </p>
+
+        <section>
+          <h2>Advocacy & Representation</h2>
+          <div class="advocacyWrapper">
+            <img
+              src="images/advocacy-img.webp"
+              alt="Judge's gavel beside a leather law book on a dark surface."
+              width="300"
+              height="237"
+            />
+            <p>
+              We advocate for policies that support business growth, innovation,
+              and a stronger business environment. We keep members informed on
+              regulatory changes and represent their interests in discussions
+              that shape commerce and industry.
             </p>
-
-            <section>
-                <h2>Advocacy & Representation</h2>
-                <div class="advocacyWrapper">
-                    <img src="images/advocacy-img.webp" alt="Judge's gavel beside a leather law book on a dark surface." width="300" height="237">
-                    <p>We advocate for policies that support business growth, innovation, and a stronger business environment. We keep members informed on regulatory changes and represent their interests in discussions that shape commerce and industry.</p>
-                </div>
-            </section>
-
-            <section class="ComplianceSection">
-                <h2>Compliance</h2>
-                <p>Running a business comes with many responsibilities, and staying compliant with business regulations is essential for growth and success. The Lagos Chamber of Commerce and Industry provides trusted guidance, resources, and support to help businesses operate confidently and focus on what matters most, growing their business.</p>
-                <ul>
-                    <li>Business Compliance Resources</li>
-                    <li>Regulatory Updates & Alerts</li>
-                    <li>Business Registration Support</li>
-                    <li>Training & Compliance Workshops</li>
-                    <li>Policy Guidance & Advisory</li>
-                    <li>Member Benefits & Business Support</li>
-                </ul>
-            </section>
-            <div class="weatherSection">
-              <div id="currentWeatherSection"></div>
-              <div id="forecastWeatherContainer"></div>
-            </div>
-            <section class="joinSection">
-                <h3>Become a Member</h3>
-                <p>Join the Lagos Chamber of Commerce and unlock exclusive 
-                    access to resources that make managing your business easier. 
-                    As a member, you'll receive expert guidance on California human 
-                    resources compliance, tools for understanding California human resources laws, 
-                    and insights to help your organization comply with complex labor law standards.
-                </p>
-                <a href="#">Join Now ></a>
-            </section>
           </div>
+        </section>
+
+        <section class="ComplianceSection">
+          <h2>Compliance</h2>
+          <p>
+            Running a business comes with many responsibilities, and staying
+            compliant with business regulations is essential for growth and
+            success. The Lagos Chamber of Commerce and Industry provides trusted
+            guidance, resources, and support to help businesses operate
+            confidently and focus on what matters most, growing their business.
+          </p>
+          <ul>
+            <li>Business Compliance Resources</li>
+            <li>Regulatory Updates & Alerts</li>
+            <li>Business Registration Support</li>
+            <li>Training & Compliance Workshops</li>
+            <li>Policy Guidance & Advisory</li>
+            <li>Member Benefits & Business Support</li>
+          </ul>
+        </section>
+        <div class="weatherSection">
+          <div id="currentWeatherSection"></div>
+          <div id="forecastWeatherContainer"></div>
+        </div>
+        <section class="joinSection">
+          <h3>Become a Member</h3>
+          <p>
+            Join the Lagos Chamber of Commerce and unlock exclusive access to
+            resources that make managing your business easier. As a member,
+            you'll receive expert guidance on California human resources
+            compliance, tools for understanding California human resources laws,
+            and insights to help your organization comply with complex labor law
+            standards.
+          </p>
+          <a href="#">Join Now ></a>
+        </section>
+      </div>
     </main>
     <footer>
-        <div class="chamberInfo">
+      <div class="chamberInfo">
         <p>Lagos chamber of commerce</p>
         <p>No 2, Ojota,</p>
         <p>Lagos state, Nigeria</p>
@@ -164,5 +184,5 @@
         <p id="last-modified"></p>
       </div>
     </footer>
-</body>
+  </body>
 </html>

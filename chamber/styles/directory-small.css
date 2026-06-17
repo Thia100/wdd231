@@ -229,7 +229,6 @@ a {
 }
 
 footer {
-  display: grid;
   background: var(--primary-color);
   margin-top: 80px;
   color: var(--text-color);

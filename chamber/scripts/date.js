@@ -6,6 +6,12 @@ let lastModified = document.querySelector("#last-modified");
 let lastModifiedDate = new Date(document.lastModified).toLocaleString('en-US', {day: "numeric", month: "short", year: "numeric", hour: "2-digit", minute: "2-digit", second: "2-digit"});
 lastModified.innerHTML = `Last Modification: ${lastModifiedDate}`
 
-const timestamp = document.querySelector("#timestamp");
-
-timestamp.value = new Date().toISOString();
+window.addEventListener("DOMContentLoaded" , () =>{
+    const timestamp = document.querySelector("#timestamp");
+    if(timestamp) {
+        timestamp.value = new Date().toISOString();
+        console.log('Timestamp element:', timestamp);
+    } else {
+        console.log('Timestamp element:', timestamp);
+    }
+})
