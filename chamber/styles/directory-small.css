@@ -129,6 +129,7 @@ a {
 }
 .heroWrapper h1{
   color: var(--primary-color);
+  font-family: var(--header-font);
 }
 
 
@@ -206,6 +207,7 @@ a {
 }
 #memberSection.gridMode h2 {
   display: none;
+  font-family: var(--header-font);
 }
 #memberSection.listMode {
   display: flex;

@@ -15,7 +15,7 @@ function displayPlaces(data) {
                     <figcaption>Image of ${place.name}</figcaption>
                 </figure>
                 <div class="placeDiv">
-                    <h2>${place.name}</h2>
+                    <h3>${place.name}</h3>
                     <p>${place.description}</p>
                     <address>${place.address}</address>
                     <p><strong>Cost:</strong> ${place.cost}</p>

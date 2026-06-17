@@ -23,6 +23,7 @@ h2,
 h3 {
   color: var(--primary-color);
   margin-bottom: 25px;
+  font-family: var(--header-font);
 }
 p {
   line-height: 1.5;
@@ -149,6 +150,7 @@ a {
 
 .heroWrapper h1 {
   font-size: clamp(2rem, 1.636rem + 1.82vw, 3rem);
+  font-family: var(--header-font);
 }
 .heroWrapper p{
   margin: 0;
@@ -200,6 +202,7 @@ a {
 
 .memberCard h2{
   margin: 10px 0 15px 0;
+  font-family: var(--header-font);
 } 
 
 
@@ -273,21 +276,6 @@ a {
 
   text-align: center;
 }
-/* .weatherCard{
-  background: var(--card-bg);
-  box-shadow: 2px 2px 10px #90e0ef;
-  border-radius: 20px;
-  padding: 10px;
-  text-align: center;
-}
-.weatherCard h2, .forecastCard h3{
-  margin: 0 0 15px 0;
-}
-.forecastCard{
-  margin: 20px 0 0 0;
-} */
-
-
 
 footer {
   background: var(--primary-color);
