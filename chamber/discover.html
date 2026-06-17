@@ -24,6 +24,7 @@
 
     <script src="scripts/navigation.js" defer></script>
     <script src="scripts/display-discover-places.js" type="module"></script>
+    <script src="scripts/display-welcome-message.js" defer></script>
     <script src="scripts/date.js" defer></script>
 
     <title>Discover page | Lagos state chamber of commerce</title>
@@ -52,24 +53,23 @@
       </nav>
     </header>
     <main>
-      
-        <div class="hero">
-          <div class="heroContainer">
-            <h1>Lagos state chamber of commerce</h1>
-            <p>Driving innovation since <span>1988</span></p>
-            <a href="#">Join</a>
-          </div>
+      <div class="hero">
+        <div class="heroContainer">
+          <h1>Lagos state chamber of commerce</h1>
+          <p>Driving innovation since <span>1988</span></p>
+          <a href="#">Join</a>
         </div>
+      </div>
 
+      <div class="main">
+        <div id="placesContainer"></div>
 
-        <div class="main">
-            <div id="placesContainer"></div>
+        <div class="welcomeMessage">
+          <span id="closeMessageContainer"><i class="fa-solid fa-xmark"></i></span>
+          <div id="welcomeMessageContainer"></div>
         </div>
-
-        
-
-        
-      
+       
+      </div>
     </main>
     <footer>
       <div class="chamberInfo">

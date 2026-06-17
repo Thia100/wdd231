@@ -29,7 +29,6 @@
     align-items: center;
   }
 
-
   footer {
     flex-direction: row;
     align-items: center;
@@ -38,9 +37,8 @@
   }
 }
 @media screen and (min-width: 900px) {
-     #placesContainer{
-        gap: 1rem;
+  #placesContainer {
+    gap: 1rem;
     grid-template-columns: repeat(2, 1fr);
-} 
+  }
 }
-
