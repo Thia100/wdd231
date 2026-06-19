@@ -1,0 +1,122 @@
+[
+  {
+    "id": 1,
+    "title": "Active Recall",
+    "category": "Memory",
+    "difficulty": "Easy",
+    "time": "15 minutes",
+    "description": "Test yourself regularly instead of simply rereading notes. This strengthens memory and improves long-term retention."
+  },
+  {
+    "id": 2,
+    "title": "Spaced Repetition",
+    "category": "Memory",
+    "difficulty": "Medium",
+    "time": "20 minutes",
+    "description": "Review information over increasing intervals rather than cramming everything at once."
+  },
+  {
+    "id": 3,
+    "title": "Pomodoro Technique",
+    "category": "Productivity",
+    "difficulty": "Easy",
+    "time": "25 minutes",
+    "description": "Study for 25 minutes, take a 5-minute break, and repeat the cycle to stay focused."
+  },
+  {
+    "id": 4,
+    "title": "Time Blocking",
+    "category": "Time Management",
+    "difficulty": "Medium",
+    "time": "10 minutes",
+    "description": "Assign specific blocks of time to tasks and avoid multitasking."
+  },
+  {
+    "id": 5,
+    "title": "Cornell Note-Taking",
+    "category": "Note Taking",
+    "difficulty": "Easy",
+    "time": "15 minutes",
+    "description": "Organize notes into sections for key ideas, details, and summaries."
+  },
+  {
+    "id": 6,
+    "title": "Mind Mapping",
+    "category": "Memory",
+    "difficulty": "Medium",
+    "time": "20 minutes",
+    "description": "Create visual diagrams that connect concepts and improve understanding."
+  },
+  {
+    "id": 7,
+    "title": "Eliminate Distractions",
+    "category": "Focus",
+    "difficulty": "Easy",
+    "time": "5 minutes",
+    "description": "Turn off notifications and remove distractions before studying."
+  },
+  {
+    "id": 8,
+    "title": "Teach Someone Else",
+    "category": "Learning",
+    "difficulty": "Medium",
+    "time": "30 minutes",
+    "description": "Explain concepts to another person to test and deepen your understanding."
+  },
+  {
+    "id": 9,
+    "title": "Practice Testing",
+    "category": "Exam Preparation",
+    "difficulty": "Medium",
+    "time": "30 minutes",
+    "description": "Use quizzes and practice questions to assess your knowledge."
+  },
+  {
+    "id": 10,
+    "title": "Create a Study Schedule",
+    "category": "Time Management",
+    "difficulty": "Easy",
+    "time": "10 minutes",
+    "description": "Plan your study sessions in advance and stick to a consistent routine."
+  },
+  {
+    "id": 11,
+    "title": "Set SMART Goals",
+    "category": "Productivity",
+    "difficulty": "Medium",
+    "time": "10 minutes",
+    "description": "Create goals that are Specific, Measurable, Achievable, Relevant, and Time-bound."
+  },
+  {
+    "id": 12,
+    "title": "Prioritize Sleep",
+    "category": "Wellness",
+    "difficulty": "Easy",
+    "time": "8 hours",
+    "description": "Getting enough sleep improves concentration, memory, and learning ability."
+  },
+  {
+    "id": 13,
+    "title": "Keep an Organized Workspace",
+    "category": "Focus",
+    "difficulty": "Easy",
+    "time": "10 minutes",
+    "description": "A clean and organized environment reduces distractions and increases productivity."
+  },
+  {
+    "id": 14,
+    "title": "Review Mistakes",
+    "category": "Exam Preparation",
+    "difficulty": "Medium",
+    "time": "20 minutes",
+    "description": "Analyze errors from assignments and tests to prevent repeating them."
+  },
+  {
+    "id": 15,
+    "title": "Break Large Tasks Into Smaller Steps",
+    "category": "Productivity",
+    "difficulty": "Easy",
+    "time": "15 minutes",
+    "description": "Divide overwhelming tasks into manageable pieces to make progress easier."
+  }
+]

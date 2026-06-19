@@ -1,4 +1,4 @@
-const url = "data/Quotes.json";
+const url = "data/quotes.json";
 const quotesContainer = document.querySelector("#qoutesContainer");
 let data = []
 async function fetchQuotes(url) {
