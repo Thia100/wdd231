@@ -3,7 +3,6 @@
   margin: 0;
   box-sizing: border-box;
 }
-
 :root {
   --primary-color: #1e3a5f;
   --secondary-color: #4f7cac;
@@ -11,7 +10,6 @@
   --background-color: #f8fafc;
   --card-bg: #ffffff;
   --text-color: #1f2937;
-  /* --heading-color: #102a43; */
   --heading-font: "Open Sans", sans-serif;
   --text-font: "Roboto", sans-serif;
 }
@@ -40,7 +38,7 @@ li {
 }
 .container {
   margin: 0 auto;
-  max-width: 1400px;
+  max-width: 1200px;
   width: 100%;
   padding: 20px 40px;
 }

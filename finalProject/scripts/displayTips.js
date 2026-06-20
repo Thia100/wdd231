@@ -34,7 +34,7 @@ function displayStudyTips(tips) {
 
   tips.forEach((tip) => {
     const div = document.createElement("div");
-    div.classList.add("tipCard")
+    div.classList.add("tipCard");
 
     div.innerHTML = `
       <h2>${tip.title}</h2>

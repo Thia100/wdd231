@@ -1,0 +1,107 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+:root {
+  --primary-color: #1e3a5f;
+  --secondary-color: #4f7cac;
+  --accent: #f4b860;
+  --background-color: #f8fafc;
+  --card-bg: #ffffff;
+  --text-color: #1f2937;
+  --heading-font: "Open Sans", sans-serif;
+  --text-font: "Roboto", sans-serif;
+}
+body {
+  background-color: var(--background-color);
+  color: var(--text-color);
+  font-family: var(--text-font);
+}
+h1,
+h2,
+h3,
+h4 {
+  font-family: var(--heading-font);
+}
+h2 {
+  margin-bottom: 30px;
+}
+p {
+  line-height: 1.5;
+}
+a {
+  text-decoration: none;
+}
+li {
+  list-style: none;
+}
+.container {
+  margin: 0 auto;
+  max-width: 1200px;
+  width: 100%;
+  padding: 20px 40px;
+}
+main {
+  margin-top: 120px;
+}
+
+.plannerControls {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  gap: 16px;
+  margin: 24px 0;
+}
+.plannerControls input,
+.plannerControls select {
+  flex: 1;
+  padding: 15px 16px;
+  border: 2px solid var(--secondary-color);
+  border-radius: 20px;
+  font-size: 1rem;
+  background: var(--card-bg);
+}
+.plannerControls button {
+  border: none;
+  background: var(--card-bg);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.06);
+  color: var(--accent);
+  font-size: 2rem;
+  cursor: pointer;
+  padding: 10px;
+  border-radius: 12px;
+}
+#taskContainer {
+  display: grid;
+  gap: 1rem;
+}
+
+
+.taskCard{
+    background: var(--card-bg);
+    padding: 16px 10px;
+    border-radius: 12px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, .08);
+}
+.taskDiv{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.taskActions {
+  display: flex;
+  gap: 12px;
+}
+.taskActions button {
+  border: none;
+  padding: .6rem;
+  border-radius: 8px;
+  cursor: pointer;
+  color: var(--primary-color);
+}
+.completed p {
+  text-decoration: line-through;
+  opacity: .6;
+}

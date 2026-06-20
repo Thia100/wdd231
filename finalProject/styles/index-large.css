@@ -1,5 +1,5 @@
 @media screen and (min-width: 768px) {
-  .open,
+    /* .open,
   .close {
     display: none;
   }
@@ -21,7 +21,8 @@
     align-items: center;
     gap: 30px;
     margin: 0;
-  }
+  } */
+
 
   .heroSection,
   .benefitSection {
@@ -31,13 +32,15 @@
   .ctaSection {
     padding: 150px 20px;
   }
-
+  
+  
   .ctaContent,
   .ctaText div {
     flex-direction: row;
   }
+  
 
-  .footer {
+  .footer{
     flex-direction: row;
   }
 }
