@@ -1,28 +1,60 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en-US">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="author" content="Fathia Diekola Gbolahan">
-    <meta name="description" content="">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="Fathia Diekola Gbolahan" />
+    <meta name="description" content="" />
+
+    <link rel="stylesheet" href="styles/normalize.css" />
+    <link rel="stylesheet" href="styles/study-tips.css" />
+    <link rel="stylesheet" href="styles/study-tips-large.css" />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300..800&family=Roboto:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
 
     <script src="scripts/displayTips.js" defer></script>
 
-    <title></title>
-</head>
-<body>
+    <title>Study Tips | Aced</title>
+  </head>
+  <body>
     <header></header>
     <main>
-        <section id="displayTipsContainer"></section>
-        
+      <div class="container">
+        <div class="filterSection">
+          <input
+            type="text"
+            id="searchInput"
+            placeholder="Search study tips..."
+          />
+          <select id="categoryFilter">
+            <option value="all">All</option>
+            <option value="Time Management">Time Management</option>
+            <option value="Memory">Memory</option>
+            <option value="Productivity">Productivity</option>
+          </select>
+        </div>
+
+        <div id="displayTipsContainer"></div>
+
         <dialog id="tipModal">
-            <div>
-                <h2 id="modalTitle"></h2>
-                <span id="closeModal">Close</span>
-            </div>
-            <p id="modalDescription"></p>
+          <div class="tipModalHeader">
+            <h2 id="modalTitle"></h2>
+            <button id="closeModal"><i class="fa-solid fa-xmark"></i></button>
+          </div>
+          <p id="modalDescription"></p>
         </dialog>
+      </div>
     </main>
     <footer></footer>
-</body>
+  </body>
 </html>

@@ -4,8 +4,26 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="author" content="Fathia Diekola Gbolahan" />
-    <meta name="description" content="" />
-    <title>Aced | Homepage</title>
+    <meta
+      name="description"
+      content="Aced helps students stay organized with study tips, planners, and motivation to improve learning habits."
+    />
+    <title>Aced | Study Smarter</title>
+
+    <meta
+      name="description"
+      content="Aced helps students stay organized with study tips, planners, and motivation to improve learning habits."
+    />
+    <meta property="og:title" content="Aced | Study Smarter" />
+    <meta
+      property="og:description"
+      content="Study tips, planner tools, and motivation for students."
+    />
+    <meta
+      property="og:image"
+      content="https://thia100.github.io/wdd231/finalProject/images/logo-blue.png"
+    />
+    <meta property="og:url" content="https://your-site-url.com" />
 
     <link
       rel="stylesheet"
@@ -24,26 +42,28 @@
     <link rel="stylesheet" href="styles/index-large.css" />
 
     <script src="scripts/displayQuotes.js" type="module"></script>
+    <script src="scripts/navigation.js" defer></script>
   </head>
   <body>
     <header>
-      <nav>
-        <div class="navMenu">
-          <img
-            class="logo"
-            src="images/logo.png"
-            alt="Aced logo"
-            width="351"
-            height="142"
-          />
-          <ul class="navList">
-            <li><a href="index.html">Home</a></li>
-            <li><a href="study-tips.html">Study tips</a></li>
-            <li><a href="planner.html">Planner</a></li>
-            <li><a href="contact.html">Contact</a></li>
+      <!-- <nav id="navigation" class="navigation">
+        <div class="logo">
+          <img src="images/logo-white.png" alt="Aced logo">
+        <span>Aced</span>
+        </div> 
+        <div class="nav-menu">
+          <i class="fa-solid fa-x close"></i>
+          <ul class="nav-bar">
+            <li><a href="index.html" target="_blank">Home</a></li>
+            <li class="active">
+              <a href="discover.html" target="_blank">Discover</a>
+            </li>
+            <li><a href="directory.html" target="_blank">Directory</a></li>
+            <li><a href="join.html" target="_blank">Join</a></li>
           </ul>
         </div>
-      </nav>
+        <i class="fa-solid fa-bars open"></i>
+      </nav> -->
 
       <div class="hero">
         <div class="heroSection container">
@@ -65,9 +85,10 @@
         </div>
       </div>
     </header>
+
     <main>
       <div class="quotesSection">
-        <div id="qoutesContainer"></div>
+        <div id="quotesContainer"></div>
       </div>
 
       <div class="benefitSection container">
@@ -196,18 +217,31 @@
 
     <footer>
       <div class="footer container">
-        <img src="images/logo.png" />
-        <ul>
-          <li><a href="#">Home</a></li>
-          <li><a href="#">Home</a></li>
-          <li><a href="#">Home</a></li>
-          <li><a href="#">Home</a></li>
+        <div class="footerLogo">
+          <img src="images/logo-white.png" alt="Aced logo" />
+          <p>Aced — Study smarter, not harder.</p>
+        </div>
+
+        <ul class="footerLinks">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="study-tips.html">Study Tips</a></li>
+          <li><a href="planner.html">Planner</a></li>
+          <li><a href="contact.html">Contact</a></li>
         </ul>
-        <ul>
-          <li><a href="#"><i class="fa-brands fa-facebook-f"></i></a></li>
-          <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
-          <li><a href="#"><i class="fa-brands fa-twitter"></i></a></li>
-          <li><a href="#"><i class="fa-brands fa-tiktok"></i></a></li>
+
+        <ul class="footerSocials">
+          <li>
+            <a href="#" target="_blank"><i class="fa-brands fa-facebook-f"></i></a>
+          </li>
+          <li>
+            <a href="#" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+          </li>
+          <li>
+            <a href="#" target="_blank"><i class="fa-brands fa-twitter"></i></a>
+          </li>
+          <li>
+            <a href="#" target="_blank"><i class="fa-brands fa-tiktok"></i></a>
+          </li>
         </ul>
       </div>
     </footer>

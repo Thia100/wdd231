@@ -1,4 +1,28 @@
 @media screen and (min-width: 768px) {
+  .open,
+  .close {
+    display: none;
+  }
+  #navMenu {
+    display: flex;
+    position: static;
+    visibility: visible;
+    opacity: 1;
+    height: auto;
+    width: auto;
+    padding: 0;
+    background: transparent;
+    transform: none;
+    top: 0;
+    left: 0;
+  }
+  .navList {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    margin: 0;
+  }
+
   .heroSection,
   .benefitSection {
     grid-template-columns: repeat(2, 1fr);
@@ -7,35 +31,13 @@
   .ctaSection {
     padding: 150px 20px;
   }
-  .grid1 {
-    margin-top: 80px;
-    grid-template-columns: repeat(2, 1fr);
-    border-bottom: 1px solid grey;
-  }
-  .grid2 {
-    margin-top: 80px;
-    grid-template-columns: repeat(3, 1fr);
-    border-bottom: 1px solid grey;
-  }
-  .grid1 div:nth-child(1),
-  .grid2 div:nth-child(1),
-  .grid2 div:nth-child(2) {
-    border-right: 1px solid grey;
-  }
-  .grid1 div,
-  .grid2 div {
-    border-bottom: none;
-  }
+
   .ctaContent,
   .ctaText div {
     flex-direction: row;
   }
-  .footer{
-    grid-template-columns: repeat(3, 1fr);
-  }
-  .footer ul {
-    display: flex;
-    place-items: center;
-    gap: 50px;
+
+  .footer {
+    flex-direction: row;
   }
 }

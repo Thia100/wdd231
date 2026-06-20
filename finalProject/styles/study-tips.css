@@ -1,0 +1,158 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --primary-color: #1e3a5f;
+  --secondary-color: #4f7cac;
+  --accent: #f4b860;
+  --background-color: #f8fafc;
+  --card-bg: #ffffff;
+  --text-color: #1f2937;
+  /* --heading-color: #102a43; */
+  --heading-font: "Open Sans", sans-serif;
+  --text-font: "Roboto", sans-serif;
+}
+body {
+  background-color: var(--background-color);
+  color: var(--text-color);
+  font-family: var(--text-font);
+}
+h1,
+h2,
+h3,
+h4 {
+  font-family: var(--heading-font);
+}
+h2 {
+  margin-bottom: 30px;
+}
+p {
+  line-height: 1.5;
+}
+a {
+  text-decoration: none;
+}
+li {
+  list-style: none;
+}
+.container {
+  margin: 0 auto;
+  max-width: 1400px;
+  width: 100%;
+  padding: 20px 40px;
+}
+main {
+  margin-top: 120px;
+}
+
+
+
+.filterSection{
+    display: flex;
+    max-width: 800px;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    gap: 24px;
+    padding: 20px 10px;
+    flex-wrap: wrap;
+}
+.filterSection input, .filterSection select{
+    flex: 1;
+  min-width: 250px;
+  padding: 15px 16px;
+  border: 2px solid var(--secondary-color);
+  border-radius: 20px;
+  font-size: 1rem;
+  background: var(--card-bg);
+}
+.filterSection input:focus,
+.filterSection select:focus {
+  outline: none;
+  border-color: var(--secondary-color);
+}
+
+
+#displayTipsContainer {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 30px;
+}
+.tipCard{
+    background: var(--card-bg);
+  border-radius: 20px;
+  padding: 18px;
+  box-shadow: 0 8px 20px rgba(0,0,0,.06);
+  transition: all .3s ease;
+}
+.tipCard:hover {
+  transform: translateY(-5px);
+}
+.tipCard h2 {
+  color: var(--primary-color);
+  font-size: 1.4rem;
+  margin-bottom: 12px;
+}
+.tipCard > p {
+  display: inline-block;
+  background: rgba(79,124,172,.15);
+  color: var(--secondary-color);
+  padding: 6px 12px;
+  border-radius: 10px;
+  font-size: .85rem;
+  margin-bottom: 16px;
+}
+.tipMeta{
+  display: flex;
+  justify-content: space-between;
+  margin: 16px 0;
+  color: #6b7280;
+  font-size: .9rem;
+}
+.openModal {
+  width: 100%;
+  border: none;
+  padding: 14px 10px;
+  border-radius: 12px;
+  background: var(--primary-color);
+  color: white;
+  cursor: pointer;
+  font-size: .95rem;
+  transition: .3s;
+}
+.openModal:hover {
+  background: var(--secondary-color);
+}
+
+
+#tipModal{
+    border: none;
+  border-radius: 20px;
+  max-width: 600px;
+  width: 90%;
+  padding: 24px;
+  margin: 0 auto;
+}
+#tipModal::backdrop {
+  background: rgba(0,0,0,.5);
+}
+#modalTitle {
+  color: var(--primary-color);
+  margin-bottom: 16px;
+}
+.tipModalHeader{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+} 
+.tipModalHeader button{
+  border: none;
+  background: none;
+  color: var(--accent);
+  font-size: 2rem;
+  cursor: pointer;
+}
