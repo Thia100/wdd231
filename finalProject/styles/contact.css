@@ -1,0 +1,140 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+:root {
+  --primary-color: #1e3a5f;
+  --secondary-color: #4f7cac;
+  --accent: #f4b860;
+  --background-color: #f8fafc;
+  --card-bg: #ffffff;
+  --text-color: #1f2937;
+  --heading-color: #102a43;
+  --heading-font: "Open Sans", sans-serif;
+  --text-font: "Roboto", sans-serif;
+}
+body {
+  background-color: var(--background-color);
+  color: var(--text-color);
+  font-family: var(--text-font);
+}
+h1,
+h2,
+h3,
+h4 {
+  font-family: var(--heading-font);
+  color: var(--heading-color);
+}
+h2 {
+  margin-bottom: 30px;
+}
+p {
+  line-height: 1.5;
+}
+a {
+  text-decoration: none;
+}
+li {
+  list-style: none;
+}
+.container {
+  margin: 0 auto;
+  max-width: 1200px;
+  width: 100%;
+  padding: 20px 40px;
+}
+main {
+  margin-top: 120px;
+}
+
+
+nav{
+  position: fixed;
+  background: var(--primary-color);
+  top: 12px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 1000;
+  margin: 0 auto;
+  padding: 0 30px;
+  width: 90vw;
+  border-radius: 30px;
+}
+.logo{
+  display: flex;
+  align-items: center;
+  gap: .5rem;
+}
+.logo span{
+  color: #fff;
+  font-size: 1.15rem;
+}
+.logo img{
+  padding: 10px 0;
+  max-width: 40px;
+  height: auto;
+  width: 100%;
+}
+.nav{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: auto;
+}
+.navMenu{
+  background: var(--primary-color);
+  position: absolute;
+  border-radius: 20px;
+  top: 42px;
+  right: 0;
+  height: 100vh;
+  width: 75vw;
+  padding: 12px 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 3rem;
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(-20px);
+  transition:
+    opacity 0.4s ease,
+    transform 0.4s ease,
+    visibility 0.4s;
+}
+.navMenu.active {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
+}
+.navMenu ul{
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+}
+.navMenu ul li a{
+  color: #fff;
+  font-size: 1.35rem;
+  font-weight: 300;
+}
+.navMenu ul li.active{
+  border-bottom: 2px solid var(--accent);
+
+}
+.open,
+.close {
+  color: #fff;
+  cursor: pointer;
+  font-size: 2.3rem;
+  transition: transform 0.5s ease-in-out;
+  padding: 10px 0;
+}
+.close{
+  text-align: left;
+  align-self: flex-start;
+}
+.open:hover,
+.close:hover {
+  transform: scale(1.05);
+}

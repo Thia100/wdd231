@@ -45,7 +45,7 @@ function displayStudyTips(tips) {
         <p>${tip.time}</p>
       </div>
 
-      <button class="openModal">Read More</button>
+      <button class="openModal" aria-label="Open Modal">Read More</button>
     `;
 
     const openModalBtn = div.querySelector(".openModal");

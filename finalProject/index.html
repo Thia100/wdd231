@@ -8,12 +8,7 @@
       name="description"
       content="Aced helps students stay organized with study tips, planners, and motivation to improve learning habits."
     />
-    <title>Aced | Study Smarter</title>
 
-    <meta
-      name="description"
-      content="Aced helps students stay organized with study tips, planners, and motivation to improve learning habits."
-    />
     <meta property="og:title" content="Aced | Study Smarter" />
     <meta
       property="og:description"
@@ -23,13 +18,15 @@
       property="og:image"
       content="https://thia100.github.io/wdd231/finalProject/images/logo-blue.png"
     />
-    <meta property="og:url" content="https://your-site-url.com" />
+    <meta
+      property="og:url"
+      content="https://thia100.github.io/wdd231/finalProject"
+    />
 
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
     />
-
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -40,9 +37,10 @@
     <link rel="stylesheet" href="styles/normalize.css" />
     <link rel="stylesheet" href="styles/index.css" />
     <link rel="stylesheet" href="styles/index-large.css" />
-
     <script src="scripts/displayQuotes.js" type="module"></script>
     <script src="scripts/navigation.js" defer></script>
+    <link rel="icon" href="images/logo-white.ico" />
+    <title>Aced | Study Smarter</title>
   </head>
   <body>
     <header>
@@ -54,7 +52,10 @@
           </div>
 
           <div class="navMenu">
-            <i class="fa-solid fa-xmark close"></i>
+            <i
+              class="fa-solid fa-xmark close"
+              aria-label="Close navigation"
+            ></i>
             <ul>
               <li class="active"><a href="index.html">Home</a></li>
               <li><a href="study-tips.html">Study Tips</a></li>
@@ -62,7 +63,7 @@
               <li><a href="contact.html">Contact</a></li>
             </ul>
           </div>
-          <i class="fa-solid fa-bars open"></i>
+          <i class="fa-solid fa-bars open" aria-label="Open navigation"></i>
         </div>
       </nav>
       <div class="hero">
@@ -73,7 +74,7 @@
               Stay organized, study smarter, and build habits that help you
               achieve your academic goals.
             </p>
-            <a href="#">Open Planner</a>
+            <a href="planner.html">Open Planner</a>
           </div>
           <img
             class="heroImg"
@@ -104,8 +105,9 @@
             <p>Learn Better</p>
           </div>
           <img
-            src="images/study.webp"
-            alt="studying image"
+            src="images/learn-better.webp"
+            loading="lazy"
+            alt="woman sitting on books staring at a screen"
             width="450"
             height="450"
           />
@@ -123,7 +125,8 @@
             <p>Explore study tips</p>
           </div>
           <img
-            src="images/study.webp"
+            src="images/explore-tips.webp"
+            loading="lazy"
             alt="studying image"
             width="450"
             height="450"
@@ -190,29 +193,28 @@
         </div>
       </section>
 
-      <section>
-        <div class="container">
-          <h2>Ready to Study Smarter?</h2>
-          <div class="ctaContent">
-            <div class="ctaText">
-              <p>
-                Start organizing your assignments, discover practical study
-                techniques, and build habits that help you succeed.
-              </p>
-              <div>
-                <a href="#">Open Planner</a>
-                <a href="#">Explore Study Tips</a>
-              </div>
+      <div class="prompt container">
+        <h2>Ready to Study Smarter?</h2>
+        <div class="ctaContent">
+          <div class="ctaText">
+            <p>
+              Start organizing your assignments, discover practical study
+              techniques, and build habits that help you succeed.
+            </p>
+            <div>
+              <a href="planner.html">Open Planner</a>
+              <a href="study-tips.html">Explore Study Tips</a>
             </div>
-            <img
-              src="images/picture.webp"
-              alt="picture of someone studying"
-              width="250"
-              height="250"
-            />
           </div>
+          <img
+            src="images/picture.webp"
+            alt="picture of someone studying"
+            loading="lazy"
+            width="250"
+            height="250"
+          />
         </div>
-      </section>
+      </div>
     </main>
 
     <footer>

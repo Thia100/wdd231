@@ -4,13 +4,23 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="author" content="Fathia Diekola Gbolahan" />
-    <meta name="description" content="" />
+    <meta name="description" content="Organize assignments, manage study tasks, and stay productive with the Aced Study Planner. Create, track, and complete tasks to build better study habits." />
+
+    <meta property="og:title" content="Planner | Aced" />
+    <meta
+      property="og:description"
+      content="Stay organized with the Aced Study Planner. Add tasks, track progress, and manage your study schedule more effectively."
+    />
+    <meta
+      property="og:image"
+      content="https://thia100.github.io/wdd231/finalProject/images/logo-blue.png"
+    />
+    <meta property="og:url" content="https://thia100.github.io/wdd231/finalProject/planner.html" />
 
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
     />
-
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -21,23 +31,22 @@
     <link rel="stylesheet" href="styles/normalize.css" />
     <link rel="stylesheet" href="styles/planner.css" />
     <link rel="stylesheet" href="styles/planner-large.css" />
-
     <script src="scripts/planner.js" defer></script>
     <script src="scripts/navigation.js" defer></script>
-
-    <title>Planner | Aced</title>
+    <link rel="icon" href="images/logo-white.ico" />
+    <title>Study Planner | Aced</title>
   </head>
   <body>
     <header>
       <nav>
         <div class="nav">
           <div class="logo">
-            <img src="images/logo-white.png" alt="Aced logo">
+            <img src="images/logo-white.png" alt="Aced logo" />
             <span>Aced</span>
           </div>
 
           <div class="navMenu">
-            <i class="fa-solid fa-xmark close"></i>
+            <i class="fa-solid fa-xmark close" aria-label="Close navigation"></i>
             <ul>
               <li><a href="index.html">Home</a></li>
               <li><a href="study-tips.html">Study Tips</a></li>
@@ -45,7 +54,7 @@
               <li><a href="contact.html">Contact</a></li>
             </ul>
           </div>
-          <i class="fa-solid fa-bars open"></i>
+          <i class="fa-solid fa-bars open" aria-label="Open navigation"></i>
         </div>
       </nav>
     </header>
@@ -65,10 +74,9 @@
             <option value="Low">Low Priority</option>
           </select>
 
-          <button id="addTaskBtn"><i class="fa-solid fa-plus"></i></button>
+          <button id="addTaskBtn" aria-label="Add task><i class="fa-solid fa-plus"></i></button>
         </section>
         <section id="taskContainer"></section>
-
       </div>
     </main>
     <footer></footer>

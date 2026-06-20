@@ -4,13 +4,29 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="author" content="Fathia Diekola Gbolahan" />
-    <meta name="description" content="" />
+    <meta
+      name="description"
+      content="Explore practical study tips to improve focus, memory, productivity, and time management. Search and filter techniques to help you study smarter with Aced."
+    />
+
+    <meta property="og:title" content="Study Tips | Aced" />
+    <meta
+      property="og:description"
+      content="Discover effective study strategies and productivity techniques. Search and filter study tips designed to help students learn more efficiently."
+    />
+    <meta
+      property="og:image"
+      content="https://thia100.github.io/wdd231/finalProject/images/logo-blue.png"
+    />
+    <meta
+      property="og:url"
+      content="https://thia100.github.io/wdd231/finalProject/study-tips.html"
+    />
 
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
     />
-
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -21,10 +37,9 @@
     <link rel="stylesheet" href="styles/normalize.css" />
     <link rel="stylesheet" href="styles/study-tips.css" />
     <link rel="stylesheet" href="styles/study-tips-large.css" />
-
     <script src="scripts/displayTips.js" defer></script>
     <script src="scripts/navigation.js" defer></script>
-
+    <link rel="icon" href="images/logo-white.ico" />
     <title>Study Tips | Aced</title>
   </head>
   <body>
@@ -32,12 +47,15 @@
       <nav>
         <div class="nav">
           <div class="logo">
-            <img src="images/logo-white.png" alt="Aced logo">
+            <img src="images/logo-white.png" alt="Aced logo" />
             <span>Aced</span>
           </div>
 
           <div class="navMenu">
-            <i class="fa-solid fa-xmark close"></i>
+            <i
+              class="fa-solid fa-xmark close"
+              aria-label="Close navigation"
+            ></i>
             <ul>
               <li><a href="index.html">Home</a></li>
               <li class="active"><a href="study-tips.html">Study Tips</a></li>
@@ -45,7 +63,7 @@
               <li><a href="contact.html">Contact</a></li>
             </ul>
           </div>
-          <i class="fa-solid fa-bars open"></i>
+          <i class="fa-solid fa-bars open" aria-label="Open navigation"></i>
         </div>
       </nav>
     </header>
@@ -77,12 +95,47 @@
         <dialog id="tipModal">
           <div class="tipModalHeader">
             <h2 id="modalTitle"></h2>
-            <button id="closeModal"><i class="fa-solid fa-xmark"></i></button>
+            <button id="closeModal">
+              <i class="fa-solid fa-xmark" aria-label="Close Modal"></i>
+            </button>
           </div>
           <p id="modalDescription"></p>
         </dialog>
       </div>
     </main>
-    <footer></footer>
+    <footer>
+      <div class="footer container">
+        <div class="footerLogo">
+          <img src="images/logo-white.png" alt="Aced logo" />
+          <p>Aced — Study smarter, not harder.</p>
+        </div>
+
+        <ul class="footerLinks">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="study-tips.html">Study Tips</a></li>
+          <li><a href="planner.html">Planner</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+
+        <ul class="footerSocials">
+          <li>
+            <a href="#" target="_blank"
+              ><i class="fa-brands fa-facebook-f"></i
+            ></a>
+          </li>
+          <li>
+            <a href="#" target="_blank"
+              ><i class="fa-brands fa-instagram"></i
+            ></a>
+          </li>
+          <li>
+            <a href="#" target="_blank"><i class="fa-brands fa-twitter"></i></a>
+          </li>
+          <li>
+            <a href="#" target="_blank"><i class="fa-brands fa-tiktok"></i></a>
+          </li>
+        </ul>
+      </div>
+    </footer>
   </body>
 </html>
