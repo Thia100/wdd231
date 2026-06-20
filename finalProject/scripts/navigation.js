@@ -9,3 +9,9 @@ closeNav.addEventListener("click", () => {
     navMenu.classList.remove("active")
 })
 
+window.addEventListener("resize", () => {
+  if (window.innerWidth >= 768) {
+    navMenu.classList.remove("active");
+  }
+});
+

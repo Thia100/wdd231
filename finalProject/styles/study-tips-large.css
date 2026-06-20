@@ -20,7 +20,4 @@
   .navMenu ul {
     flex-direction: row;
   }
-  .plannerControls {
-    flex-direction: row;
-  }
 }

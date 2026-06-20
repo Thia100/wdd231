@@ -72,7 +72,9 @@ nav{
   font-size: 1.15rem;
 }
 .logo img{
+  padding: 10px 0;
   max-width: 40px;
+  height: auto;
   width: 100%;
 }
 .nav{
@@ -83,12 +85,10 @@ nav{
 }
 .navMenu{
   background: var(--primary-color);
-
   position: absolute;
   border-radius: 20px;
-  /* edit */
   top: 42px;
-  left: 200px;
+  right: 0;
   height: 100vh;
   width: 75vw;
   padding: 12px 20px;
@@ -117,7 +117,11 @@ nav{
 .navMenu ul li a{
   color: #fff;
   font-size: 1.35rem;
-  font-weight: 200;
+  font-weight: 300;
+}
+.navMenu ul li.active{
+  border-bottom: 2px solid var(--accent);
+
 }
 .open,
 .close {
@@ -136,37 +140,16 @@ nav{
   transform: scale(1.05);
 }
 
-/* 
 
 
-.nav-bar {
-  margin-top: 40px;
-  align-self: center;
+.hero {
+   background: linear-gradient(
+    135deg,
+    #1e3a5f,
+    #4f7cac
+  );
+  color: white;
 }
-.nav-bar li a {
-  color: var(--text-color);
-  font-size: 18px;
-  transition: all 0.2s ease;
-}
-.nav-bar li a:hover {
-  font-weight: 600;
-}
-.nav-bar li.active a {
-  border-bottom: 2px solid var(--active);
-}
-.nav-bar li {
-  padding: 20px 0;
-  transition: all 0.5s;
-} */
-
-
-
-
-
-
-/* .hero {
-  background: var(--primary-color);
-} */
 .heroSection {
   display: grid;
   grid-template-columns: 1fr;
@@ -179,7 +162,7 @@ nav{
   text-align: center;
 }
 .heroText span {
-  color: whitesmoke;
+  color: var(--accent);
 }
 .heroText a {
   margin-top: 30px;
@@ -196,7 +179,7 @@ nav{
 
 /* QUOTES */
 .quotesSection {
-  background: var(--primary-color);
+  background: var(--secondary-color);
   color: white;
   padding: 60px 20px;
   text-align: center;

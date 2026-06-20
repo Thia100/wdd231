@@ -7,13 +7,12 @@
     background: transparent;
     transform: none;
     position: static;
-    /* edit */
     top: 0;
     left: 0;
     height: auto;
     width: auto;
     padding: 0;
-
+    transition: none;
     flex-direction: row;
     visibility: visible;
     opacity: 1;

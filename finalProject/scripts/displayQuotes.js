@@ -1,27 +1,16 @@
-const url = "data/quotes.json";
+import quotes from "../data/quotes.mjs";
 const quotesContainer = document.querySelector("#quotesContainer");
-let data = []
-async function fetchQuotes(url) {
-  try {
-    const response = await fetch(url);
-    if (!response.ok) {
-      throw new Error(`Fetch Error: ${Error}`);
-    }
-    data = await response.json();
-    displayQuotes();
-    setInterval(displayQuotes, 9000);
-  } catch (error) {
-    console.log(error);
-  }
-}
 
-function displayQuotes() {
+function displayQuotes(quotes) {
   quotesContainer.innerHTML = "";
 
-  const randomIndex = Math.floor(Math.random() * data.length);
+  const randomIndex = Math.floor(Math.random() * quotes.length);
   quotesContainer.innerHTML = `
-  <p>${data[randomIndex].quote}</p>
-   <p>- ${data[randomIndex].author}</p>`;
+  <p>${quotes[randomIndex].quote}</p>
+   <p>- ${quotes[randomIndex].author}</p>`;
 }
 
-fetchQuotes(url);
+displayQuotes(quotes);
+setInterval(() => {
+  displayQuotes(quotes)
+}, 9000);

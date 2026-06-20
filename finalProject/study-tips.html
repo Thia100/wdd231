@@ -6,10 +6,6 @@
     <meta name="author" content="Fathia Diekola Gbolahan" />
     <meta name="description" content="" />
 
-    <link rel="stylesheet" href="styles/normalize.css" />
-    <link rel="stylesheet" href="styles/study-tips.css" />
-    <link rel="stylesheet" href="styles/study-tips-large.css" />
-
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
@@ -22,12 +18,37 @@
       rel="stylesheet"
     />
 
+    <link rel="stylesheet" href="styles/normalize.css" />
+    <link rel="stylesheet" href="styles/study-tips.css" />
+    <link rel="stylesheet" href="styles/study-tips-large.css" />
+
     <script src="scripts/displayTips.js" defer></script>
+    <script src="scripts/navigation.js" defer></script>
 
     <title>Study Tips | Aced</title>
   </head>
   <body>
-    <header></header>
+    <header>
+      <nav>
+        <div class="nav">
+          <div class="logo">
+            <img src="images/logo-white.png" alt="Aced logo">
+            <span>Aced</span>
+          </div>
+
+          <div class="navMenu">
+            <i class="fa-solid fa-xmark close"></i>
+            <ul>
+              <li><a href="index.html">Home</a></li>
+              <li class="active"><a href="study-tips.html">Study Tips</a></li>
+              <li><a href="planner.html">Planner</a></li>
+              <li><a href="contact.html">Contact</a></li>
+            </ul>
+          </div>
+          <i class="fa-solid fa-bars open"></i>
+        </div>
+      </nav>
+    </header>
     <main>
       <div class="container">
         <section class="tipsHero">
