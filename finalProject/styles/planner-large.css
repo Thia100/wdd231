@@ -23,4 +23,8 @@
   .plannerControls {
     flex-direction: row;
   }
+
+  .footer {
+    flex-direction: row;
+  }
 }

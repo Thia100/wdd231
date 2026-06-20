@@ -198,3 +198,72 @@ nav{
   text-decoration: line-through;
   opacity: .6;
 }
+
+/* FOOTER */
+footer {
+  background-color: var(--primary-color);
+  color: #fff;
+  margin-top: 100px;
+  padding: 20px 0;
+}
+.footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+.footerLogo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.footerLogo img {
+  max-width: 45px;
+  width: 100%;
+  margin-bottom: 10px;
+}
+footerLinks {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.footerLinks a {
+  color: white;
+  font-size: 1.2rem;
+  font-weight: 300;
+  transition: 0.3s;
+  opacity: 0.8;
+}
+.footerLinks li {
+  margin-top: 20px;
+}
+.footerLinks a:hover {
+  opacity: 1;
+  border-bottom: 1px solid var(--accent);
+  color: var(--accent);
+}
+.footerSocials {
+  margin-top: 20px;
+  display: flex;
+  gap: 30px;
+}
+.footerSocials i {
+  font-size: 1.2rem;
+}
+.footerSocials a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  background: white;
+  color: var(--primary-color);
+  border-radius: 50%;
+  transition: all 0.3s ease;
+}
+.footerSocials a:hover {
+  transform: translateY(-3px);
+  color: var(--accent);
+}

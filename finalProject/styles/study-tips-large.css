@@ -20,4 +20,7 @@
   .navMenu ul {
     flex-direction: row;
   }
+  .footer {
+    flex-direction: row;
+  }
 }
