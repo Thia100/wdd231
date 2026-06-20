@@ -58,9 +58,9 @@ nav{
   transform: translateX(-50%);
   z-index: 1000;
   margin: 0 auto;
-  padding: 0 24px;
+  padding: 0 30px;
   width: 90vw;
-  border-radius: 20px;
+  border-radius: 30px;
 }
 .logo{
   display: flex;
@@ -83,36 +83,19 @@ nav{
 }
 .navMenu{
   background: var(--primary-color);
+
   position: absolute;
   border-radius: 20px;
   /* edit */
   top: 42px;
-  left: 150px;
+  left: 200px;
   height: 100vh;
-  width: 80vw;
-
-  /* padding: 20px 0 0 50px; */
+  width: 75vw;
+  padding: 12px 20px;
   display: flex;
   flex-direction: column;
-  /* opacity: 0;
-  visibility: hidden; */
-  transform: translateY(-20px);
-  transition:
-    opacity 0.4s ease,
-    transform 0.4s ease,
-    visibility 0.4s;
-}
-/* 
-.nav-menu {
-  position: absolute;
-  top: 42px;
-  left: 50px;
-  height: 100vh;
-  width: 90vw;
-  background: var(--primary-color);
-  padding: 20px 0 0 50px;
-  display: flex;
-  flex-direction: column;
+  align-items: center;
+  gap: 3rem;
   opacity: 0;
   visibility: hidden;
   transform: translateY(-20px);
@@ -121,11 +104,41 @@ nav{
     transform 0.4s ease,
     visibility 0.4s;
 }
-.nav-menu.active {
+.navMenu.active {
   opacity: 1;
   visibility: visible;
   transform: translateY(0);
 }
+.navMenu ul{
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+}
+.navMenu ul li a{
+  color: #fff;
+  font-size: 1.35rem;
+  font-weight: 200;
+}
+.open,
+.close {
+  color: #fff;
+  cursor: pointer;
+  font-size: 2.3rem;
+  transition: transform 0.5s ease-in-out;
+  padding: 10px 0;
+}
+.close{
+  text-align: left;
+  align-self: flex-start;
+}
+.open:hover,
+.close:hover {
+  transform: scale(1.05);
+}
+
+/* 
+
+
 .nav-bar {
   margin-top: 40px;
   align-self: center;
@@ -145,26 +158,8 @@ nav{
   padding: 20px 0;
   transition: all 0.5s;
 } */
-/* .logo {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 4px;
-}
-.logo span {
-  font-size: 20px;
-} */
-/* .open,
-.close {
-  cursor: pointer;
-  font-size: 26px;
-  transition: transform 0.5s ease-in-out;
-  padding: 10px 0;
-}
-.open:hover,
-.close:hover {
-  transform: scale(1.05);
-} */
+
+
 
 
 

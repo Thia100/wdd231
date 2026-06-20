@@ -1,28 +1,26 @@
 @media screen and (min-width: 768px) {
-    /* .open,
+  .open,
   .close {
     display: none;
   }
-  #navMenu {
-    display: flex;
+  .navMenu {
+    background: transparent;
+    transform: none;
     position: static;
-    visibility: visible;
-    opacity: 1;
+    /* edit */
+    top: 0;
+    left: 0;
     height: auto;
     width: auto;
     padding: 0;
-    background: transparent;
-    transform: none;
-    top: 0;
-    left: 0;
-  }
-  .navList {
-    display: flex;
-    align-items: center;
-    gap: 30px;
-    margin: 0;
-  } */
 
+    flex-direction: row;
+    visibility: visible;
+    opacity: 1;
+  }
+  .navMenu ul {
+    flex-direction: row;
+  }
 
   .heroSection,
   .benefitSection {
@@ -32,15 +30,13 @@
   .ctaSection {
     padding: 150px 20px;
   }
-  
-  
+
   .ctaContent,
   .ctaText div {
     flex-direction: row;
   }
-  
 
-  .footer{
+  .footer {
     flex-direction: row;
   }
 }
