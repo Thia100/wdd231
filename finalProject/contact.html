@@ -4,22 +4,24 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="author" content="Fathia Diekola Gbolahan" />
-    <meta name="description" content="" />
-
     <meta
       name="description"
-      content="Aced helps students stay organized with study tips, planners, and motivation to improve learning habits."
+      content="Get in touch with Aced for questions, feedback, or suggestions. Reach out through our contact form and let us know how we can help you study smarter and stay organized"
     />
-    <meta property="og:title" content="Aced | Study Smarter" />
+
+    <meta property="og:title" content="Contact | Aced" />
     <meta
       property="og:description"
-      content="Study tips, planner tools, and motivation for students."
+      content="Contact Aced with questions, feedback, or suggestions. We'd love to hear from students looking to study smarter and stay organized."
     />
     <meta
       property="og:image"
       content="https://thia100.github.io/wdd231/finalProject/images/logo-blue.png"
     />
-    <meta property="og:url" content="https://your-site-url.com" />
+    <meta
+      property="og:url"
+      content="https://thia100.github.io/wdd231/finalProject/contact.html"
+    />
 
     <link
       rel="stylesheet"
@@ -65,9 +67,115 @@
       </nav>
     </header>
     <main>
-      <form method="get">
-        
-      </form>
+      <div class="container">
+        <div class="gridTemplates">
+          <div class="contactDetails">
+            <div class="contantContent">
+              <h2>Get in touch</h2>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla,
+                ab?
+              </p>
+
+              <div class="detailsContainer">
+                <div>
+                  <i class="fa-solid fa-location-dot"></i>
+                  <div>
+                    <p>Head Office</p>
+                    <p>Akindoyin street, Eleyele Ile-Ife, Osun state Nigeria</p>
+                  </div>
+                </div>
+
+                <div>
+                  <i class="fa-regular fa-envelope"></i>
+                  <div>
+                    <p>Email Us</p>
+                    <p>acedAcademy@gmail.com</p>
+                  </div>
+                </div>
+
+                <div>
+                  <i class="fa-solid fa-phone"></i>
+                  <div>
+                    <p>Call Us</p>
+                    <p>Phone: +2348154585224</p>
+                  </div>
+                </div>
+              </div>
+
+              <ul>
+                <li>
+                  <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                </li>
+                <li>
+                  <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                </li>
+                <li>
+                  <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                </li>
+                <li>
+                  <a href="#"><i class="fa-brands fa-tiktok"></i></a>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="contactForm">
+            <form action="" method="get">
+              <h2>Send us a message</h2>
+
+              <div>
+                <label for="name">Name</label>
+                <input
+                  placeholder="Name"
+                  id="name"
+                  required
+                  autocomplete="name"
+                  name="name"
+                />
+              </div>
+
+              <div>
+                <label for="email">Email</label>
+                <input
+                  placeholder="Email"
+                  id="email"
+                  required
+                  autocomplete="email"
+                  name="iemail"
+                />
+              </div>
+
+              <div>
+                <label for="phone">Phone</label>
+                <input placeholder="Phone" id="phone" autocomplete="tel" name="phone"/>
+              </div>
+
+              <div>
+                <label for="subject">Subject</label>
+                <input placeholder="Subject" id="subject" name="subject"/>
+              </div>
+
+              <div>
+                <label for="message">Message</label>
+                <textarea name="message" id="message"></textarea>
+              </div>
+
+              <button type="submit" id="submitBtn">Send Message</button>
+            </form>
+          </div>
+
+          <div class="mapContainer">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=..."
+              loading="lazy"
+              allowfullscreen
+            >
+            </iframe>
+          </div>
+
+        </div>
+      </div>
     </main>
     <footer>
       <div class="footer container">

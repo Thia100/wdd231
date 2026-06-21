@@ -20,6 +20,21 @@
   .navMenu ul {
     flex-direction: row;
   }
+
+  .gridTemplates {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .mapContainer {
+    grid-column: span 2;
+  }
+  .contactForm {
+    padding: 30px;
+    border-radius: 0 20px 20px 0;
+  }
+  .contactDetails {
+    border-radius: 20px 0 0 20px;
+  }
   .footer {
     flex-direction: row;
   }
