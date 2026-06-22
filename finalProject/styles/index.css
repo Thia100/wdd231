@@ -377,6 +377,9 @@ footer {
   border-bottom: 1px solid var(--accent);
   color: var(--accent);
 }
+.footerLogo a{
+  color: #fff;
+}
 .footerSocials {
   margin-top: 20px;
   display: flex;

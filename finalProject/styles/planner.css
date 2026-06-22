@@ -242,6 +242,9 @@ footer {
   gap: 40px;
   flex-wrap: wrap;
 }
+.footerLogo a{
+  color: #fff;
+}
 .footerLogo {
   display: flex;
   flex-direction: column;
