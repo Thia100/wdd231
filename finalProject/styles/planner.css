@@ -186,17 +186,28 @@ nav {
   border-radius: 20px;
   font-size: .85rem;
 }
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
 .high {
   background: #ffe2e2;
-  color: #b42318;
+  color: #7e170f;
 }
 .medium {
-  background: #fff4d6;
-  color: #b26a00;
+  background: #fbf4df;
+  color: #673f04;
 }
 .low {
   background: #dcfce7;
-  color: #166534;
+  color: #12542b;
 }
 
 .taskActions {

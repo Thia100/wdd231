@@ -54,7 +54,7 @@
               <li><a href="contact.html">Contact</a></li>
             </ul>
           </div>
-          <i class="fa-solid fa-bars open" aria-label="Open navigation"></i>
+          <i class="fa-solid fa-bars open"></i>
         </div>
       </nav>
     </header>
@@ -66,11 +66,11 @@
         </section>
 
         <section class="plannerControls">
-          <label for="taskInput" hidden>Task</label>
-          <input type="text" id="taskInput" placeholder="Enter a task" />
+          <label for="taskInput" class="sr-only">Task</label>
+          <input type="text" id="taskInput" placeholder="Enter a task" name="taskInput"/>
 
-          <label for="priority" hidden>Select Priority</label>
-          <select id="priority">
+          <label for="priority" class="sr-only">Select Priority</label>
+          <select id="priority" name="priority">
             <option value="High">High Priority</option>
             <option value="Medium">Medium Priority</option>
             <option value="Low">Low Priority</option>

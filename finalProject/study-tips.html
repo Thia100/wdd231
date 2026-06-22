@@ -63,7 +63,7 @@
               <li><a href="contact.html">Contact</a></li>
             </ul>
           </div>
-          <i class="fa-solid fa-bars open" aria-label="Open navigation"></i>
+          <i class="fa-solid fa-bars open"></i>
         </div>
       </nav>
     </header>
@@ -78,11 +78,14 @@
           </p>
         </section>
         <div class="filterSection">
+          <label class="sr-only" for="searchInput">Search Study Tips</label>
           <input
             type="text"
             id="searchInput"
+            name="searchInput"
             placeholder="Search study tips..."
           />
+          <label for="categoryFilter" class="sr-only">Select Filter</label>
           <select id="categoryFilter">
             <option value="all">All</option>
             <option value="Time Management">Time Management</option>

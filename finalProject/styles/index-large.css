@@ -24,16 +24,19 @@
   .heroSection,
   .benefitSection {
     grid-template-columns: repeat(2, 1fr);
-    padding: 150px 20px;
+    padding: 200px 20px;
   }
   .ctaSection {
     padding: 150px 20px;
   }
-
   .ctaContent,
   .ctaText div {
     flex-direction: row;
   }
+  .grid2 {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
 
   .footer {
     flex-direction: row;
