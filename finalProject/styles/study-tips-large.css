@@ -23,4 +23,7 @@
   .footer {
     flex-direction: row;
   }
+  .footerLinks {
+    flex-direction: row;
+  }
 }

@@ -20,7 +20,10 @@ async function fetchStudyTips() {
     tips = await response.json();
     displayStudyTips(tips);
   } catch (error) {
-    console.log(`Error: ${error}`);
+    displayTipsContainer.innerHTML = `
+    <p>Unable to load study tips at this time.</p>
+  `;
+    console.error(`Error: ${error}`);
   }
 }
 

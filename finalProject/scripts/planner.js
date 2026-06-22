@@ -51,19 +51,22 @@ function displayTasks() {
     }
 
     taskCard.innerHTML = `
-    <div class="taskDiv">
-        <p>${task.text}</p>
-        <div class="taskActions">
-        <button class="completeBtn">
-            <i class="fa-solid fa-check"></i>
-        </button>
-        <button class="deleteBtn">
-            <i class="fa-solid fa-trash"></i>
-        </button>
-    </div>
-    <p>${task.priority}</p>
-    
-    `;
+          <div class="taskDiv">
+            <p>${task.text}</p>
+            <p class="priority ${task.priority.toLowerCase()}">
+              ${task.priority}
+            </p>
+            <div class="taskActions">
+              <button class="completeBtn" aria-label="Mark task complete">
+                <i class="fa-solid fa-check"></i>
+              </button>
+
+              <button class="deleteBtn" aria-label="Delete task">
+                <i class="fa-solid fa-trash"></i>
+              </button>
+            </div>
+          </div>
+        `;
 
     taskCard.querySelector(".completeBtn").addEventListener("click", () => {
       task.completed = !task.completed;

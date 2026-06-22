@@ -72,8 +72,9 @@
         <section class="tipsHero">
           <h1>Study Tips Library</h1>
           <p>
-            Search, filter, and discover practical techniques to improve focus,
-            memory, and productivity.
+            Explore proven study strategies, improve concentration, strengthen
+            memory, and build productive habits that help you succeed
+            academically.
           </p>
         </section>
         <div class="filterSection">
@@ -92,11 +93,11 @@
 
         <div id="displayTipsContainer"></div>
 
-        <dialog id="tipModal">
+        <dialog id="tipModal" aria-labelledby="modalTitle" aria-describedby="modalDescription">
           <div class="tipModalHeader">
             <h2 id="modalTitle"></h2>
-            <button id="closeModal">
-              <i class="fa-solid fa-xmark" aria-label="Close Modal"></i>
+            <button id="closeModal" aria-label="Close Modal">
+              <i class="fa-solid fa-xmark"></i>
             </button>
           </div>
           <p id="modalDescription"></p>
@@ -119,20 +120,24 @@
 
         <ul class="footerSocials">
           <li>
-            <a href="#" target="_blank"
+            <a href="#" target="_blank" aria-label="Visit our Facebook page"
               ><i class="fa-brands fa-facebook-f"></i
             ></a>
           </li>
           <li>
-            <a href="#" target="_blank"
+            <a href="#" target="_blank" aria-label="Visit our Instagram page"
               ><i class="fa-brands fa-instagram"></i
             ></a>
           </li>
           <li>
-            <a href="#" target="_blank"><i class="fa-brands fa-twitter"></i></a>
+            <a href="#" target="_blank" aria-label="Visit our Twitter page"
+              ><i class="fa-brands fa-twitter"></i
+            ></a>
           </li>
           <li>
-            <a href="#" target="_blank"><i class="fa-brands fa-tiktok"></i></a>
+            <a href="#" target="_blank" aria-label="Visit our TikTok page"
+              ><i class="fa-brands fa-tiktok"></i
+            ></a>
           </li>
         </ul>
       </div>

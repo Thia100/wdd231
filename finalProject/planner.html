@@ -66,15 +66,18 @@
         </section>
 
         <section class="plannerControls">
+          <label for="taskInput" hidden>Task</label>
           <input type="text" id="taskInput" placeholder="Enter a task" />
 
+          <label for="priority" hidden>Select Priority</label>
           <select id="priority">
             <option value="High">High Priority</option>
             <option value="Medium">Medium Priority</option>
             <option value="Low">Low Priority</option>
           </select>
+          
 
-          <button id="addTaskBtn" aria-label="Add task><i class="fa-solid fa-plus"></i></button>
+          <button id="addTaskBtn" aria-label="Add task"><i class="fa-solid fa-plus"></i></button>
         </section>
         <section id="taskContainer"></section>
       </div>
@@ -95,20 +98,20 @@
 
         <ul class="footerSocials">
           <li>
-            <a href="#" target="_blank"
+            <a href="#" target="_blank" aria-label="Visit our Facebook page"
               ><i class="fa-brands fa-facebook-f"></i
             ></a>
           </li>
           <li>
-            <a href="#" target="_blank"
+            <a href="#" target="_blank" aria-label="Visit our Instagram page"
               ><i class="fa-brands fa-instagram"></i
             ></a>
           </li>
           <li>
-            <a href="#" target="_blank"><i class="fa-brands fa-twitter"></i></a>
+            <a href="#" target="_blank" aria-label="Visit our Twitter page"><i class="fa-brands fa-twitter"></i></a>
           </li>
           <li>
-            <a href="#" target="_blank"><i class="fa-brands fa-tiktok"></i></a>
+            <a href="#" target="_blank" aria-label="Visit our TikTok page"><i class="fa-brands fa-tiktok"></i></a>
           </li>
         </ul>
       </div>
