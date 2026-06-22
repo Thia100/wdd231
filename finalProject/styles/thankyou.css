@@ -1,0 +1,94 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --primary-color: #1e3a5f;
+  --secondary-color: #4f7cac;
+  --accent: #f4b860;
+  --background-color: #f8fafc;
+  --card-bg: #ffffff;
+  --text-color: #1f2937;
+  --heading-color: #102a43;
+  --heading-font: "Open Sans", sans-serif;
+  --text-font: "Roboto", sans-serif;
+}
+
+body {
+  background-color: var(--background-color);
+  color: var(--text-color);
+  font-family: var(--text-font);
+}
+
+main {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+}
+
+.container {
+  width: 100%;
+  max-width: 700px;
+}
+
+.thankYouCard {
+  background: white;
+  border-radius: 20px;
+  padding: 3rem;
+  text-align: center;
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.08);
+}
+
+.successIcon {
+  font-size: 4rem;
+  color: var(--accent);
+  margin-bottom: 1rem;
+}
+
+.thankYouCard h1 {
+  color: var(--heading-color);
+  margin-bottom: 1rem;
+  font-family: var(--heading-font);
+}
+
+.intro {
+  margin-bottom: 2rem;
+  color: var(--secondary-color);
+}
+
+.submittedInfo {
+  text-align: left;
+  background: var(--background-color);
+  border-radius: 12px;
+  padding: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+.submittedInfo p {
+  margin-bottom: 1rem;
+  line-height: 1.6;
+}
+
+.submittedInfo p:last-child {
+  margin-bottom: 0;
+}
+
+.homeBtn {
+  display: inline-block;
+  background: var(--accent);
+  color: var(--primary-color);
+  text-decoration: none;
+  padding: 0.9rem 1.5rem;
+  border-radius: 12px;
+  font-weight: 600;
+  transition: 0.3s;
+}
+
+.homeBtn:hover {
+  transform: translateY(-2px);
+  background: #efab47;
+}

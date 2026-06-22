@@ -20,9 +20,7 @@ body {
   font-family: var(--text-font);
 }
 h1,
-h2,
-h3,
-h4 {
+h2, h3 {
   font-family: var(--heading-font);
   color: var(--heading-color);
 }
@@ -153,10 +151,7 @@ nav {
   gap: 25px;
   margin-top: 50px;
 }
-.detailsContainer > div div p:first-child{
-  font-size: 1.2rem;
-  font-weight: 500;
-}
+
 .detailsContainer > div i {
   font-size: 1.5rem;
   flex-shrink: 0; 
