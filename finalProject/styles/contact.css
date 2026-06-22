@@ -136,6 +136,33 @@ nav {
 }
 
 
+header section{
+ background: linear-gradient(135deg, #1e3a5f, #4f7cac);
+ color: white;
+}
+.heroSection{
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 60px;
+  padding: 100px 20px;
+}
+.heroText span {
+  color: var(--accent);
+}
+.heroSection img{
+  max-width: 450px;
+  width: 100%;
+  height: auto;
+  margin: 0 auto;
+}
+.heroText {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+
+
 
 .contactDetails {
   background: #eae9e9;

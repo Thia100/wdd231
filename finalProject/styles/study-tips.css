@@ -205,8 +205,8 @@ nav {
 }
 .tipCard > p {
   display: inline-block;
-  background: rgba(79, 124, 172, 0.15);
-  color: var(--secondary-color);
+  background: rgba(123, 164, 207, 0.15);
+  color: var(--primary-color);
   padding: 6px 12px;
   border-radius: 10px;
   font-size: 0.85rem;

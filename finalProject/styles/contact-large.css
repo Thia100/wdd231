@@ -21,6 +21,12 @@
     flex-direction: row;
   }
 
+  .heroSection{
+    grid-template-columns: repeat(2, 1fr);
+    padding: 130px 20px;
+    align-items: center;
+  }
+
   .gridTemplates {
     display: grid;
     grid-template-columns: 0.9fr 1.1fr;
